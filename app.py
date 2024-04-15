@@ -1,6 +1,6 @@
 from flask import Flask
 
-from database.db import Database, Query
+from database.db import Database
 
 USER = "postgres"
 PASSWORD = "0000"
@@ -8,8 +8,6 @@ DATABASE = "db24_team11"
 
 app = Flask(__name__)
 db = Database(database=DATABASE, user=USER, password=PASSWORD)
-
-query = Query('SELECT * FROM User', None)
 
 
 @app.route('/')
