@@ -17,9 +17,14 @@ def login():
         query = Query("SELECT * FROM UserAccount WHERE username=%s", (username,))
         user = db.fetch_one(query)
         if user and user["password"] == password:
-            session["logged_in"] = True
             session["user"] = user
-            return redirect(url_for("dashboard"))
+            return redirect(url_for("queries.dashboard"))
         else:
             return render_template("login.html", error="Invalid username or password")
     return render_template("login.html")
+
+
+@auth_bp.route("/logout", methods=["GET"])
+def logout():
+    session.pop("user", None)
+    return redirect(url_for("auth.login"))

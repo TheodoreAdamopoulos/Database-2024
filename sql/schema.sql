@@ -22,8 +22,12 @@ CREATE TABLE Recipe (
     name VARCHAR(255) UNIQUE NOT NULL,
     cuisine_id INT NOT NULL,
     description TEXT,
-    difficulty INT CHECK (difficulty >= 1 AND difficulty <= 5),
-    ingredient_id INT NOT NULL, -- main ingredient
+    difficulty INT CHECK (
+        difficulty >= 1
+        AND difficulty <= 5
+    ),
+    ingredient_id INT NOT NULL,
+    -- main ingredient
     image_url VARCHAR(255),
     FOREIGN KEY (ingredient_id) REFERENCES Ingredient(id) ON DELETE RESTRICT,
     FOREIGN KEY (cuisine_id) REFERENCES Cuisine(id) ON DELETE CASCADE
@@ -86,11 +90,11 @@ CREATE TABLE Tool_Recipe (
     FOREIGN KEY (recipe_id) REFERENCES Recipe(id) ON DELETE CASCADE
 );
 
-
 CREATE TABLE Ingredient_Recipe (
     ingredient_id INT,
     recipe_id INT,
-    quantity VARCHAR(255) NOT NULL, -- number or descriptive word
+    quantity VARCHAR(255) NOT NULL,
+    -- number or descriptive word
     PRIMARY KEY (ingredient_id, recipe_id),
     FOREIGN KEY (ingredient_id) REFERENCES Ingredient(id) ON DELETE RESTRICT,
     FOREIGN KEY (recipe_id) REFERENCES Recipe(id) ON DELETE CASCADE
@@ -113,7 +117,8 @@ CREATE TABLE Ingredient_FoodCategory (
 
 CREATE TABLE NutrionFacts (
     recipe_id INT,
-    sequence INT,    -- ???
+    sequence INT,
+    -- ???
     fatPerPortion INT,
     proteinPerPortion INT,
     carbohydratePerPortion INT,
@@ -145,7 +150,15 @@ CREATE TABLE Cook (
     date_of_birth DATE NOT NULL,
     years_of_experience INTEGER DEFAULT 0,
     image_url VARCHAR(255),
-    job_title VARCHAR(50) CHECK (job_title IN ('Chef', 'Assistant Chef', 'Cook A', 'Cook B', 'Cook C')) NOT NULL,
+    job_title VARCHAR(50) CHECK (
+        job_title IN (
+            'Chef',
+            'Assistant Chef',
+            'Cook A',
+            'Cook B',
+            'Cook C'
+        )
+    ) NOT NULL,
     FOREIGN KEY (user_id) REFERENCES UserAccount (id) ON DELETE CASCADE
 );
 
