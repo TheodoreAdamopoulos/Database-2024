@@ -28,7 +28,7 @@ class Database:
             port=Config.PORT,
         )
 
-    def get_connection(self):
+    def get_connection(self) -> psycopg2:
         return self._pool.getconn()
 
     def release_connection(self, conn) -> None:

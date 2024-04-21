@@ -1,5 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
 <h1>Welcome {{ session['user']['username'] }}</h1>
+{% if session['user']['is_admin'] %}
+<h2>You are an admin!</h2>
+{% endif %}
 <!-- Add button links with queries -->
 {% endblock %}
