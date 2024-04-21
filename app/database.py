@@ -99,11 +99,11 @@ def get_db() -> Database:
     return current_app.config["db"]
 
 
-def close_db(e=None):
+def close_db(e=None) -> None:
     db: Database = current_app.config.pop("db", None)
     if db is not None:
         db.close_all_connections()
 
 
-def init_app(app: Flask):
+def init_app(app: Flask) -> None:
     app.teardown_appcontext(close_db)
