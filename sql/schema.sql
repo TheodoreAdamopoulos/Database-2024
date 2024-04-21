@@ -156,3 +156,42 @@ CREATE TABLE Cook_Cuisine (
     FOREIGN KEY (cook_id) REFERENCES Cook(user_id) ON DELETE CASCADE,
     FOREIGN KEY (cuisine_id) REFERENCES Cuisine(id) ON DELETE CASCADE
 );
+
+CREATE TABLE Episode (
+    id INT,
+    couisine_id INT, -- random result generators
+    cook_id INT,     -- Also we need a list from each id
+    judje_id INT,    -- (list of cooks, list of judges, list of recipes)(it could be like a list of attempts)    
+    recipe_id INT,   -- probably we don't need cuisine as an attribute here
+);
+
+CREATE TABLE Attempt (
+    id INT,
+    episode_id INT,
+    cook_id INT,     -- do we actually need 3 ids here?
+    --recipe_id INT, -- I think episode and cook are enough
+    grade INT, 
+    FOREIGN KEY (episode_id) REFERENCES Episode(id) ON DELETE CASCADE,
+    FOREIGN KEY (cook_id) REFERENCES Cook(id) ON DELETE CASCADE,
+    --FOREIGN KEY (recipe_id) REFERENCES Recipe(id) ON DELETE CASCADE
+);
+
+-- cook judges episode
+
+CREATE TABLE Cook_Episode (
+    cook_id INT,
+    episode_id INT,
+    PRIMARY KEY (cook_id, episode_id),
+    FOREIGN KEY (cook_id) REFERENCES Cook(user_id) ON DELETE CASCADE,
+    FOREIGN KEY (episode_id) REFERENCES Episode(id) ON DELETE CASCADE
+);
+
+-- cook evaluates attempt
+
+CREATE TABLE Cook_Attempt (
+    cook_id INT, -- 
+    attempt_id INT,
+    PRIMARY KEY (cook_id, attempt_id),
+    FOREIGN KEY (cook_id) REFERENCES Cook(user_id) ON DELETE CASCADE,
+    FOREIGN KEY (attempt_id) REFERENCES Attempt(id) ON DELETE CASCADE
+);
