@@ -1,8 +1,13 @@
-from flask import request, session, redirect, render_template, url_for
+from flask import render_template
+
+from app.database import get_db
+from app.decorators import login_required
 from . import queries_bp
-from app.database import get_db, Query
 
 
 @queries_bp.route("/dashboard", methods=["GET"])
+@login_required
 def dashboard():
+    db = get_db()
+    cur = db.get_connection().cursor()
     return render_template("dashboard.html")

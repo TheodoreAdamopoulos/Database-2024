@@ -1,23 +1,51 @@
-CREATE TABLE UserAccount (
+DROP TABLE IF EXISTS Evaluation;
+DROP TABLE IF EXISTS Judge_Episode;
+DROP TABLE IF EXISTS Attempt;
+DROP TABLE IF EXISTS Episode;
+DROP TABLE IF EXISTS Cook_Cuisine;
+DROP TABLE IF EXISTS Cook;
+DROP TABLE IF EXISTS Topic_Recipe;
+DROP TABLE IF EXISTS Topic;
+DROP TABLE IF EXISTS NutrionFacts;
+DROP TABLE IF EXISTS Ingredient_FoodCategory;
+DROP TABLE IF EXISTS FoodCategory;
+DROP TABLE IF EXISTS Ingredient_Recipe;
+DROP TABLE IF EXISTS Tool_Recipe;
+DROP TABLE IF EXISTS Tool;
+DROP TABLE IF EXISTS Label_Recipe;
+DROP TABLE IF EXISTS Label;
+DROP TABLE IF EXISTS Meal_Recipe;
+DROP TABLE IF EXISTS Meal;
+DROP TABLE IF EXISTS RecipeStep;
+DROP TABLE IF EXISTS RecipeTip;
+DROP TABLE IF EXISTS Recipe;
+DROP TABLE IF EXISTS Ingredient;
+DROP TABLE IF EXISTS Cuisine;
+DROP TABLE IF EXISTS UserAccount;
+
+
+
+CREATE TABLE IF NOT EXISTS UserAccount (
     id SERIAL PRIMARY KEY,
     username VARCHAR(50) UNIQUE NOT NULL,
     password VARCHAR(255) NOT NULL,
     is_admin BOOLEAN NOT NULL
 );
 
-CREATE TABLE Cuisine (
+CREATE TABLE IF NOT EXISTS Cuisine (
     id SERIAL PRIMARY KEY,
-    nationality VARCHAR(255) UNIQUE NOT NULL
+    nationality VARCHAR(255) UNIQUE NOT NULL,
+    image_url VARCHAR(255)
 );
 
-CREATE TABLE Ingredient (
+CREATE TABLE IF NOT EXISTS Ingredient (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255) UNIQUE NOT NULL,
     image_url VARCHAR(255),
     caloriesPer100 INT
 );
 
-CREATE TABLE Recipe (
+CREATE TABLE IF NOT EXISTS Recipe (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255) UNIQUE NOT NULL,
     cuisine_id INT NOT NULL,
@@ -33,7 +61,7 @@ CREATE TABLE Recipe (
     FOREIGN KEY (cuisine_id) REFERENCES Cuisine(id) ON DELETE CASCADE
 );
 
-CREATE TABLE RecipeTip (
+CREATE TABLE IF NOT EXISTS RecipeTip (
     recipe_id INT,
     tip_no INT,
     instructions TEXT NOT NULL,
@@ -41,7 +69,7 @@ CREATE TABLE RecipeTip (
     FOREIGN KEY (recipe_id) REFERENCES Recipe(id) ON DELETE CASCADE
 );
 
-CREATE TABLE RecipeStep (
+CREATE TABLE IF NOT EXISTS RecipeStep (
     recipe_id INT,
     step_no INT,
     description TEXT NOT NULL,
@@ -49,12 +77,12 @@ CREATE TABLE RecipeStep (
     FOREIGN KEY (recipe_id) REFERENCES Recipe(id) ON DELETE CASCADE
 );
 
-CREATE TABLE Meal (
+CREATE TABLE IF NOT EXISTS Meal (
     id SERIAL PRIMARY KEY,
     type VARCHAR(255) UNIQUE NOT NULL
 );
 
-CREATE TABLE Meal_Recipe (
+CREATE TABLE IF NOT EXISTS Meal_Recipe (
     meal_id INT,
     recipe_id INT,
     PRIMARY KEY (meal_id, recipe_id),
@@ -62,12 +90,12 @@ CREATE TABLE Meal_Recipe (
     FOREIGN KEY (recipe_id) REFERENCES Recipe(id) ON DELETE CASCADE
 );
 
-CREATE TABLE Label (
+CREATE TABLE IF NOT EXISTS Label (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255) UNIQUE NOT NULL
 );
 
-CREATE TABLE Label_Recipe (
+CREATE TABLE IF NOT EXISTS Label_Recipe (
     label_id INT,
     recipe_id INT,
     PRIMARY KEY (label_id, recipe_id),
@@ -75,14 +103,14 @@ CREATE TABLE Label_Recipe (
     FOREIGN KEY (recipe_id) REFERENCES Recipe(id) ON DELETE CASCADE
 );
 
-CREATE TABLE Tool (
+CREATE TABLE IF NOT EXISTS Tool (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255) UNIQUE NOT NULL,
     image_url VARCHAR(255),
     instructions TEXT NOT NULL
 );
 
-CREATE TABLE Tool_Recipe (
+CREATE TABLE IF NOT EXISTS Tool_Recipe (
     tool_id INT,
     recipe_id INT,
     PRIMARY KEY (tool_id, recipe_id),
@@ -90,7 +118,7 @@ CREATE TABLE Tool_Recipe (
     FOREIGN KEY (recipe_id) REFERENCES Recipe(id) ON DELETE CASCADE
 );
 
-CREATE TABLE Ingredient_Recipe (
+CREATE TABLE IF NOT EXISTS Ingredient_Recipe (
     ingredient_id INT,
     recipe_id INT,
     quantity VARCHAR(255) NOT NULL,
@@ -100,14 +128,14 @@ CREATE TABLE Ingredient_Recipe (
     FOREIGN KEY (recipe_id) REFERENCES Recipe(id) ON DELETE CASCADE
 );
 
-CREATE TABLE FoodCategory (
+CREATE TABLE IF NOT EXISTS FoodCategory (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255) UNIQUE NOT NULL,
     image_url VARCHAR(255),
     description TEXT NOT NULL
 );
 
-CREATE TABLE Ingredient_FoodCategory (
+CREATE TABLE IF NOT EXISTS Ingredient_FoodCategory (
     ingredient_id INT,
     food_category_id INT,
     PRIMARY KEY (ingredient_id, food_category_id),
@@ -115,7 +143,7 @@ CREATE TABLE Ingredient_FoodCategory (
     FOREIGN KEY (food_category_id) REFERENCES FoodCategory(id) ON DELETE CASCADE
 );
 
-CREATE TABLE NutrionFacts (
+CREATE TABLE IF NOT EXISTS NutrionFacts (
     recipe_id INT,
     sequence INT,
     -- ???
@@ -127,14 +155,14 @@ CREATE TABLE NutrionFacts (
     FOREIGN KEY (recipe_id) REFERENCES Recipe(id) ON DELETE CASCADE
 );
 
-CREATE TABLE Topic (
+CREATE TABLE IF NOT EXISTS Topic (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255) UNIQUE NOT NULL,
     image_url VARCHAR(255),
     description TEXT NOT NULL
 );
 
-CREATE TABLE Topic_Recipe (
+CREATE TABLE IF NOT EXISTS Topic_Recipe (
     topic_id INT,
     recipe_id INT,
     PRIMARY KEY (topic_id, recipe_id),
@@ -142,7 +170,7 @@ CREATE TABLE Topic_Recipe (
     FOREIGN KEY (recipe_id) REFERENCES Recipe(id) ON DELETE CASCADE
 );
 
-CREATE TABLE Cook (
+CREATE TABLE IF NOT EXISTS Cook (
     user_id INT PRIMARY KEY,
     first_name VARCHAR(255) NOT NULL,
     last_name VARCHAR(255) NOT NULL,
@@ -162,7 +190,7 @@ CREATE TABLE Cook (
     FOREIGN KEY (user_id) REFERENCES UserAccount (id) ON DELETE CASCADE
 );
 
-CREATE TABLE Cook_Cuisine (
+CREATE TABLE IF NOT EXISTS Cook_Cuisine (
     cook_id INT,
     cuisine_id INT,
     PRIMARY KEY (cook_id, cuisine_id),
@@ -170,7 +198,7 @@ CREATE TABLE Cook_Cuisine (
     FOREIGN KEY (cuisine_id) REFERENCES Cuisine(id) ON DELETE CASCADE
 );
 
-CREATE TABLE Episode (
+CREATE TABLE IF NOT EXISTS Episode (
     id SERIAL PRIMARY KEY,
     season_no SMALLINT,
     episode_no SMALLINT,
@@ -178,7 +206,7 @@ CREATE TABLE Episode (
 );
 
 
-CREATE TABLE Attempt (
+CREATE TABLE IF NOT EXISTS Attempt (
     id SERIAL PRIMARY KEY,
     episode_id INT,
     cook_id INT,
@@ -190,7 +218,7 @@ CREATE TABLE Attempt (
 
 -- cook judges episode
 
-CREATE TABLE Judge_Episode (
+CREATE TABLE IF NOT EXISTS Judge_Episode (
     cook_id INT,
     episode_id INT,
     PRIMARY KEY (cook_id, episode_id),
@@ -200,9 +228,9 @@ CREATE TABLE Judge_Episode (
 
 -- cook evaluates attempt
 
-CREATE TABLE Evaluation (
+CREATE TABLE IF NOT EXISTS Evaluation (
     id SERIAL PRIMARY KEY,
-    cook_id INT, -- 
+    cook_id INT, --
     attempt_id INT,
     grade SMALLINT CHECK (
         grade >= 1
