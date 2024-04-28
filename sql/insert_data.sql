@@ -1,6 +1,6 @@
 -- Insert data into UserAccount table
 INSERT INTO
-  UserAccount (id, username, password, is_admin)
+  Account (id, username, password, is_admin)
 VALUES
   (1, 'john_doe', 'password1', FALSE),
   (2, 'jane_doe', 'password2', FALSE),
@@ -331,8 +331,8 @@ VALUES
   (36, 'Tagine', 15, 'Moroccan stew named after the earthenware pot in which it is cooked, typically made with meat, vegetables, and spices.', 3, 36, '/recipes/tagine.jpg'),
   (37, 'Pelmeni', 16, 'Russian dumplings filled with minced meat, often served with sour cream or melted butter.', 3, 37, '/recipes/pelmeni.jpg'),
   (38, 'Causa Rellena', 17, 'Peruvian dish of mashed yellow potatoes seasoned with lime juice and chili peppers, layered with fillings such as chicken, tuna, or avocado.', 3, 38, '/recipes/causa_rellena.jpg'),
-  (39, 'Pavlova', 18, 'Australian dessert consisting of a meringue base topped with whipped cream and fresh fruit.', 3, 39, '/recipes/pavlova.jpg'),
-  (40, 'Swedish Meatballs', 19, 'Swedish dish of meatballs made from ground meat, typically served with gravy, lingonberry sauce, and mashed potatoes.', 3, 40, '/recipes/swedish_meatballs.jpg'),
+  (39, 'Divine Pavlova', 18, 'Australian dessert consisting of a meringue base topped with whipped cream and fresh fruit.', 3, 39, '/recipes/pavlova.jpg'),
+  (40, 'Nordic Delight Meatballs', 19, 'Swedish dish of meatballs made from ground meat, typically served with gravy, lingonberry sauce, and mashed potatoes.', 3, 40, '/recipes/swedish_meatballs.jpg'),
   (41, 'Milanesa', 20, 'Argentinian dish of breaded and fried meat cutlets, typically made from beef, chicken, or veal.', 3, 41, '/recipes/milanesa.jpg'),
   (42, 'Carbonnade Flamande', 5, 'Belgian beef and onion stew made with beer, seasoned with thyme, bay leaf, and mustard.', 4, 42, '/recipes/carbonnade_flamande.jpg'),
   (43, 'Chiles en Nogada', 2, 'Mexican dish of poblano chiles stuffed with picadillo (a mixture of meat, fruits, and spices), topped with walnut-based cream sauce and pomegranate seeds.', 4, 43, '/recipes/chiles_en_nogada.jpg'),
@@ -540,12 +540,12 @@ VALUES
   (38, 2, 'Layer the filling ingredients evenly to ensure a balanced and flavorful causa.'),
   (38, 3, 'Garnish with sliced hard-boiled eggs, olives, and aji amarillo sauce for a colorful presentation.'),
 
-  -- Pavlova
+  -- Divine Pavlova
   (39, 1, 'Add a pinch of cream of tartar or vinegar to the egg whites to stabilize the meringue and prevent it from deflating.'),
   (39, 2, 'Shape the pavlova into a nest-like structure to hold the whipped cream and fruit.'),
   (39, 3, 'Decorate with a variety of seasonal fruits and berries for a vibrant and visually appealing dessert.'),
 
-  -- Swedish Meatballs
+  -- Nordic Swedish Meatballs
   (40, 1, 'For added richness, use a mixture of ground beef and pork in your meatballs.'),
   (40, 2, 'Brown the meatballs in butter for extra flavor before simmering them in the creamy sauce.'),
   (40, 3, 'Serve with lingonberry sauce and mashed potatoes for a classic Swedish meal.'),
@@ -1002,7 +1002,7 @@ VALUES
   (38, 10, 'Garnish each slice of causa rellena with a slice of hard-boiled egg, a black olive, and a sprinkle of chopped fresh parsley or cilantro, if desired.'),
   (38, 11, 'Serve the causa rellena cold, accompanied by lime wedges and additional black olives on the side.'),
 
--- Pavlova
+-- Divine Pavlova
   (39, 1, 'Preheat the oven to 300°F (150°C) and line a baking sheet with parchment paper.'),
   (39, 2, 'In a large mixing bowl, beat the egg whites and cream of tartar with an electric mixer on medium speed until soft peaks form.'),
   (39, 3, 'Gradually add the sugar, 1 tablespoon at a time, while continuing to beat the egg whites on high speed until stiff, glossy peaks form.'),
@@ -1015,7 +1015,7 @@ VALUES
   (39, 10, 'Drizzle the pavlova with honey or fruit coulis, if desired, and garnish with fresh mint leaves for a pop of color.'),
   (39, 11, 'Slice the pavlova into wedges and serve immediately, as it may soften if left to sit for too long.'),
 
--- Swedish Meatballs
+-- Nordic Swedish Meatballs
   (40, 1, 'Preheat the oven to 400°F (200°C) and line a baking sheet with parchment paper.'),
   (40, 2, 'In a large mixing bowl, combine the ground beef, ground pork, breadcrumbs, finely chopped onion, minced garlic, beaten egg, milk, salt, pepper, allspice, and nutmeg. Mix well until fully combined.'),
   (40, 3, 'Shape the meat mixture into small balls, about 1 inch in diameter, and arrange them on the prepared baking sheet.'),
@@ -1135,326 +1135,255 @@ VALUES
   (50, 9, 'Repeat the layers with the remaining eggplant slices and meat sauce, then pour the béchamel sauce over the top, spreading it out evenly.'),
   (50, 10, 'Bake the moussaka in the preheated oven for 45-50 minutes, or until the top is golden brown and bubbly.'),
   (50, 11, 'Remove the moussaka from the oven and let it cool for 10-15 minutes before slicing and serving.'),
-  (50, 12, 'Serve the moussaka with a Greek salad and crusty bread for a complete meal.')
+  (50, 12, 'Serve the moussaka with a Greek salad and crusty bread for a complete meal.');
 
 
 
 
--- Insert meal types
 INSERT INTO Meal (id, type) VALUES
 (1, 'Breakfast'),
 (2, 'Brunch'),
 (3, 'Lunch'),
 (4, 'Supper'),
-(5, 'Dinner');
-
-
+(5, 'Dinner'),
+(6, 'Snack'),
+(7, 'Dessert'),
+(8, 'Appetizer');
 
 -- Insert data into Meal_Recipe table
 INSERT INTO Meal_Recipe (meal_id, recipe_id) VALUES
-(1, 1),
-(2, 2),
-(3, 3),
-(4, 4),
-(5, 5),
-(1, 6),
-(2, 7),
-(3, 8),
-(4, 9),
-(5, 10),
-(1, 11),
-(2, 12),
-(3, 13),
-(4, 14),
-(5, 15),
-(1, 16),
-(2, 17),
-(3, 18),
-(4, 19),
-(5, 20),
-(1, 21),
-(2, 22),
-(3, 23),
-(4, 24),
-(5, 25),
-(1, 26),
-(2, 27),
-(3, 28),
-(4, 29),
-(5, 30),
+(7, 11),
+(7, 12),
+(8, 26),
+(6, 40),
 (1, 31),
-(2, 32),
-(3, 33),
+(8, 18),
+(7, 16),
+(7, 26),
+(1, 43),
+(7, 34),
+(3, 12),
+(4, 41),
+(6, 12),
+(6, 42),
+(6, 45),
+(5, 37),
+(2, 35),
+(6, 33),
+(1, 20),
+(7, 37),
+(3, 21),
+(6, 2),
+(6, 9),
+(7, 22),
+(2, 14),
+(4, 36),
+(7, 35),
+(1, 8),
+(3, 11),
+(8, 47),
+(7, 18),
+(5, 27),
+(8, 39),
+(3, 37),
+(8, 2),
+(7, 47),
+(3, 36),
+(1, 28),
+(2, 43),
+(5, 41),
+(1, 1),
+(2, 36),
+(6, 30),
+(8, 12),
+(4, 37),
+(1, 3),
+(8, 17),
+(2, 1),
+(3, 31),
+(4, 45),
+(6, 8),
+(2, 11),
+(3, 4),
+(2, 8),
+(1, 50),
+(5, 32),
+(3, 34),
+(2, 7),
+(8, 9),
+(7, 46),
+(4, 47),
+(1, 39),
+(6, 23),
+(4, 20),
+(8, 46),
+(5, 46),
+(6, 49),
+(6, 34),
+(4, 18),
+(7, 49),
+(3, 6),
+(5, 8),
+(7, 33),
+(8, 49),
 (4, 34),
-(5, 35),
-(1, 36),
-(2, 37),
-(3, 38),
-(4, 39),
-(5, 40),
-(1, 41),
-(2, 42),
-(3, 43),
-(4, 44),
-(5, 45),
+(4, 11),
+(6, 26),
+(3, 42),
+(6, 44),
+(2, 44),
+(4, 6),
+(4, 13),
+(5, 49),
+(6, 28),
+(6, 6),
+(5, 47),
+(2, 28),
 (1, 46),
-(2, 47),
-(3, 48),
-(4, 49),
-(5, 50);
+(7, 5),
+(5, 26),
+(2, 33),
+(6, 5),
+(2, 23),
+(8, 34),
+(1, 25),
+(7, 9),
+(6, 7),
+(4, 46),
+(7, 8),
+(8, 29);
+
+
 
 
 
 
 INSERT INTO Label(id, name) VALUES
 (1, 'Quick Lunch'),
-(2, 'Italian'),
-(3, 'Pasta'),
-(4, 'Quick Lunch'),
-(5, 'Italian'),
-(6, 'Pizza'),
-(7, 'Lunch'),
-(8, 'Mexican'),
-(9, 'Street Food'),
-(10, 'Dinner'),
-(11, 'Japanese'),
-(12, 'Sushi'),
-(13, 'Dinner'),
-(14, 'Chinese'),
-(15, 'Stir-fry'),
-(16, 'Dinner'),
-(17, 'French'),
-(18, 'Stew'),
-(19, 'Dinner'),
-(20, 'Indian'),
-(21, 'Chicken'),
-(22, 'Dinner'),
-(23, 'Thai'),
-(24, 'Noodles'),
-(25, 'Dinner'),
-(26, 'Spanish'),
-(27, 'Rice Dish'),
-(28, 'Lunch'),
-(29, 'Greek'),
-(30, 'Salad'),
-(31, 'Dinner'),
-(32, 'Brazilian'),
-(33, 'Stew'),
-(34, 'Side Dish'),
-(35, 'Korean'),
-(36, 'Fermented'),
-(37, 'Lunch'),
-(38, 'Lebanese'),
-(39, 'Fried'),
-(40, 'Lunch'),
-(41, 'Vietnamese'),
-(42, 'Soup'),
-(43, 'Dinner'),
-(44, 'Turkish'),
-(45, 'Grilled'),
-(46, 'Dinner'),
-(47, 'Moroccan'),
-(48, 'Stew'),
-(49, 'Dinner'),
-(50, 'Russian'),
-(51, 'Dumplings'),
-(52, 'Dinner'),
-(53, 'Peruvian'),
-(54, 'Potatoes'),
-(55, 'Dessert'),
-(56, 'Australian'),
-(57, 'Meringue'),
-(58, 'Dinner'),
-(59, 'Swedish'),
-(60, 'Meatballs'),
-(61, 'Appetizer'),
-(62, 'Argentinian'),
-(63, 'Fried'),
-(64, 'Dinner'),
-(65, 'Italian'),
-(66, 'Pasta'),
-(67, 'Dinner'),
-(68, 'Mexican'),
-(69, 'Tortillas'),
-(70, 'Lunch'),
-(71, 'Japanese'),
-(72, 'Seafood'),
-(73, 'Dinner'),
-(74, 'Chinese'),
-(75, 'Pork'),
-(76, 'Dinner'),
-(77, 'French'),
-(78, 'Stew'),
-(79, 'Dinner'),
-(80, 'Indian'),
-(81, 'Chicken'),
-(82, 'Appetizer'),
-(83, 'Thai'),
-(84, 'Soup'),
-(85, 'Appetizer'),
-(86, 'Spanish'),
-(87, 'Soup'),
-(88, 'Dinner'),
-(89, 'Greek'),
-(90, 'Casserole'),
-(91, 'Breakfast'),
-(92, 'Brazilian'),
-(93, 'Bread'),
-(94, 'Lunch'),
-(95, 'Korean'),
-(96, 'Rice'),
-(97, 'Lunch'),
-(98, 'Lebanese'),
-(99, 'Salad'),
-(100, 'Dinner'),
-(101, 'Vietnamese'),
-(102, 'Soup'),
-(103, 'Dinner'),
-(104, 'Turkish'),
-(105, 'Kebab'),
-(106, 'Dinner'),
-(107, 'Moroccan'),
-(108, 'Stew'),
-(109, 'Dinner'),
-(110, 'Russian'),
-(111, 'Dumplings'),
-(112, 'Dinner'),
-(113, 'Peruvian'),
-(114, 'Potatoes'),
-(115, 'Dessert'),
-(116, 'Australian'),
-(117, 'Meringue'),
-(118, 'Dinner'),
-(119, 'Swedish'),
-(120, 'Meatballs'),
-(121, 'Appetizer'),
-(122, 'Argentinian'),
-(123, 'Fried'),
-(124, 'Dinner'),
-(125, 'Belgian'),
-(126, 'Stew'),
-(127, 'Dinner'),
-(128, 'Mexican'),
-(129, 'Chiles'),
-(130, 'Appetizer'),
-(131, 'Japanese'),
-(132, 'Fried'),
-(133, 'Dinner'),
-(134, 'Chinese'),
-(135, 'Tofu'),
-(136, 'Dinner'),
-(137, 'French'),
-(138, 'Tart'),
-(139, 'Dinner'),
-(140, 'Indian'),
-(141, 'Chicken');
- 
+(2, 'Leisurely Lunch'),
+(3, 'Hearty Brunch'),
+(4, 'Speedy Breakfast'),
+(5, 'Gourmet Dinner'),
+(6, 'Family Dinner'),
+(7, 'Weekend Brunch'),
+(8, 'Office Lunch'),
+(9, 'Home-cooked Dinner'),
+(10, 'Healthy Breakfast'),
+(11, 'Late-night Snack'),
+(12, 'Sunday Brunch'),
+(13, 'Midweek Dinner'),
+(14, 'Holiday Feast'),
+(15, 'Picnic Lunch'),
+(16, 'Fancy Dinner'),
+(17, 'Casual Lunch'),
+(18, 'Business Dinner'),
+(19, 'Holiday Brunch'),
+(20, 'Midnight Snack');
 
 
 
--- Insert data into Label_Recipe table
+
 INSERT INTO Label_Recipe (label_id, recipe_id) VALUES
--- Spaghetti Carbonara (Italian, Dinner)
-(1, 1), (2, 1),
--- Margherita Pizza (Italian, Dinner)
-(1, 2), (2, 2),
--- Tacos al Pastor (Mexican, Dinner)
-(2, 3), (3, 3),
--- Sushi Rolls (Japanese, Dinner)
-(1, 4), (4, 4),
--- Kung Pao Chicken (Chinese, Dinner)
-(5, 5),
--- Coq au Vin (French, Dinner)
-(6, 6),
--- Chicken Tikka Masala (Indian, Dinner)
-(7, 7),
--- Pad Thai (Thai, Dinner)
-(8, 8),
--- Paella (Spanish, Dinner)
-(9, 9),
--- Greek Salad (Greek, Dinner)
-(10, 10),
--- Feijoada (Brazilian, Dinner)
-(11, 11),
--- Kimchi (Korean, Dinner)
-(12, 12),
--- Falafel (Lebanese, Dinner)
-(13, 13),
--- Pho (Vietnamese, Dinner)
-(14, 14),
--- Kebab (Turkish, Dinner)
+(14, 5),
+(2, 22),
+(14, 3),
 (15, 15),
--- Couscous (Moroccan, Dinner)
-(16, 16),
--- Borscht (Russian, Dinner)
-(17, 17),
--- Ceviche (Peruvian, Dinner)
-(18, 18),
--- Pavlova (Australian, Dinner)
-(19, 19),
--- Swedish Meatballs (Swedish, Dinner)
-(20, 20),
--- Empanadas (Argentinian, Dinner)
-(21, 21),
--- Lasagna (Italian, Dinner)
-(1, 22), (2, 22),
--- Enchiladas (Mexican, Dinner)
-(2, 23), (3, 23),
--- Sushi Nigiri (Japanese, Dinner)
-(1, 24), (4, 24),
--- Sweet and Sour Pork (Chinese, Dinner)
-(5, 25),
--- Beef Bourguignon (French, Dinner)
+(7, 9),
+(8, 27),
+(8, 35),
+(10, 44),
+(17, 10),
 (6, 26),
--- Chicken Curry (Indian, Dinner)
-(7, 27),
--- Tom Yum Soup (Thai, Dinner)
-(8, 28),
--- Gazpacho (Spanish, Dinner)
-(2, 29), (3, 29),
--- Moussaka (Greek, Dinner)
-(10, 30), (16, 30),
--- Pão de Queijo (Brazilian, Dinner)
-(2, 31),
--- Bibimbap (Korean, Dinner)
-(11, 32),
--- Tabbouleh (Lebanese, Dinner)
-(2, 33),
--- Pho Bo (Vietnamese, Dinner)
-(14, 34),
--- Iskender Kebab (Turkish, Dinner)
+(9, 12),
+(5, 49),
+(17, 35),
+(6, 34),
+(3, 46),
+(12, 14),
+(14, 31),
+(18, 46),
+(3, 29),
+(15, 6),
+(1, 10),
+(2, 25),
+(11, 29),
+(7, 32),
+(15, 38),
+(3, 20),
+(19, 42),
+(5, 1),
+(5, 22),
+(16, 6),
+(11, 44),
+(3, 47),
+(9, 14),
+(6, 13),
+(19, 24),
+(16, 13),
+(18, 44),
+(16, 26),
+(14, 38),
+(13, 9),
+(19, 11),
+(17, 2),
+(18, 11),
+(10, 4),
+(10, 40),
+(12, 22),
+(16, 50),
+(6, 40),
+(11, 27),
+(1, 19),
+(16, 35),
+(13, 28),
+(2, 38),
+(6, 16),
+(20, 14),
+(14, 23),
+(8, 43),
+(6, 28),
+(19, 15),
+(8, 30),
 (15, 35),
--- Tagine (Moroccan, Dinner)
+(14, 10),
+(5, 45),
+(8, 9),
+(7, 26),
+(1, 26),
+(2, 16),
+(2, 32),
+(1, 30),
+(20, 35),
+(16, 17),
+(9, 10),
+(20, 2),
+(13, 7),
+(20, 16),
+(4, 25),
+(2, 30),
+(4, 31),
+(3, 6),
+(2, 31),
+(19, 31),
+(8, 5),
+(7, 49),
+(14, 40),
+(6, 6),
 (16, 36),
--- Pelmeni (Russian, Dinner)
-(17, 37),
--- Causa Rellena (Peruvian, Dinner)
-(18, 38),
--- Pavlova (Australian, Dinner)
-(19, 39),
--- Swedish Meatballs (Swedish, Dinner)
-(20, 40),
--- Milanesa (Argentinian, Dinner)
-(21, 41),
--- Carbonnade Flamande (Belgian, Dinner)
-(42, 42),
--- Chiles en Nogada (Mexican, Dinner)
-(2, 43),
--- Tempura (Japanese, Dinner)
-(44, 44),
--- Mapo Tofu (Chinese, Dinner)
-(45, 45),
--- Quiche Lorraine (French, Dinner)
-(6, 46),
--- Butter Chicken (Indian, Dinner)
-(7, 47),
--- Tom Kha Gai (Thai, Dinner)
-(8, 48),
--- Gazpacho Andaluz (Spanish, Dinner)
-(2, 49), (3, 49),
--- Moussaka with Eggplant (Greek, Dinner)
-(10, 50), (16, 50);
-
+(1, 21),
+(8, 18),
+(9, 3),
+(1, 16),
+(1, 28),
+(1, 9),
+(12, 13),
+(17, 32),
+(10, 15),
+(13, 15),
+(2, 17),
+(7, 40),
+(3, 9),
+(2, 7);
 
 
 
@@ -1543,7 +1472,7 @@ INSERT INTO Tool (id, name, image_url, instructions) VALUES
 -- Dutch Oven
 (41, 'Dutch Oven', '/tools/dutch_oven.jpg', 'Use a Dutch oven to braise, stew, or bake dishes in the oven or on the stovetop.'),
 -- Blender
-(42, 'Blender', '/tools/blender.jpg', 'Use a blender to mix, puree, or emulsify ingredients into smoothies, sauces, or soups.'),
+(42, 'Hand Blender', '/tools/hand_blender.jpg', 'Use a hand blender to mix, puree, or emulsify ingredients directly in the pot or bowl.'),
 -- Cocktail Shaker
 (43, 'Cocktail Shaker', '/tools/cocktail_shaker.jpg', 'Use a cocktail shaker to mix and chill cocktails by shaking them with ice.'),
 -- Bar Spoon
@@ -1993,8 +1922,7 @@ INSERT INTO Tool_Recipe (tool_id, recipe_id) VALUES
 (4, 50), -- Measuring Cup
 (7, 50), -- Wooden Spoon
 (11, 50), -- Saucepan
-(16, 50), -- Tongs
-;
+(16, 50); -- Tongs
 
 
 

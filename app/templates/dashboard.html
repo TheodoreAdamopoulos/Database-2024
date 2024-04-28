@@ -1,9 +1,4 @@
 {% extends "base.html" %}
 {% block content %}
-    <h1>Welcome {{ session['user']['username'] }}</h1>
-    {% if session['user']['is_admin'] %}
-        <h2>You are an admin!</h2>
-    {% endif %}
-    <img alt="user image" src="{{ url_for('static', filename='images/cooks/img_1.jpg') }}"/>
-    <!-- Add button links with queries -->
+    <h1> Hello {{ username }}</h1>
 {% endblock %}

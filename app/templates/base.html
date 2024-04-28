@@ -10,24 +10,26 @@
 </head>
 
 <body>
-    <header>
-        {% if session.user %}
-        <nav class="navbar bg-primary ">
-            <div class="container-fluid">
-                <a class="navbar-brand text-light" href="{{ url_for('queries.dashboard') }}">Dashboard</a>
-                <a class="navbar-brand text-light" href="{{ url_for('auth.logout') }}">Logout</a>
-            </div>
-        </nav>
-        {% else %}
-        <nav class="navbar bg-primary ">
-            <div class="container-fluid">
-                <div class="ms-auto">
-                    <a class="navbar-brand text-light" href="{{ url_for('auth.login') }}">Login</a>
+<header>
+    <nav class="navbar bg-primary">
+        <div class="container-fluid">
+            {% if session.id %}
+                <div class="navbar-brand">
+                    <a class="text-light" href="{{ url_for('index') }}">Dashboard</a>
                 </div>
-            </div>
-        </nav>
-        {% endif %}
-    </header>
+                <div class="navbar-brand ms-auto">
+                    <a href="{{ url_for('account.credentials') }}" class="text-light me-3">{{ session.username }}</a>
+                    <a  class="text-light me-3" href="{{ url_for('account.logout') }}">Logout</a>
+                </div>
+            {% else %}
+                <div class="ms-auto">
+                    <a class="navbar-brand text-light" href="{{ url_for('account.login') }}">Login</a>
+                </div>
+            {% endif %}
+        </div>
+    </nav>
+</header>
+
     <main class="main">
         {% block content %}
         {% endblock %}
