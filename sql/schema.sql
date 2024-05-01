@@ -27,27 +27,27 @@ DROP TABLE IF EXISTS Account;
 
 CREATE TABLE Account (
     id SERIAL PRIMARY KEY,
-    username VARCHAR(50) UNIQUE NOT NULL,
+    username VARCHAR(50) UNIQUE NOT NULL, -- ok
     password VARCHAR(255) NOT NULL,
     is_admin BOOLEAN NOT NULL
 );
 
 CREATE TABLE Cuisine (
     id SERIAL PRIMARY KEY,
-    nationality VARCHAR(255) UNIQUE NOT NULL,
+    nationality VARCHAR(255) UNIQUE NOT NULL, -- ok
     image_url VARCHAR(255)
 );
 
 CREATE TABLE Ingredient (
     id SERIAL PRIMARY KEY,
-    name VARCHAR(255) UNIQUE NOT NULL,
+    name VARCHAR(255) UNIQUE NOT NULL,  -- ok
     image_url VARCHAR(255),
     caloriesPer100 INT
 );
 
 CREATE TABLE Recipe (
     id SERIAL PRIMARY KEY,
-    name VARCHAR(255) UNIQUE NOT NULL,
+    name VARCHAR(255) UNIQUE NOT NULL, -- ok
     cuisine_id INT NOT NULL,
     description TEXT,
     difficulty SMALLINT CHECK (
@@ -63,7 +63,7 @@ CREATE TABLE Recipe (
 
 CREATE TABLE RecipeTip (
     recipe_id INT,
-    tip_no INT,
+    tip_no INT,                         -- ok
     instructions TEXT NOT NULL,
     PRIMARY KEY (recipe_id, tip_no),
     FOREIGN KEY (recipe_id) REFERENCES Recipe(id) ON DELETE CASCADE
@@ -71,40 +71,40 @@ CREATE TABLE RecipeTip (
 
 CREATE TABLE RecipeStep (
     recipe_id INT,
-    step_no INT,
+    step_no INT,                -- ok
     description TEXT NOT NULL,
     PRIMARY KEY (recipe_id, step_no),
     FOREIGN KEY (recipe_id) REFERENCES Recipe(id) ON DELETE CASCADE
 );
 
 CREATE TABLE Meal (
-    id SERIAL PRIMARY KEY,
+    id SERIAL PRIMARY KEY,  -- ok
     type VARCHAR(255) UNIQUE NOT NULL
 );
 
 CREATE TABLE Meal_Recipe (
     meal_id INT,
-    recipe_id INT,
+    recipe_id INT,                  -- ok
     PRIMARY KEY (meal_id, recipe_id),
     FOREIGN KEY (meal_id) REFERENCES Meal(id) ON DELETE CASCADE,
     FOREIGN KEY (recipe_id) REFERENCES Recipe(id) ON DELETE CASCADE
 );
 
 CREATE TABLE Label (
-    id SERIAL PRIMARY KEY,
+    id SERIAL PRIMARY KEY,      -- ok
     name VARCHAR(255) UNIQUE NOT NULL
 );
 
 CREATE TABLE Label_Recipe (
     label_id INT,
-    recipe_id INT,
+    recipe_id INT,              -- ok
     PRIMARY KEY (label_id, recipe_id),
     FOREIGN KEY (label_id) REFERENCES Label(id) ON DELETE CASCADE,
     FOREIGN KEY (recipe_id) REFERENCES Recipe(id) ON DELETE CASCADE
 );
 
 CREATE TABLE Tool (
-    id SERIAL PRIMARY KEY,
+    id SERIAL PRIMARY KEY,         -- ok
     name VARCHAR(255) UNIQUE NOT NULL,
     image_url VARCHAR(255),
     instructions TEXT NOT NULL
@@ -112,7 +112,7 @@ CREATE TABLE Tool (
 
 CREATE TABLE Tool_Recipe (
     tool_id INT,
-    recipe_id INT,
+    recipe_id INT,               -- ok
     PRIMARY KEY (tool_id, recipe_id),
     FOREIGN KEY (tool_id) REFERENCES Tool(id) ON DELETE CASCADE,
     FOREIGN KEY (recipe_id) REFERENCES Recipe(id) ON DELETE CASCADE
@@ -121,7 +121,7 @@ CREATE TABLE Tool_Recipe (
 CREATE TABLE Ingredient_Recipe (
     ingredient_id INT,
     recipe_id INT,
-    quantity VARCHAR(255) NOT NULL,
+    quantity VARCHAR(255) NOT NULL,     -- ok
     -- number or descriptive word
     PRIMARY KEY (ingredient_id, recipe_id),
     FOREIGN KEY (ingredient_id) REFERENCES Ingredient(id) ON DELETE RESTRICT,
@@ -130,14 +130,14 @@ CREATE TABLE Ingredient_Recipe (
 
 CREATE TABLE FoodCategory (
     id SERIAL PRIMARY KEY,
-    name VARCHAR(255) UNIQUE NOT NULL,
+    name VARCHAR(255) UNIQUE NOT NULL,   -- ok
     image_url VARCHAR(255),
     description TEXT NOT NULL
 );
 
 CREATE TABLE Ingredient_FoodCategory (
     ingredient_id INT,
-    food_category_id INT,
+    food_category_id INT,                   -- ok
     PRIMARY KEY (ingredient_id, food_category_id),
     FOREIGN KEY (ingredient_id) REFERENCES Ingredient(id) ON DELETE CASCADE,
     FOREIGN KEY (food_category_id) REFERENCES FoodCategory(id) ON DELETE CASCADE
@@ -157,14 +157,14 @@ CREATE TABLE NutrionFacts (
 
 CREATE TABLE Topic (
     id SERIAL PRIMARY KEY,
-    name VARCHAR(255) UNIQUE NOT NULL,
+    name VARCHAR(255) UNIQUE NOT NULL, -- ok
     image_url VARCHAR(255),
     description TEXT NOT NULL
 );
 
 CREATE TABLE Topic_Recipe (
     topic_id INT,
-    recipe_id INT,
+    recipe_id INT,                  -- ok
     PRIMARY KEY (topic_id, recipe_id),
     FOREIGN KEY (topic_id) REFERENCES Topic(id) ON DELETE CASCADE,
     FOREIGN KEY (recipe_id) REFERENCES Recipe(id) ON DELETE CASCADE
@@ -172,7 +172,7 @@ CREATE TABLE Topic_Recipe (
 
 CREATE TABLE Cook (
     user_id INT PRIMARY KEY,
-    first_name VARCHAR(255) NOT NULL,
+    first_name VARCHAR(255) NOT NULL,  -- ok
     last_name VARCHAR(255) NOT NULL,
     phone_number VARCHAR(20) NOT NULL,
     date_of_birth DATE NOT NULL,
@@ -190,24 +190,25 @@ CREATE TABLE Cook (
     FOREIGN KEY (user_id) REFERENCES Account (id) ON DELETE CASCADE
 );
 
+--Cook's specialization
 CREATE TABLE Cook_Cuisine (
     cook_id INT,
-    cuisine_id INT,
+    cuisine_id INT,             -- ok
     PRIMARY KEY (cook_id, cuisine_id),
     FOREIGN KEY (cook_id) REFERENCES Cook(user_id) ON DELETE CASCADE,
     FOREIGN KEY (cuisine_id) REFERENCES Cuisine(id) ON DELETE CASCADE
 );
 
 CREATE TABLE Episode (
-    id SERIAL PRIMARY KEY,
-    season_no SMALLINT,
-    episode_no SMALLINT,
+    id SERIAL PRIMARY KEY,   -- ok
+    --season_no SMALLINT,
+    --episode_no SMALLINT,
     release_date DATE
 );
 
 
 CREATE TABLE Attempt (
-    id SERIAL PRIMARY KEY,
+    id SERIAL PRIMARY KEY,      -- ok
     episode_id INT,
     cook_id INT,
     recipe_id INT,
@@ -220,7 +221,7 @@ CREATE TABLE Attempt (
 
 CREATE TABLE Judge_Episode (
     cook_id INT,
-    episode_id INT,
+    episode_id INT,              -- ok
     PRIMARY KEY (cook_id, episode_id),
     FOREIGN KEY (cook_id) REFERENCES Cook(user_id) ON DELETE CASCADE,
     FOREIGN KEY (episode_id) REFERENCES Episode(id) ON DELETE CASCADE
