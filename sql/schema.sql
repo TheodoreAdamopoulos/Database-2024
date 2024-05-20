@@ -171,7 +171,7 @@ CREATE TABLE Topic_Recipe (
 );
 
 CREATE TABLE Cook (
-    user_id INT PRIMARY KEY,
+    id INT PRIMARY KEY,
     first_name VARCHAR(255) NOT NULL,
     last_name VARCHAR(255) NOT NULL,
     phone_number VARCHAR(20) NOT NULL,
@@ -187,23 +187,23 @@ CREATE TABLE Cook (
             'Cook C'
         )
     ) NOT NULL,
-    FOREIGN KEY (user_id) REFERENCES Account (id) ON DELETE CASCADE
+    FOREIGN KEY (id) REFERENCES Account (id) ON DELETE CASCADE
 );
 
 CREATE TABLE Cook_Cuisine (
     cook_id INT,
     cuisine_id INT,
     PRIMARY KEY (cook_id, cuisine_id),
-    FOREIGN KEY (cook_id) REFERENCES Cook(user_id) ON DELETE CASCADE,
+    FOREIGN KEY (cook_id) REFERENCES Cook(id) ON DELETE CASCADE,
     FOREIGN KEY (cuisine_id) REFERENCES Cuisine(id) ON DELETE CASCADE
 );
 
 CREATE TABLE Episode (
-    id SERIAL PRIMARY KEY,
-    season_no SMALLINT,
-    episode_no SMALLINT,
-    release_date DATE
-);
+      id SERIAL PRIMARY KEY,
+      season_no SMALLINT,
+      episode_no SMALLINT,
+      release_date DATE
+  );
 
 
 CREATE TABLE Attempt (
@@ -212,7 +212,7 @@ CREATE TABLE Attempt (
     cook_id INT,
     recipe_id INT,
     FOREIGN KEY (episode_id) REFERENCES Episode(id) ON DELETE CASCADE,
-    FOREIGN KEY (cook_id) REFERENCES Cook(user_id) ON DELETE SET NULL,
+    FOREIGN KEY (cook_id) REFERENCES Cook(id) ON DELETE SET NULL,
     FOREIGN KEY (recipe_id) REFERENCES Recipe(id) ON DELETE SET NULL
 );
 
@@ -222,7 +222,7 @@ CREATE TABLE Judge_Episode (
     cook_id INT,
     episode_id INT,
     PRIMARY KEY (cook_id, episode_id),
-    FOREIGN KEY (cook_id) REFERENCES Cook(user_id) ON DELETE CASCADE,
+    FOREIGN KEY (cook_id) REFERENCES Cook(id) ON DELETE CASCADE,
     FOREIGN KEY (episode_id) REFERENCES Episode(id) ON DELETE CASCADE
 );
 
@@ -236,6 +236,6 @@ CREATE TABLE Evaluation (
         grade >= 1
         AND grade <= 5
     ),
-    FOREIGN KEY (cook_id) REFERENCES Cook(user_id) ON DELETE SET NULL,
+    FOREIGN KEY (cook_id) REFERENCES Cook(id) ON DELETE SET NULL,
     FOREIGN KEY (attempt_id) REFERENCES Attempt(id) ON DELETE CASCADE
 );

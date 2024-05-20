@@ -1,2 +1,0 @@
-1. In episode table what is the purpose of the season_no and episode_no attributes?
-
