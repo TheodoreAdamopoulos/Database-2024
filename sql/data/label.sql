@@ -1,0 +1,22 @@
+-- Insert data into Label table
+INSERT INTO Label(id, name) VALUES
+(1, 'Quick Lunch'),
+(2, 'Leisurely Lunch'),
+(3, 'Hearty Brunch'),
+(4, 'Speedy Breakfast'),
+(5, 'Gourmet Dinner'),
+(6, 'Family Dinner'),
+(7, 'Weekend Brunch'),
+(8, 'Office Lunch'),
+(9, 'Home-cooked Dinner'),
+(10, 'Healthy Breakfast'),
+(11, 'Late-night Snack'),
+(12, 'Sunday Brunch'),
+(13, 'Midweek Dinner'),
+(14, 'Holiday Feast'),
+(15, 'Picnic Lunch'),
+(16, 'Fancy Dinner'),
+(17, 'Casual Lunch'),
+(18, 'Business Dinner'),
+(19, 'Holiday Brunch'),
+(20, 'Midnight Snack');

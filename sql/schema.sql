@@ -71,6 +71,7 @@ CREATE TABLE Recipe (
     -- main ingredient
     ingredient_id INT NOT NULL,
     image_url VARCHAR(255),
+    image_description VARCHAR(255),
     FOREIGN KEY (ingredient_id) REFERENCES Ingredient(id) ON DELETE RESTRICT,
     FOREIGN KEY (cuisine_id) REFERENCES Cuisine(id) ON DELETE CASCADE
 );
@@ -254,4 +255,12 @@ CREATE TABLE Evaluation (
     SET
         NULL,
         FOREIGN KEY (attempt_id) REFERENCES Attempt(id) ON DELETE CASCADE
+);
+
+CREATE TABLE Cook_Recipe (
+    cook_id INT,
+    recipe_id INT,
+    PRIMARY KEY (cook_id, recipe_id),
+    FOREIGN KEY (cook_id) REFERENCES Cook(id) ON DELETE CASCADE,
+    FOREIGN KEY (recipe_id) REFERENCES Recipe(id) ON DELETE CASCADE
 );
