@@ -1,253 +1,230 @@
 -- Insert data into RecipeTip table
-INSERT INTO RecipeTip
-  (recipe_id, tip_no, instructions)
+INSERT INTO RecipeTip (recipe_id, tip_no, instructions)
 VALUES
-  -- Spaghetti Carbonara
-  (1, 1, 'For a richer flavor, use pancetta instead of bacon in your carbonara.'),
-  (1, 2, 'Add a splash of white wine to the sauce for extra depth of flavor.'),
-  (1, 3, 'To prevent the eggs from scrambling, remove the pan from heat before adding them to the pasta.'),
+  -- Spaghetti Carbonara tips
+  (1, 1, 'Use fresh eggs for a richer and creamier sauce.'),
+  (1, 2, 'Add the pasta water gradually to avoid making the sauce too runny.'),
+  (1, 3, 'Grate the cheese finely to ensure it melts smoothly.'),
 
-  -- Margherita Pizza
-  (2, 1, 'For an authentic touch, use fresh buffalo mozzarella cheese on your Margherita pizza.'),
-  (2, 2, 'Drizzle a bit of extra-virgin olive oil over the pizza just before serving for extra flavor.'),
-  (2, 3, 'Bake the pizza on a pizza stone for a crispier crust.'),
+  -- Margherita Pizza tips
+  (2, 1, 'Use fresh basil leaves for a more authentic flavor.'),
+  (2, 2, 'Preheat the oven with a pizza stone for a crispier crust.'),
 
-  -- Tacos al Pastor
-  (3, 1, 'Marinate the pork in a blend of pineapple juice, achiote paste, and spices for at least 2 hours before grilling.'),
-  (3, 2, 'Serve the tacos with diced onions, cilantro, and a squeeze of lime for freshness.'),
-  (3, 3, 'Char the tortillas slightly over an open flame for added flavor.'),
+  -- Lasagna tips
+  (3, 1, 'Let the lasagna rest for 10 minutes before slicing to set the layers.'),
 
-  -- Sushi Rolls
-  (4, 1, 'Use a bamboo sushi mat to roll the sushi tightly and evenly.'),
-  (4, 2, 'Dip your fingers in water to prevent the rice from sticking to them while assembling the sushi rolls.'),
-  (4, 3, 'Experiment with different fillings and sauces to create your own unique sushi rolls.'),
+  -- Risotto tips
+  (4, 1, 'Stir constantly to release the starches and create a creamy texture.'),
+  (4, 2, 'Use warm broth to maintain a consistent cooking temperature.'),
 
-  -- Kung Pao Chicken
-  (5, 1, 'For an extra kick, add more dried red chili peppers to your Kung Pao chicken.'),
-  (5, 2, 'Roast the peanuts before adding them to the dish for a nuttier flavor and crunchier texture.'),
-  (5, 3, 'Add a splash of rice vinegar to balance the flavors of the sauce.'),
+  -- Pesto Pasta tips
+  (5, 1, 'Use a mix of basil and spinach for a more vibrant color.'),
+  (5, 2, 'Toast the pine nuts lightly for added flavor.'),
 
-  -- Coq au Vin
-  (6, 1, 'Marinate the chicken in red wine and aromatics overnight for maximum flavor.'),
-  (6, 2, 'Serve the Coq au Vin with crusty bread or buttered noodles to soak up the delicious sauce.'),
-  (6, 3, 'Garnish with fresh parsley before serving for a pop of color.'),
+  -- Tiramisu tips
+  (6, 1, 'Chill the tiramisu for at least 4 hours for the best flavor.'),
+  (6, 2, 'Use high-quality espresso for a more authentic taste.'),
 
-  -- Chicken Tikka Masala
-  (7, 1, 'Make your own garam masala spice blend for the freshest flavor in your Chicken Tikka Masala.'),
-  (7, 2, 'For a creamier sauce, add a splash of heavy cream or coconut milk towards the end of cooking.'),
-  (7, 3, 'Garnish with chopped cilantro and a drizzle of lemon juice before serving.'),
+  -- Tacos al Pastor tips
+  (7, 1, 'Marinate the pork overnight for a deeper flavor.'),
+  (7, 2, 'Grill the pork on medium heat to keep it juicy.'),
 
-  -- Pad Thai
-  (8, 1, 'Soak the rice noodles in warm water for about 30 minutes before stir-frying to soften them.'),
-  (8, 2, 'Toss in some bean sprouts and crushed peanuts for added texture and crunchiness.'),
-  (8, 3, 'Serve with lime wedges and extra chili flakes for those who like it extra spicy.'),
+  -- Guacamole tips
+  (8, 1, 'Add lime juice to prevent the guacamole from browning.'),
+  (8, 2, 'Mash the avocados with a fork for a chunkier texture.'),
 
-  -- Paella
-  (9, 1, 'Use a wide, shallow pan (paellera) for even cooking and to achieve the traditional crispy rice layer at the bottom (socarrat).'),
-  (9, 2, 'Add saffron threads to the broth for a rich, golden color and distinctive flavor.'),
-  (9, 3, 'Garnish with lemon wedges and fresh parsley before serving for a burst of freshness.'),
+  -- Chicken Enchiladas tips
+  (9, 1, 'Warm the tortillas before filling to prevent cracking.'),
+  (9, 2, 'Use a mix of cheeses for a richer flavor.'),
 
-  -- Greek Salad
-  (10, 1, 'Use the freshest ingredients available, including ripe tomatoes, crisp cucumbers, and tangy feta cheese.'),
-  (10, 2, 'Season the salad with dried oregano and drizzle with extra-virgin olive oil for authentic Greek flavor.'),
-  (10, 3, 'Serve the salad chilled for maximum refreshment on a hot day.'),
+  -- Chiles Rellenos tips
+  (10, 1, 'Roast the peppers until charred for easier peeling.'),
+  (10, 2, 'Use a toothpick to secure the filling if necessary.'),
 
-  -- Feijoada
-  (11, 1, 'Simmer the beans with smoked pork products like bacon, ham hocks, and sausage for maximum flavor.'),
-  (11, 2, 'Serve with orange slices to cut through the richness of the dish and add a burst of freshness.'),
-  (11, 3, 'Accompany with farofa (toasted cassava flour) and rice for a complete Brazilian meal.'),
+  -- Tamales tips
+  (11, 1, 'Soak the corn husks in warm water for easier wrapping.'),
+  (11, 2, 'Steam the tamales for at least an hour for the best texture.'),
 
-  -- Kimchi
-  (12, 1, 'Massage the salt and seasonings into the cabbage leaves to ensure even distribution of flavor.'),
-  (12, 2, 'Ferment the kimchi at room temperature for 1-2 days before transferring it to the refrigerator for longer storage.'),
-  (12, 3, 'Use a dedicated kimchi container or jar with an airtight lid to prevent odor transfer in your fridge.'),
+  -- Pozole tips
+  (12, 1, 'Simmer the soup slowly to develop deeper flavors.'),
 
-  -- Falafel
-  (13, 1, 'Soak the chickpeas overnight for better texture and easier blending.'),
-  (13, 2, 'Add a pinch of baking soda to the falafel mixture to help them brown and crisp up during frying.'),
-  (13, 3, 'Serve with tahini sauce, hummus, or tzatziki for dipping.'),
+  -- Sushi tips
+  (13, 1, 'Use sushi-grade fish for the best flavor and safety.'),
+  (13, 2, 'Keep your hands wet to prevent rice from sticking while shaping the sushi.'),
+  (13, 3, 'Use a sharp knife to slice the fish cleanly.'),
 
-  -- Pho
-  (14, 1, 'Simmer the broth for several hours to extract maximum flavor from the bones and spices.'),
-  (14, 2, 'Serve with a side plate of fresh herbs, bean sprouts, lime wedges, and chili slices for garnish.'),
-  (14, 3, 'Customize your pho with additional toppings like sliced beef, meatballs, or tripe.'),
+  -- Ramen tips
+  (14, 1, 'Simmer the broth for several hours for a richer flavor.'),
 
-  -- Kebab
-  (15, 1, 'Marinate the meat in yogurt, garlic, and spices for at least a few hours, or overnight, for maximum flavor.'),
-  (15, 2, 'Skewer the meat and vegetables separately to ensure even cooking.'),
-  (15, 3, 'Serve the kebabs with pita bread, rice, or a salad, and a dollop of tzatziki sauce for dipping.'),
+  -- Tempura tips
+  (15, 1, 'Keep the batter cold for a lighter and crispier texture.'),
+  (15, 2, 'Do not overcrowd the frying pan to maintain the oil temperature.'),
 
-  -- Couscous
-  (16, 1, 'Use equal parts couscous and boiling water, and let it sit covered for 5 minutes to steam and fluff up.'),
-  (16, 2, 'Mix in dried fruits like raisins or apricots and toasted nuts like almonds or pine nuts for added sweetness and crunch.'),
-  (16, 3, 'Drizzle with olive oil and lemon juice, and season with salt and pepper to taste before serving.'),
+  -- Teriyaki Chicken tips
+  (16, 1, 'Marinate the chicken for at least 30 minutes for more flavor.'),
+  (16, 2, 'Cook the chicken on medium heat to avoid burning the sauce.'),
 
-  -- Borscht
-  (17, 1, 'For a richer flavor, roast the beets in the oven before adding them to the soup.'),
-  (17, 2, 'Serve with a dollop of sour cream or a swirl of crème fraîche for added creaminess.'),
-  (17, 3, 'Garnish with fresh dill and a squeeze of lemon juice before serving for a burst of freshness.'),
+  -- Miso Soup tips
+  (17, 1, 'Dissolve the miso paste in a small amount of broth before adding to the soup to avoid clumps.'),
 
-  -- Ceviche
-  (18, 1, 'Use the freshest fish available, preferably sushi-grade, and marinate it in lime juice for at least 30 minutes before serving.'),
-  (18, 2, 'Add diced avocado and mango for a tropical twist, or diced cucumber and jalapeño for a refreshing kick.'),
-  (18, 3, 'Serve with tortilla chips or crispy plantain chips for scooping up the ceviche.'),
+  -- Okonomiyaki tips
+  (18, 1, 'Cook on medium heat to ensure the center is fully cooked without burning the outside.'),
+  (18, 2, 'Top with a variety of ingredients for extra flavor and texture.'),
+  (18, 3, 'Use a lid to help cook the okonomiyaki evenly.'),
 
-  -- Pavlova
-  (19, 1, 'Use room temperature egg whites for maximum volume and stability when whipping.'),
-  (19, 2, 'Add a teaspoon of cornstarch to the sugar when whipping the egg whites to help stabilize the meringue.'),
-  (19, 3, 'Top with a medley of fresh berries and a drizzle of passionfruit or raspberry coulis for a vibrant finish.'),
+  -- Kung Pao Chicken tips
+  (19, 1, 'Toast the peanuts for added crunch and flavor.'),
+  (19, 2, 'Adjust the amount of dried chilies to control the spiciness.'),
 
-  -- Swedish Meatballs
-  (20, 1, 'For tender meatballs, soak the breadcrumbs in milk before adding them to the meat mixture.'),
-  (20, 2, 'Brown the meatballs in butter before simmering them in the creamy sauce for added flavor.'),
-  (20, 3, 'Serve with lingonberry jam and mashed potatoes for a traditional Swedish meal.'),
+  -- Sweet and Sour Pork tips
+  (20, 1, 'Fry the pork in small batches to keep the oil temperature consistent.'),
 
-  -- Empanadas
-  (21, 1, 'Make sure to seal the edges of the empanadas tightly to prevent filling from leaking during baking.'),
-  (21, 2, 'Brush the tops of the empanadas with egg wash before baking for a golden, shiny finish.'),
-  (21, 3, 'Serve with chimichurri sauce or salsa for dipping.'),
+  -- Dumplings tips
+  (21, 1, 'Use a mix of cabbage and meat for juicier dumplings.'),
+  (21, 2, 'Seal the edges well to prevent the filling from leaking during cooking.'),
 
-  -- Lasagna
-  (22, 1, 'Make a large batch of sauce and freeze the leftovers for quick and easy lasagna-making in the future.'),
-  (22, 2, 'Use no-boil lasagna noodles for convenience, or if using regular noodles, boil them until al dente before layering.'),
-  (22, 3, 'Let the lasagna rest for 10-15 minutes after baking to set before slicing and serving.'),
+  -- Fried Rice tips
+  (22, 1, 'Use day-old rice for a better texture.'),
 
-  -- Enchiladas
-  (23, 1, 'Lightly fry the tortillas in oil before filling and rolling them to make them more pliable and prevent tearing.'),
-  (23, 2, 'Top the enchiladas with shredded cheese and bake until bubbly and golden brown.'),
-  (23, 3, 'Serve with a dollop of sour cream and a sprinkle of chopped cilantro for garnish.'),
+  -- Hot and Sour Soup tips
+  (23, 1, 'Adjust the vinegar and pepper to taste for the perfect balance.'),
 
-  -- Sushi Nigiri
-  (24, 1, 'Use sushi-grade fish and slice it against the grain for the best texture and mouthfeel.'),
-  (24, 2, 'Dip your fingers in water before shaping the rice to prevent sticking and ensure a smooth surface.'),
-  (24, 3, 'Serve with soy sauce, pickled ginger, and wasabi on the side for dipping.'),
+  -- Peking Duck tips
+  (24, 1, 'Hang the duck to dry before roasting for crispier skin.'),
+  (24, 2, 'Score the skin to allow the fat to render more effectively.'),
+  (24, 3, 'Serve with thin pancakes and hoisin sauce.'),
 
-  -- Sweet and Sour Pork
-  (25, 1, 'Coat the pork pieces in cornstarch before frying for extra crispiness.'),
-  (25, 2, 'Make your own sweet and sour sauce with pineapple juice, vinegar, ketchup, and brown sugar for a fresher flavor.'),
-  (25, 3, 'Garnish with sliced green onions and sesame seeds for added flavor and texture.'),
+  -- Coq au Vin tips
+  (25, 1, 'Use a good quality red wine for a richer sauce.'),
+  (25, 2, 'Cook slowly to allow the flavors to meld.'),
+  (25, 3, 'Brown the chicken well for deeper flavor.'),
 
-  -- Beef Bourguignon
-  (26, 1, 'For a deeper flavor, marinate the beef overnight in red wine, garlic, and herbs before cooking.'),
-  (26, 2, 'Serve the Beef Bourguignon with crusty bread or buttered noodles for soaking up the delicious sauce.'),
-  (26, 3, 'Garnish with fresh parsley before serving for a pop of color.'),
+  -- Ratatouille tips
+  (26, 1, 'Slice the vegetables uniformly for even cooking.'),
+  (26, 2, 'Cook slowly to develop a rich flavor.'),
 
-  -- Chicken Curry
-  (27, 1, 'Toast the spices in oil before adding the chicken and liquid for a more fragrant and flavorful curry.'),
-  (27, 2, 'For a creamier curry, add a splash of coconut milk or heavy cream towards the end of cooking.'),
-  (27, 3, 'Serve with steamed rice or naan bread for a complete meal.'),
+  -- Beef Bourguignon tips
+  (27, 1, 'Brown the beef well to add depth to the sauce.'),
 
-  -- Tom Yum Soup
-  (28, 1, 'Use fresh lemongrass, kaffir lime leaves, and galangal for the most authentic flavor in your Tom Yum Soup.'),
-  (28, 2, 'Adjust the level of spiciness by adding more or fewer chili peppers and chili paste.'),
-  (28, 3, 'Finish with a squeeze of lime juice and a sprinkle of chopped cilantro for freshness and brightness.'),
+  -- Croissants tips
+  (28, 1, 'Chill the dough between folds to keep the butter from melting.'),
+  (28, 2, 'Use high-quality butter for a better flavor.'),
 
-  -- Gazpacho
-  (29, 1, 'Chill all the ingredients before blending to ensure a refreshing and cold soup.'),
-  (29, 2, 'Adjust the consistency with more bread for a thicker gazpacho or more water for a lighter soup.'),
-  (29, 3, 'Garnish with diced cucumber, red bell pepper, and croutons for added texture and color.'),
+  -- Quiche Lorraine tips
+  (29, 1, 'Blind bake the crust to prevent it from becoming soggy.'),
+  (29, 2, 'Use heavy cream for a richer filling.'),
 
-  -- Moussaka
-  (30, 1, 'Salt the eggplant slices and let them sit for 30 minutes to draw out excess moisture before frying.'),
-  (30, 2, 'Use a combination of ground lamb and beef for a richer flavor in your Moussaka.'),
-  (30, 3, 'Allow the Moussaka to rest for at least 20 minutes before slicing to prevent it from falling apart.'),
+  -- Crème Brûlée tips
+  (30, 1, 'Chill the custard thoroughly before caramelizing the sugar.'),
+  (30, 2, 'Use a torch for an even caramelized top.'),
 
-  -- Pão de Queijo
-  (31, 1, 'Use tapioca flour (also known as tapioca starch) for the authentic texture of Pão de Queijo.'),
-  (31, 2, 'Mix the dough until smooth and elastic for light and airy Pão de Queijo.'),
-  (31, 3, 'Serve warm for the best taste and texture.'),
+  -- Chicken Tikka Masala tips
+  (31, 1, 'Marinate the chicken overnight for maximum flavor.'),
+  (31, 2, 'Use a mix of yogurt and spices for the marinade.'),
 
-  -- Bibimbap
-  (32, 1, 'Cook the rice in a stone bowl (dolsot) for a crispy rice crust at the bottom, known as nurungji.'),
-  (32, 2, 'Arrange the toppings in a colorful and visually appealing manner for a beautiful presentation.'),
-  (32, 3, 'Drizzle with gochujang sauce and sesame oil before mixing for a burst of flavor.'),
+  -- Palak Paneer tips
+  (32, 1, 'Blanch the spinach briefly to retain its color.'),
+  (32, 2, 'Use fresh paneer for the best texture.'),
 
-  -- Tabbouleh
-  (33, 1, 'Soak the bulgur in boiling water for 15-20 minutes, then drain and squeeze out any excess moisture before using.'),
-  (33, 2, 'Use plenty of fresh herbs like parsley and mint for a vibrant and aromatic Tabbouleh.'),
-  (33, 3, 'Dress with a generous amount of olive oil and lemon juice for a refreshing and tangy flavor.'),
+  -- Biryani tips
+  (33, 1, 'Use basmati rice for the best texture and aroma.'),
+  (33, 2, 'Layer the rice and meat for a more flavorful dish.'),
 
-  -- Pho Bo
-  (34, 1, 'Simmer the beef bones and aromatics for several hours to develop a rich and flavorful broth.'),
-  (34, 2, 'Blanch the rice noodles in hot water before adding them to the soup to prevent them from becoming mushy.'),
-  (34, 3, 'Serve with a plate of fresh herbs, bean sprouts, lime wedges, and chili slices for garnish.'),
+  -- Butter Chicken tips
+  (34, 1, 'Use a mix of yogurt and cream for a richer sauce.'),
+  (34, 2, 'Cook the chicken on medium heat to prevent it from drying out.'),
 
-  -- Iskender Kebab
-  (35, 1, 'Slice the meat thinly and grill it briefly for a smoky flavor and tender texture.'),
-  (35, 2, 'Layer the meat over the pita bread and ladle the tomato sauce and yogurt over the top for maximum flavor.'),
-  (35, 3, 'Garnish with melted butter and dried oregano before serving for an authentic touch.'),
+  -- Samosas tips
+  (35, 1, 'Seal the edges well to prevent filling from leaking during frying.'),
+  (35, 2, 'Use a mix of spices for a more complex flavor.'),
 
-  -- Tagine
-  (36, 1, 'Use a traditional clay tagine pot for cooking to impart a unique flavor to the dish.'),
-  (36, 2, 'Adjust the sweetness and tanginess of the dish by adding more or less dried fruit and preserved lemon.'),
-  (36, 3, 'Serve with couscous or crusty bread for soaking up the flavorful sauce.'),
+  -- Gulab Jamun tips
+  (36, 1, 'Fry on low heat to cook the dough balls evenly.'),
+  (36, 2, 'Soak in sugar syrup while still warm to absorb more syrup.'),
 
-  -- Pelmeni
-  (37, 1, 'Freeze the assembled pelmeni on a baking sheet before transferring them to a freezer bag for longer storage.'),
-  (37, 2, 'Cook the pelmeni in boiling water until they float to the surface, then drain and serve with melted butter or sour cream.'),
-  (37, 3, 'Sprinkle with chopped dill or parsley for a burst of freshness.'),
+  -- Moussaka tips
+  (37, 1, 'Let the dish rest after baking to set the layers.'),
 
-  -- Causa Rellena
-  (38, 1, 'Chill the mashed potato mixture before assembling the causa for easier handling and shaping.'),
-  (38, 2, 'Layer the filling ingredients evenly to ensure a balanced and flavorful causa.'),
-  (38, 3, 'Garnish with sliced hard-boiled eggs, olives, and aji amarillo sauce for a colorful presentation.'),
+  -- Souvlaki tips
+  (38, 1, 'Marinate the meat with lemon juice for added tenderness.'),
 
-  -- Divine Pavlova
-  (39, 1, 'Add a pinch of cream of tartar or vinegar to the egg whites to stabilize the meringue and prevent it from deflating.'),
-  (39, 2, 'Shape the pavlova into a nest-like structure to hold the whipped cream and fruit.'),
-  (39, 3, 'Decorate with a variety of seasonal fruits and berries for a vibrant and visually appealing dessert.'),
+  -- Greek Salad tips
+  (39, 1, 'Use high-quality feta cheese for the best flavor.'),
 
-  -- Nordic Swedish Meatballs
-  (40, 1, 'For added richness, use a mixture of ground beef and pork in your meatballs.'),
-  (40, 2, 'Brown the meatballs in butter for extra flavor before simmering them in the creamy sauce.'),
-  (40, 3, 'Serve with lingonberry sauce and mashed potatoes for a classic Swedish meal.'),
+  -- Spanakopita tips
+  (40, 1, 'Brush the phyllo sheets with butter for a crispier texture.'),
+  (40, 2, 'Use fresh spinach for a more vibrant taste.'),
 
-  -- Milanesa
-  (41, 1, 'Pound the meat thinly to ensure even cooking and a tender texture in your Milanesa.'),
-  (41, 2, 'Dip the breaded cutlets in beaten egg and breadcrumbs twice for a thicker and crispier coating.'),
-  (41, 3, 'Serve with lemon wedges and a sprinkle of salt for squeezing over the cutlets.'),
+  -- Baklava tips
+  (41, 1, 'Pour the syrup over the baklava while it’s still hot.'),
+  (41, 2, 'Use a mix of nuts for added complexity.'),
 
-  -- Carbonnade Flamande
-  (42, 1, 'Use a hearty Belgian beer like a Dubbel or a Tripel for braising the beef for an authentic flavor.'),
-  (42, 2, 'Cook the stew low and slow to allow the flavors to meld together and the meat to become tender.'),
-  (42, 3, 'Serve with crusty bread or fries for soaking up the delicious sauce.'),
+  -- Tzatziki tips
+  (42, 1, 'Drain the cucumber to prevent the dip from becoming watery.'),
+  (42, 2, 'Add fresh dill for a more authentic taste.'),
 
-  -- Chiles en Nogada
-  (43, 1, 'Roast the poblano chiles over an open flame or under the broiler until charred, then steam them to loosen the skins for easy removal.'),
-  (43, 2, 'Make the picadillo filling with a mixture of ground beef, pork, or a combination of both, seasoned with spices, fruits, and nuts.'),
-  (43, 3, 'Top the stuffed chiles with the creamy walnut sauce and garnish with pomegranate seeds and chopped parsley for a festive presentation.'),
+  -- Bibimbap tips
+  (43, 1, 'Use sesame oil for a more authentic flavor.'),
 
-  -- Tempura
-  (44, 1, 'Keep the batter ice cold and do not overmix to ensure a light and crispy tempura coating.'),
-  (44, 2, 'Fry the tempura in small batches to maintain the oil temperature and prevent overcrowding in the fryer.'),
-  (44, 3, 'Serve the tempura immediately after frying for the best texture and flavor.'),
+  -- Kimchi tips
+  (44, 1, 'Ferment the kimchi for at least a week for better flavor.'),
+  (44, 2, 'Use a mix of napa cabbage and radishes for added texture.'),
 
-  -- Mapo Tofu
-  (45, 1, 'Use silken tofu for a softer texture in your Mapo Tofu, and firm tofu if you prefer a firmer texture.'),
-  (45, 2, 'Adjust the level of spiciness by adding more or less chili peppers and Szechuan peppercorns.'),
-  (45, 3, 'Garnish with chopped green onions and toasted sesame seeds before serving for extra flavor and crunch.'),
+  -- Bulgogi tips
+  (45, 1, 'Marinate the beef overnight for the best flavor.'),
 
-  -- Quiche Lorraine
-  (46, 1, 'Pre-bake the pie crust before adding the filling to prevent it from becoming soggy.'),
-  (46, 2, 'Use a combination of Gruyère and Emmental cheese for a classic Quiche Lorraine.'),
-  (46, 3, 'Serve warm or at room temperature, sliced into wedges, for a delicious brunch or light dinner.'),
+  -- Japchae tips
+  (46, 1, 'Soak the noodles in cold water to prevent them from sticking.'),
+  (46, 2, 'Use a mix of vegetables for a more colorful dish.'),
 
-  -- Butter Chicken
-  (47, 1, 'Marinate the chicken in yogurt, lemon juice, and spices for at least 30 minutes to tenderize and flavor the meat.'),
-  (47, 2, 'Simmer the sauce gently to allow the flavors to meld together and the chicken to become tender and juicy.'),
-  (47, 3, 'Garnish with a swirl of cream and chopped cilantro before serving for an extra touch of richness and freshness.'),
+  -- Tteokbokki tips
+  (47, 1, 'Use anchovy broth for a more authentic taste.'),
 
-  -- Tom Kha Gai
-  (48, 1, 'Use chicken thighs for a more flavorful and tender meat in your Tom Kha Gai soup.'),
-  (48, 2, 'Add the coconut milk towards the end of cooking to prevent it from curdling and to preserve its creamy texture.'),
-  (48, 3, 'Garnish with fresh cilantro and a squeeze of lime juice before serving for a burst of freshness.'),
+  -- Samgyeopsal tips
+  (48, 1, 'Grill the pork belly on medium-high heat for the best texture.'),
+  (48, 2, 'Serve with a variety of dipping sauces for extra flavor.'),
 
-  -- Gazpacho Andaluz
-  (49, 1, 'Chill all the ingredients before blending to ensure a refreshing and cold soup.'),
-  (49, 2, 'Adjust the consistency with more bread for a thicker gazpacho or more water for a lighter soup.'),
-  (49, 3, 'Garnish with diced cucumber, red bell pepper, and croutons for added texture and color.'),
+  -- Pho tips
+  (49, 1, 'Simmer the broth for at least 6 hours for a rich flavor.'),
+  (49, 2, 'Use fresh herbs for the best taste.'),
 
-  -- Moussaka with Eggplant
-  (50, 1, 'Salt the eggplant slices and let them sit for 30 minutes to draw out excess moisture before frying.'),
-  (50, 2, 'Use a combination of ground lamb and beef for a richer flavor in your Moussaka.'),
-  (50, 3, 'Allow the Moussaka to rest for at least 20 minutes before slicing to prevent it from falling apart.');
+  -- Banh Mi tips
+  (50, 1, 'Use pickled vegetables for added crunch and flavor.'),
+  (50, 2, 'Toast the baguette lightly for a better texture.'),
+
+  -- Spring Rolls tips
+  (51, 1, 'Keep the rice paper moist to prevent cracking.'),
+  (51, 2, 'Use fresh herbs for the best taste.'),
+
+  -- Bun Cha tips
+  (52, 1, 'Grill the pork over charcoal for a smoky flavor.'),
+  (52, 2, 'Serve with a side of fish sauce for dipping.'),
+
+  -- Goi Cuon tips
+  (53, 1, 'Use fresh herbs for the best taste.'),
+  (53, 2, 'Roll the rice paper tightly to keep the filling in place.'),
+
+  -- Ca Kho To tips
+  (54, 1, 'Caramelize the sugar until it turns a deep amber color.'),
+
+  -- Beef Stroganoff tips
+  (55, 1, 'Use a mix of sour cream and heavy cream for a richer sauce.'),
+  (55, 2, 'Cook the beef quickly to keep it tender.'),
+
+  -- Borscht tips
+  (56, 1, 'Use fresh beets for the best flavor.'),
+  (56, 2, 'Add a dollop of sour cream before serving.'),
+
+  -- Pelmeni tips
+  (57, 1, 'Use a mix of pork and beef for the filling.'),
+
+  -- Shchi tips
+  (58, 1, 'Use fresh cabbage for the best texture.'),
+
+  -- Blini tips
+  (59, 1, 'Use buckwheat flour for a more traditional taste.'),
+  (59, 2, 'Serve with a variety of toppings for added flavor.'),
+
+  -- Olivier Salad tips
+  (60, 1, 'Use fresh vegetables for the best taste.'),
+  (60, 2, 'Chill the salad before serving for better flavor.');

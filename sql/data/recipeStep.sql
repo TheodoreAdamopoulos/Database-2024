@@ -2,532 +2,413 @@
 INSERT INTO RecipeStep (recipe_id, step_no, description)
 VALUES
   -- Spaghetti Carbonara
-  (1, 1, 'Bring a large pot of salted water to a boil and cook the spaghetti according to package instructions until al dente.'),
-  (1, 2, 'While the pasta is cooking, heat olive oil in a large skillet over medium heat.'),
-  (1, 3, 'Add the pancetta or bacon to the skillet and cook until crispy, then remove from the pan and set aside.'),
-  (1, 4, 'In a mixing bowl, whisk together the eggs, egg yolks, grated Parmesan cheese, and black pepper until well combined.'),
-  (1, 5, 'Once the pasta is cooked, drain it, reserving a cup of pasta water, and immediately add it to the skillet with the pancetta.'),
-  (1, 6, 'Remove the skillet from the heat and quickly pour the egg and cheese mixture over the hot pasta, tossing continuously to coat the pasta evenly.'),
-  (1, 7, 'If the pasta seems too dry, add a splash of reserved pasta water to loosen the sauce.'),
-  (1, 8, 'Serve immediately, garnished with additional grated Parmesan cheese and chopped parsley, if desired.'),
+  (1, 1, 'Cook the pasta according to package instructions until al dente.'),
+  (1, 2, 'In a bowl, whisk together eggs and grated cheese.'),
+  (1, 3, 'Cook pancetta in a pan until crispy.'),
+  (1, 4, 'Drain pasta and add to the pan with pancetta.'),
+  (1, 5, 'Remove from heat and quickly stir in the egg and cheese mixture.'),
+  (1, 6, 'Season with black pepper and serve immediately.'),
 
--- Margherita Pizza
-  (2, 1, 'Preheat your oven to its highest temperature setting, preferably with a pizza stone inside if available.'),
-  (2, 2, 'Roll out the pizza dough on a lightly floured surface into a circle of desired thickness.'),
-  (2, 3, 'Transfer the rolled-out dough to a pizza peel or parchment paper.'),
-  (2, 4, 'Spread the tomato sauce evenly over the surface of the dough, leaving a small border around the edges.'),
-  (2, 5, 'Arrange the slices of fresh mozzarella cheese evenly over the sauce.'),
-  (2, 6, 'Place the basil leaves on top of the cheese.'),
-  (2, 7, 'Carefully transfer the pizza to the preheated oven and bake until the crust is golden brown and the cheese is bubbly and melted, about 8-10 minutes.'),
-  (2, 8, 'Remove the pizza from the oven, slice, and serve hot.'),
+  -- Margherita Pizza
+  (2, 1, 'Preheat the oven to the highest temperature with a pizza stone inside.'),
+  (2, 2, 'Roll out the pizza dough on a floured surface.'),
+  (2, 3, 'Spread tomato sauce over the dough.'),
+  (2, 4, 'Add slices of mozzarella cheese and fresh basil leaves.'),
+  (2, 5, 'Drizzle with olive oil and bake for 8-10 minutes.'),
 
--- Tacos al Pastor
-  (3, 1, 'In a blender, combine the pineapple juice, orange juice, vinegar, garlic, achiote paste, and chipotle peppers. Blend until smooth to make the marinade.'),
-  (3, 2, 'Place the sliced pork shoulder in a large resealable plastic bag and pour the marinade over it. Seal the bag and marinate in the refrigerator for at least 4 hours, preferably overnight.'),
-  (3, 3, 'Preheat the grill to medium-high heat. Remove the pork from the marinade and discard the excess marinade.'),
-  (3, 4, 'Thread the pork slices onto skewers and grill for 5-7 minutes on each side, until cooked through and slightly charred.'),
-  (3, 5, 'While the pork is grilling, warm the tortillas on the grill for about 30 seconds on each side.'),
-  (3, 6, 'Remove the pork from the skewers and place it in the warm tortillas. Top with chopped onion, cilantro, and a squeeze of lime juice.'),
-  (3, 7, 'Serve the tacos al pastor hot, with additional lime wedges and salsa on the side.'),
+  -- Lasagna
+  (3, 1, 'Preheat oven to 375°F (190°C).'),
+  (3, 2, 'Cook lasagna noodles according to package instructions.'),
+  (3, 3, 'In a pan, cook ground beef until browned.'),
+  (3, 4, 'Add marinara sauce to the beef and simmer.'),
+  (3, 5, 'In a bowl, mix ricotta cheese with egg and parsley.'),
+  (3, 6, 'Layer noodles, meat sauce, ricotta mixture, and mozzarella in a baking dish.'),
+  (3, 7, 'Repeat layers and finish with a layer of mozzarella.'),
+  (3, 8, 'Bake for 45 minutes until bubbly and golden brown.'),
 
--- Sushi Rolls
-  (4, 1, 'Prepare sushi rice according to package instructions, then spread it evenly over a sheet of nori on a bamboo rolling mat.'),
-  (4, 2, 'Arrange the desired fillings, such as sliced fish, avocado, cucumber, or crab sticks, in a line across the center of the rice.'),
-  (4, 3, 'Using the bamboo mat to help you, roll the sushi tightly, starting from the edge closest to you and rolling away from you.'),
-  (4, 4, 'Use a sharp knife to slice the sushi roll into individual pieces, wiping the knife clean between cuts to ensure clean slices.'),
-  (4, 5, 'Repeat the process with the remaining rice and fillings until all ingredients are used up.'),
-  (4, 6, 'Serve the sushi rolls with soy sauce, wasabi, and pickled ginger on the side for dipping.'),
+  -- Risotto
+  (4, 1, 'Heat broth in a pot and keep warm.'),
+  (4, 2, 'In a pan, sauté onions in olive oil until translucent.'),
+  (4, 3, 'Add rice and cook, stirring, for 2 minutes.'),
+  (4, 4, 'Add white wine and cook until absorbed.'),
+  (4, 5, 'Gradually add broth, one ladle at a time, stirring constantly.'),
+  (4, 6, 'Continue until rice is creamy and cooked through.'),
+  (4, 7, 'Stir in butter and grated cheese before serving.'),
 
--- Kung Pao Chicken
-  (5, 1, 'Marinate the chicken pieces in soy sauce, rice wine, and cornstarch for about 20 minutes.'),
-  (5, 2, 'Heat oil in a wok or skillet over high heat. Add the dried chili peppers and Sichuan peppercorns, and stir-fry until fragrant, about 30 seconds.'),
-  (5, 3, 'Add the marinated chicken to the wok and stir-fry until browned and cooked through, about 4-5 minutes.'),
-  (5, 4, 'Add the garlic, ginger, and green onions to the wok and stir-fry for another 1-2 minutes, until fragrant.'),
-  (5, 5, 'Pour in the sauce mixture and stir well to coat the chicken and vegetables.'),
-  (5, 6, 'Add the peanuts to the wok and stir-fry for another 1-2 minutes, until everything is heated through and well combined.'),
-  (5, 7, 'Remove the wok from the heat and transfer the Kung Pao chicken to a serving dish.'),
-  (5, 8, 'Garnish with additional sliced green onions and serve hot with steamed rice.'),
+  -- Pesto Pasta
+  (5, 1, 'Cook pasta according to package instructions.'),
+  (5, 2, 'In a food processor, blend basil, garlic, pine nuts, and parmesan.'),
+  (5, 3, 'Gradually add olive oil until smooth.'),
+  (5, 4, 'Drain pasta and toss with pesto sauce.'),
+  (5, 5, 'Serve with extra parmesan cheese on top.'),
 
--- Coq au Vin
-  (6, 1, 'Preheat the oven to 325°F (160°C).'),
-  (6, 2, 'Season the chicken pieces with salt and pepper.'),
-  (6, 3, 'In a large Dutch oven, heat the olive oil over medium-high heat.'),
-  (6, 4, 'Add the bacon and cook until crisp, then transfer to a plate and set aside.'),
-  (6, 5, 'Add the chicken pieces to the Dutch oven and cook until browned on all sides, then transfer to the plate with the bacon.'),
-  (6, 6, 'Add the onions, carrots, and mushrooms to the Dutch oven and cook until softened, about 5 minutes.'),
-  (6, 7, 'Add the garlic and tomato paste and cook for another 1-2 minutes, until fragrant.'),
-  (6, 8, 'Return the chicken and bacon to the Dutch oven, then add the wine, chicken broth, thyme, and bay leaves.'),
-  (6, 9, 'Bring the mixture to a simmer, then cover and transfer to the preheated oven.'),
-  (6, 10, 'Bake for 1.5 to 2 hours, or until the chicken is tender and cooked through.'),
-  (6, 11, 'Remove the Dutch oven from the oven and discard the thyme sprigs and bay leaves.'),
-  (6, 12, 'Serve the Coq au Vin hot, garnished with chopped parsley, with crusty bread or mashed potatoes on the side.'),
+  -- Tiramisu
+  (6, 1, 'Brew strong coffee and let it cool.'),
+  (6, 2, 'Beat egg yolks with sugar until thick and pale.'),
+  (6, 3, 'Fold in mascarpone cheese.'),
+  (6, 4, 'In a separate bowl, whip cream until stiff peaks form.'),
+  (6, 5, 'Fold whipped cream into mascarpone mixture.'),
+  (6, 6, 'Dip ladyfingers in coffee and layer in a dish.'),
+  (6, 7, 'Spread mascarpone mixture over ladyfingers.'),
+  (6, 8, 'Repeat layers and finish with a layer of mascarpone.'),
+  (6, 9, 'Chill for at least 4 hours.'),
+  (6, 10, 'Dust with cocoa powder before serving.'),
 
--- Chicken Tikka Masala
-  (7, 1, 'In a large bowl, combine the yogurt, lemon juice, ginger, garlic, garam masala, turmeric, cumin, paprika, and cayenne pepper.'),
-  (7, 2, 'Add the chicken pieces to the bowl and toss until evenly coated in the marinade.'),
-  (7, 3, 'Cover the bowl and refrigerate for at least 1 hour, or overnight for best results.'),
-  (7, 4, 'Preheat the broiler to high heat.'),
-  (7, 5, 'Thread the marinated chicken pieces onto skewers and place them on a broiler pan or baking sheet.'),
-  (7, 6, 'Broil the chicken skewers for 5-7 minutes on each side, or until cooked through and slightly charred.'),
-  (7, 7, 'Meanwhile, in a large skillet, heat the oil over medium heat.'),
-  (7, 8, 'Add the onions and cook until softened and translucent, about 5 minutes.'),
-  (7, 9, 'Stir in the tomato sauce, cream, and fenugreek leaves, and bring to a simmer.'),
-  (7, 10, 'Add the cooked chicken skewers to the skillet and simmer for another 10-15 minutes, stirring occasionally.'),
-  (7, 11, 'Season with salt and pepper to taste, and garnish with chopped cilantro before serving.'),
+  -- Tacos al Pastor
+  (7, 1, 'Marinate pork in a mixture of pineapple juice, vinegar, and spices overnight.'),
+  (7, 2, 'Preheat grill to medium-high heat.'),
+  (7, 3, 'Grill pork until cooked through and slightly charred.'),
+  (7, 4, 'Warm tortillas on the grill.'),
+  (7, 5, 'Slice pork thinly and assemble tacos with pineapple, cilantro, and onions.'),
 
--- Pad Thai
-  (8, 1, 'Soak the rice noodles in warm water for about 30 minutes, or until soft but still slightly firm.'),
-  (8, 2, 'In a small bowl, combine the tamarind paste, fish sauce, soy sauce, and sugar to make the Pad Thai sauce.'),
-  (8, 3, 'Heat the oil in a large skillet or wok over medium-high heat.'),
-  (8, 4, 'Add the garlic and tofu, and stir-fry until golden brown, about 3-4 minutes.'),
-  (8, 5, 'Add the shrimp and stir-fry until pink and cooked through, about 2-3 minutes.'),
-  (8, 6, 'Push the shrimp and tofu to one side of the skillet, and crack the eggs into the empty space.'),
-  (8, 7, 'Scramble the eggs until cooked, then mix them with the shrimp and tofu.'),
-  (8, 8, 'Add the drained rice noodles to the skillet, along with the Pad Thai sauce.'),
-  (8, 9, 'Toss everything together until well combined and heated through, about 2-3 minutes.'),
-  (8, 10, 'Stir in the bean sprouts, green onions, and peanuts, then remove the skillet from the heat.'),
-  (8, 11, 'Serve the Pad Thai hot, garnished with additional peanuts, lime wedges, and cilantro, if desired.'),
+  -- Guacamole
+  (8, 1, 'Halve and pit the avocados, then scoop the flesh into a bowl.'),
+  (8, 2, 'Mash the avocados with a fork to desired consistency.'),
+  (8, 3, 'Stir in lime juice, diced onions, tomatoes, and cilantro.'),
+  (8, 4, 'Season with salt and serve immediately.'),
 
--- Paella
-  (9, 1, 'In a large paella pan or skillet, heat the olive oil over medium-high heat.'),
-  (9, 2, 'Add the chorizo and cook until browned, then remove from the pan and set aside.'),
-  (9, 3, 'Season the chicken and shrimp with salt and pepper, then add them to the pan and cook until browned on all sides, about 5-7 minutes.'),
-  (9, 4, 'Remove the chicken and shrimp from the pan and set aside.'),
-  (9, 5, 'Add the onion, bell pepper, and garlic to the pan, and cook until softened, about 5 minutes.'),
-  (9, 6, 'Stir in the rice, saffron, paprika, and tomato paste, and cook for another 2-3 minutes, until the rice is coated in the spices.'),
-  (9, 7, 'Pour in the chicken broth and bring to a simmer, then reduce the heat to low and let the mixture cook for about 15 minutes, or until the rice is almost tender and most of the liquid has been absorbed.'),
-  (9, 8, 'Return the chicken and shrimp to the pan, along with the chorizo, peas, and diced tomatoes.'),
-  (9, 9, 'Continue to cook for another 5-7 minutes, or until the chicken and shrimp are fully cooked and the rice is tender, adding more broth if necessary.'),
-  (9, 10, 'Garnish the paella with chopped parsley and lemon wedges before serving.'),
+  -- Chicken Enchiladas
+  (9, 1, 'Preheat oven to 350°F (175°C).'),
+  (9, 2, 'Shred cooked chicken and mix with half of the enchilada sauce.'),
+  (9, 3, 'Fill tortillas with chicken mixture and roll up.'),
+  (9, 4, 'Place rolled tortillas in a baking dish.'),
+  (9, 5, 'Pour remaining enchilada sauce over the top and sprinkle with cheese.'),
+  (9, 6, 'Bake for 20-25 minutes until cheese is melted and bubbly.'),
 
--- Greek Salad
-  (10, 1, 'In a large salad bowl, combine the chopped tomatoes, cucumbers, red onions, bell peppers, and olives.'),
-  (10, 2, 'Crumble the feta cheese over the top of the salad.'),
-  (10, 3, 'In a small bowl, whisk together the olive oil, red wine vinegar, oregano, salt, and pepper to make the dressing.'),
-  (10, 4, 'Pour the dressing over the salad and toss gently to coat all the ingredients evenly.'),
-  (10, 5, 'Garnish the Greek salad with fresh oregano leaves and serve immediately.'),
+  -- Chiles Rellenos
+  (10, 1, 'Roast the peppers until charred and then peel off the skins.'),
+  (10, 2, 'Make a small slit and remove seeds.'),
+  (10, 3, 'Stuff peppers with cheese and secure with toothpicks.'),
+  (10, 4, 'Dip in beaten egg and flour, then fry until golden.'),
 
--- Feijoada
-  (11, 1, 'In a large pot or Dutch oven, heat the oil over medium heat.'),
-  (11, 2, 'Add the bacon, sausage, and pork shoulder to the pot, and cook until browned on all sides, about 5-7 minutes.'),
-  (11, 3, 'Stir in the onions, garlic, and bay leaves, and cook until the onions are softened and translucent, about 5 minutes.'),
-  (11, 4, 'Add the black beans, chicken broth, and orange zest to the pot, and bring to a simmer.'),
-  (11, 5, 'Reduce the heat to low, cover, and let the feijoada simmer gently for about 2 hours, stirring occasionally, until the meat is tender and the flavors have melded together.'),
-  (11, 6, 'Once the feijoada is cooked, remove the bay leaves and discard them.'),
-  (11, 7, 'Season the feijoada with salt and pepper to taste, and serve hot, garnished with chopped parsley, orange slices, and farofa on the side.'),
+  -- Tamales
+  (11, 1, 'Soak corn husks in warm water for 30 minutes.'),
+  (11, 2, 'Prepare masa dough by mixing masa harina with water and lard.'),
+  (11, 3, 'Spread masa dough on corn husks.'),
+  (11, 4, 'Add filling in the center and fold the husks.'),
+  (11, 5, 'Steam tamales for 1-2 hours until masa is cooked through.'),
 
--- Kimchi
-  (12, 1, 'Cut the cabbage into quarters and remove the core.'),
-  (12, 2, 'In a large bowl, dissolve the salt in water to create a brine.'),
-  (12, 3, 'Submerge the cabbage in the brine, cover, and let it sit at room temperature for 2-3 hours, flipping occasionally.'),
-  (12, 4, 'Rinse the cabbage under cold water to remove excess salt, then drain and set aside.'),
-  (12, 5, 'In a blender, combine the garlic, ginger, fish sauce, sugar, and Korean red pepper flakes to make the kimchi paste.'),
-  (12, 6, 'Rub the paste all over the cabbage leaves, making sure to coat them evenly.'),
-  (12, 7, 'Place the cabbage in a clean jar or fermentation crock, pressing down firmly to remove any air bubbles.'),
-  (12, 8, 'Cover the jar loosely and let it ferment at room temperature for 1-5 days, depending on your preference.'),
-  (12, 9, 'Once fermented, store the kimchi in the refrigerator for up to several months.'),
+  -- Pozole
+  (12, 1, 'Simmer pork in water with garlic and onions until tender.'),
+  (12, 2, 'Add hominy and red chile sauce to the pot.'),
+  (12, 3, 'Simmer for another hour to develop flavors.'),
+  (12, 4, 'Serve with shredded cabbage, radishes, and lime wedges.'),
 
--- Falafel
-  (13, 1, 'In a food processor, combine the chickpeas, onion, garlic, parsley, cilantro, cumin, coriander, salt, and pepper.'),
-  (13, 2, 'Pulse the mixture until it forms a coarse paste, then transfer it to a bowl.'),
-  (13, 3, 'Stir in the baking powder and flour until well combined, then cover and refrigerate the mixture for at least 1 hour.'),
-  (13, 4, 'Form the falafel mixture into small balls or patties, about 1.5 inches in diameter.'),
-  (13, 5, 'In a large skillet, heat the oil over medium-high heat until hot but not smoking.'),
-  (13, 6, 'Carefully add the falafel balls to the skillet and cook until golden brown and crispy on all sides, about 3-4 minutes per side.'),
-  (13, 7, 'Transfer the cooked falafel to a paper towel-lined plate to drain off any excess oil.'),
-  (13, 8, 'Serve the falafel hot, with tahini sauce, hummus, or tzatziki for dipping.'),
+  -- Sushi
+  (13, 1, 'Rinse sushi rice until water runs clear.'),
+  (13, 2, 'Cook rice according to package instructions.'),
+  (13, 3, 'Mix rice vinegar, sugar, and salt into the cooked rice.'),
+  (13, 4, 'Lay nori on a bamboo mat and spread rice evenly over it.'),
+  (13, 5, 'Place fillings along the bottom edge and roll tightly.'),
+  (13, 6, 'Slice with a sharp knife and serve.'),
 
--- Pho
-  (14, 1, 'In a large pot, combine the beef bones, water, onion, ginger, star anise, cinnamon, cloves, and fish sauce.'),
-  (14, 2, 'Bring the mixture to a boil over high heat, then reduce the heat to low and let it simmer, uncovered, for at least 1 hour, or up to 4 hours for maximum flavor.'),
-  (14, 3, 'Meanwhile, prepare the rice noodles according to the package instructions, then drain and set aside.'),
-  (14, 4, 'Strain the broth through a fine mesh sieve into a clean pot, discarding the solids.'),
-  (14, 5, 'Return the strained broth to the stove and bring it to a simmer over medium heat.'),
-  (14, 6, 'Divide the cooked noodles among serving bowls, then top with thinly sliced beef, bean sprouts, sliced onion, and chopped cilantro.'),
-  (14, 7, 'Carefully ladle the hot broth over the top of the ingredients in each bowl, then serve immediately, with lime wedges, hoisin sauce, and sriracha on the side.'),
-  
--- Kebab
-  (15, 1, 'In a bowl, combine the yogurt, lemon juice, olive oil, garlic, paprika, cumin, coriander, salt, and pepper to make the marinade.'),
-  (15, 2, 'Add the cubed meat to the marinade, cover, and refrigerate for at least 1 hour, or overnight for best results.'),
-  (15, 3, 'Thread the marinated meat onto skewers, alternating with pieces of onion, bell pepper, and tomato if desired.'),
-  (15, 4, 'Preheat the grill to medium-high heat, then grill the kebabs for 10-12 minutes, turning occasionally, until the meat is cooked through and slightly charred.'),
-  (15, 5, 'Remove the kebabs from the grill and let them rest for a few minutes before serving.'),
-  
--- Couscous
-  (16, 1, 'In a large bowl, combine the couscous, salt, and olive oil.'),
-  (16, 2, 'Pour the boiling water over the couscous, cover the bowl with a plate or plastic wrap, and let it sit for 5 minutes, or until the couscous has absorbed all the water.'),
-  (16, 3, 'Fluff the couscous with a fork to separate the grains, then stir in the lemon zest, lemon juice, chopped parsley, and chopped mint.'),
-  (16, 4, 'Season the couscous with additional salt and pepper to taste, if desired, then serve warm or at room temperature.'),
-  
--- Borscht
-  (17, 1, 'In a large pot, heat the oil over medium heat.'),
-  (17, 2, 'Add the onions, carrots, and celery, and cook until softened, about 5 minutes.'),
-  (17, 3, 'Stir in the beets, cabbage, potatoes, tomato paste, and vegetable broth, and bring to a boil.'),
-  (17, 4, 'Reduce the heat to low, cover, and let the soup simmer for about 30 minutes, or until the vegetables are tender.'),
-  (17, 5, 'Stir in the lemon juice, sugar, salt, and pepper to taste, then remove the soup from the heat.'),
-  (17, 6, 'Serve the borscht hot, garnished with a dollop of sour cream and fresh dill, if desired.'),
-  
--- Ceviche
-  (18, 1, 'In a large bowl, combine the diced fish, lime juice, lemon juice, and orange juice.'),
-  (18, 2, 'Cover the bowl and refrigerate for at least 30 minutes, or until the fish is opaque and "cooked" through by the acidity of the citrus juices.'),
-  (18, 3, 'Stir in the diced onion, diced tomato, diced cucumber, diced avocado, chopped cilantro, and sliced chili peppers, if using.'),
-  (18, 4, 'Season the ceviche with salt and pepper to taste, then serve immediately, with tortilla chips or lettuce leaves for scooping.'),
-  
--- Pavlova
-  (19, 1, 'Preheat the oven to 300°F (150°C) and line a baking sheet with parchment paper.'),
-  (19, 2, 'In a large bowl, beat the egg whites with an electric mixer until stiff peaks form.'),
-  (19, 3, 'Gradually add the sugar, one tablespoon at a time, beating well after each addition, until the meringue is glossy and holds stiff peaks.'),
-  (19, 4, 'Gently fold in the cornstarch, white vinegar, and vanilla extract until just combined.'),
-  (19, 5, 'Spoon the meringue onto the prepared baking sheet, forming a large circle or oval shape with slightly raised edges.'),
-  (19, 6, 'Transfer the pavlova to the oven and immediately reduce the temperature to 250°F (120°C).'),
-  (19, 7, 'Bake the pavlova for 1-1.5 hours, or until the outside is dry and crisp but the inside is still soft and marshmallow-like.'),
-  (19, 8, 'Turn off the oven and let the pavlova cool completely inside the oven with the door slightly ajar.'),
-  (19, 9, 'Once cooled, transfer the pavlova to a serving platter and top with whipped cream and fresh fruit.'),
-  
--- Swedish Meatballs
-  (20, 1, 'In a large bowl, combine the ground beef, ground pork, breadcrumbs, egg, milk, grated onion, salt, pepper, and allspice.'),
-  (20, 2, 'Mix the ingredients together until well combined, then shape the mixture into small meatballs, about 1 inch in diameter.'),
-  (20, 3, 'In a large skillet, heat the butter over medium heat until melted and foamy.'),
-  (20, 4, 'Add the meatballs to the skillet and cook until browned on all sides and cooked through, about 8-10 minutes.'),
-  (20, 5, 'Transfer the cooked meatballs to a plate and cover with foil to keep warm while you make the gravy.'),
-  (20, 6, 'To make the gravy, melt the butter in the same skillet over medium heat.'),
-  (20, 7, 'Whisk in the flour and cook, stirring constantly, for 1-2 minutes, or until golden brown.'),
-  (20, 8, 'Gradually whisk in the beef broth, scraping up any browned bits from the bottom of the skillet.'),
-  (20, 9, 'Simmer the gravy for 2-3 minutes, or until thickened, then season with salt, pepper, and a pinch of nutmeg, if desired.'),
-  (20, 10, 'Return the meatballs to the skillet and toss to coat them in the gravy, then simmer for another 2-3 minutes to heat through.'),
-  (20, 11, 'Serve the Swedish meatballs hot, garnished with chopped parsley, alongside lingonberry sauce and mashed potatoes.'),
-  
--- Empanadas
-  (21, 1, 'In a large bowl, combine the flour, salt, and baking powder.'),
-  (21, 2, 'Cut the butter into the flour mixture using a pastry cutter or your fingers, until the mixture resembles coarse crumbs.'),
-  (21, 3, 'Gradually add the water, stirring with a fork, until a dough forms.'),
-  (21, 4, 'Turn the dough out onto a floured surface and knead briefly until smooth.'),
-  (21, 5, 'Divide the dough into small balls, then roll each ball out into a circle about 1/8 inch thick.'),
-  (21, 6, 'Place a spoonful of filling in the center of each dough circle, then fold the dough over to enclose the filling, pressing the edges together firmly to seal.'),
-  (21, 7, 'Crimp the edges of the empanadas with a fork to seal them further, then transfer them to a baking sheet lined with parchment paper.'),
-  (21, 8, 'Brush the tops of the empanadas with beaten egg, then bake in the preheated oven for 20-25 minutes, or until golden brown and crisp.'),
-  
--- Lasagna
-  (22, 1, 'Preheat the oven to 375°F (190°C) and grease a 9x13-inch baking dish with cooking spray.'),
-  (22, 2, 'In a large skillet, heat the olive oil over medium heat.'),
-  (22, 3, 'Add the ground beef and Italian sausage to the skillet, and cook until browned and cooked through, breaking up the meat with a spoon as it cooks.'),
-  (22, 4, 'Stir in the onion, garlic, oregano, basil, salt, and pepper, and cook for another 2-3 minutes, or until the onion is softened and translucent.'),
-  (22, 5, 'Add the tomato paste and diced tomatoes to the skillet, and simmer for 10-15 minutes, or until the sauce has thickened slightly.'),
-  (22, 6, 'Meanwhile, cook the lasagna noodles according to the package instructions, then drain and set aside.'),
-  (22, 7, 'Spread a thin layer of the meat sauce in the bottom of the prepared baking dish, then top with a layer of lasagna noodles.'),
-  (22, 8, 'Repeat the layers of meat sauce and noodles, ending with a layer of meat sauce on top.'),
-  (22, 9, 'Sprinkle the shredded mozzarella and grated Parmesan cheese evenly over the top of the lasagna.'),
-  (22, 10, 'Cover the baking dish with foil and bake in the preheated oven for 30 minutes.'),
-  (22, 11, 'Remove the foil and bake for an additional 10-15 minutes, or until the cheese is melted and bubbly and the edges are golden brown.'),
-  (22, 12, 'Let the lasagna cool for 10-15 minutes before slicing and serving.'),
-  
--- Enchiladas
-  (23, 1, 'Preheat the oven to 375°F (190°C) and grease a 9x13-inch baking dish with cooking spray.'),
-  (23, 2, 'In a large skillet, heat the oil over medium heat.'),
-  (23, 3, 'Add the onion and garlic to the skillet, and cook until softened, about 5 minutes.'),
-  (23, 4, 'Stir in the chili powder, cumin, oregano, salt, and pepper, and cook for another 1-2 minutes, or until fragrant.'),
-  (23, 5, 'Add the shredded chicken and diced green chilies to the skillet, and cook for 2-3 minutes, or until heated through.'),
-  (23, 6, 'Pour 1/2 cup of the enchilada sauce into the bottom of the prepared baking dish, spreading it out evenly.'),
-  (23, 7, 'Place a spoonful of the chicken mixture in the center of each tortilla, then roll them up tightly and place them seam-side down in the baking dish.'),
-  (23, 8, 'Pour the remaining enchilada sauce over the top of the rolled tortillas, spreading it out evenly.'),
-  (23, 9, 'Sprinkle the shredded cheese over the top of the enchiladas, then cover the baking dish with foil.'),
-  (23, 10, 'Bake in the preheated oven for 20 minutes, then remove the foil and bake for an additional 10 minutes, or until the cheese is melted and bubbly.'),
-  (23, 11, 'Serve the enchiladas hot, garnished with chopped cilantro, diced avocado, and sour cream, if desired.'),
-  
--- Sushi Nigiri
-  (24, 1, 'Cook the sushi rice according to the package instructions, then let it cool slightly.'),
-  (24, 2, 'Using wet hands, shape the rice into small oblong or oval-shaped mounds, about 2 tablespoons each, and place them on a plate or cutting board.'),
-  (24, 3, 'Slice the fish into thin strips or pieces that are slightly longer than the rice mounds.'),
-  (24, 4, 'Gently press a piece of fish onto each mound of rice, using your fingers to shape and mold the rice around the fish.'),
-  (24, 5, 'Serve the sushi nigiri immediately, with soy sauce, wasabi, and pickled ginger on the side.'),
-  
--- Sweet and Sour Pork
-  (25, 1, 'In a large bowl, whisk together the egg, soy sauce, cornstarch, and flour until smooth.'),
-  (25, 2, 'Add the diced pork to the bowl and toss until evenly coated in the batter.'),
-  (25, 3, 'In a large skillet or wok, heat the vegetable oil over medium-high heat.'),
-  (25, 4, 'Carefully add the battered pork to the hot oil, in batches if necessary, and fry until golden brown and crispy, about 3-4 minutes per side.'),
-  (25, 5, 'Transfer the cooked pork to a paper towel-lined plate to drain off any excess oil.'),
-  (25, 6, 'In a separate skillet or saucepan, combine the pineapple juice, vinegar, ketchup, brown sugar, soy sauce, and cornstarch.'),
-  (25, 7, 'Bring the mixture to a simmer over medium heat, stirring constantly, until thickened and bubbly.'),
-  (25, 8, 'Add the cooked pork, bell pepper, pineapple chunks, and onion to the skillet, and toss to coat everything in the sauce.'),
-  (25, 9, 'Continue to cook for another 2-3 minutes, or until the pork is heated through and the sauce is thick and glossy.'),
-  (25, 10, 'Serve the sweet and sour pork hot, over steamed rice, garnished with sliced green onions.'),
-  
--- Beef Bourguignon
-  (26, 1, 'Preheat the oven to 325°F (160°C).'),
-  (26, 2, 'In a large Dutch oven or oven-safe pot, heat the olive oil over medium-high heat.'),
-  (26, 3, 'Season the beef chunks with salt and pepper, then add them to the pot in batches and brown them on all sides, about 4-5 minutes per batch.'),
-  (26, 4, 'Transfer the browned beef to a plate and set aside.'),
-  (26, 5, 'Add the diced bacon to the pot and cook until crispy, about 5 minutes.'),
-  (26, 6, 'Stir in the onion, carrots, and garlic, and cook for 5-7 minutes, or until softened.'),
-  (26, 7, 'Return the beef to the pot, along with any accumulated juices, and sprinkle the flour over the top.'),
-  (26, 8, 'Cook, stirring constantly, for 1-2 minutes, or until the flour is lightly browned.'),
-  (26, 9, 'Pour in the red wine and beef broth, stirring to scrape up any browned bits from the bottom of the pot.'),
-  (26, 10, 'Add the tomato paste, thyme, bay leaf, and mushrooms, and bring the mixture to a simmer.'),
-  (26, 11, 'Cover the pot with a lid and transfer it to the preheated oven.'),
-  (26, 12, 'Braise the beef bourguignon in the oven for 2.5-3 hours, or until the beef is tender and the sauce has thickened.'),
-  (26, 13, 'Remove the pot from the oven and discard the thyme sprigs and bay leaf.'),
-  (26, 14, 'Serve the beef bourguignon hot, garnished with chopped parsley, alongside mashed potatoes, noodles, or crusty bread for soaking up the sauce.'),
-  
--- Chicken Curry
-  (27, 1, 'In a large skillet or saucepan, heat the oil over medium heat.'),
-  (27, 2, 'Add the onion, garlic, ginger, and chili peppers to the skillet, and cook for 5-7 minutes, or until softened and fragrant.'),
-  (27, 3, 'Stir in the curry powder, turmeric, coriander, cumin, and paprika, and cook for another 1-2 minutes, or until toasted and aromatic.'),
-  (27, 4, 'Add the diced chicken to the skillet and cook until browned on all sides, about 5-7 minutes.'),
-  (27, 5, 'Pour in the coconut milk and chicken broth, stirring to combine.'),
-  (27, 6, 'Bring the mixture to a simmer, then reduce the heat to low and let it simmer gently for 20-25 minutes, or until the chicken is cooked through and the sauce has thickened slightly.'),
-  (27, 7, 'Stir in the sugar, lime juice, and fish sauce, and season with salt and pepper to taste.'),
-  (27, 8, 'Serve the chicken curry hot, garnished with chopped cilantro, alongside steamed rice or naan bread for soaking up the sauce.'),
-  
--- Tom Yum Soup
-  (28, 1, 'In a large pot, combine the chicken broth, lemongrass, kaffir lime leaves, galangal, and chili peppers.'),
-  (28, 2, 'Bring the mixture to a boil over high heat, then reduce the heat to low and let it simmer for 10-15 minutes, or until the flavors have infused the broth.'),
-  (28, 3, 'Stir in the mushrooms, cherry tomatoes, and shrimp, and cook for 2-3 minutes, or until the shrimp are pink and cooked through.'),
-  (28, 4, 'Add the fish sauce, lime juice, and sugar to the pot, and stir to combine.'),
-  (28, 5, 'Taste the soup and adjust the seasoning with more fish sauce, lime juice, or sugar as needed.'),
-  (28, 6, 'Remove the soup from the heat and stir in the chopped cilantro and sliced green onions.'),
-  (28, 7, 'Serve the tom yum soup hot, garnished with additional cilantro and lime wedges, if desired.'),
-  
--- Gazpacho
-  (29, 1, 'In a blender, combine the tomatoes, peppers, cucumbers, onions, garlic, and bread, and blend until smooth.'),
-  (29, 2, 'With the blender running, gradually add the olive oil and vinegar until emulsified and well combined.'),
-  (29, 3, 'Season the gazpacho with salt and pepper to taste, then transfer it to a large bowl and refrigerate for at least 1 hour, or until well chilled.'),
-  (29, 4, 'Serve the gazpacho cold, garnished with chopped herbs, diced vegetables, and a drizzle of olive oil, if desired.'),
-  
--- Moussaka
-  (30, 1, 'Preheat the oven to 375°F (190°C) and grease a 9x13-inch baking dish with cooking spray.'),
-  (30, 2, 'Peel the eggplants and slice them into 1/4-inch rounds.'),
-  (30, 3, 'Place the eggplant slices on a baking sheet lined with parchment paper, brush them with olive oil, and sprinkle with salt and pepper.'),
-  (30, 4, 'Roast the eggplant in the preheated oven for 20-25 minutes, or until tender and lightly browned, flipping once halfway through.'),
-  (30, 5, 'Meanwhile, in a large skillet, heat the olive oil over medium heat.'),
-  (30, 6, 'Add the ground lamb or beef to the skillet and cook until browned, breaking up the meat with a spoon as it cooks.'),
-  (30, 7, 'Stir in the onion, garlic, oregano, cinnamon, salt, and pepper, and cook for another 5-7 minutes, or until the onion is softened and translucent.'),
-  (30, 8, 'Stir in the tomato paste and diced tomatoes, and simmer for 10-15 minutes, or until the sauce has thickened slightly.'),
-  (30, 9, 'In a separate saucepan, melt the butter over medium heat.'),
-  (30, 10, 'Whisk in the flour to form a roux, then gradually whisk in the milk until smooth and thickened.'),
-  (30, 11, 'Stir in the nutmeg, salt, and pepper, and cook for another 1-2 minutes, or until the sauce is creamy and velvety.'),
-  (30, 12, 'To assemble the moussaka, spread half of the eggplant slices in the bottom of the prepared baking dish.'),
-  (30, 13, 'Top the eggplant with half of the meat sauce, spreading it out evenly.'),
-  (30, 14, 'Repeat the layers with the remaining eggplant slices and meat sauce, then pour the béchamel sauce over the top.'),
-  (30, 15, 'Smooth the sauce out with a spatula, then sprinkle the grated Parmesan cheese over the top.'),
-  (30, 16, 'Bake the moussaka in the preheated oven for 45-50 minutes, or until golden brown and bubbling around the edges.'),
-  (30, 17, 'Let the moussaka cool for 10-15 minutes before slicing and serving.'),
-  
--- Pão de Queijo
-  (31, 1, 'Preheat the oven to 375°F (190°C) and grease a mini muffin tin with cooking spray.'),
-  (31, 2, 'In a medium saucepan, combine the milk, oil, and salt, and bring to a gentle boil over medium heat.'),
-  (31, 3, 'Remove the saucepan from the heat and stir in the tapioca flour until well combined.'),
-  (31, 4, 'Let the mixture cool for a few minutes, then stir in the beaten eggs and grated cheese until smooth.'),
-  (31, 5, 'Spoon the batter into the prepared muffin tin, filling each cup almost to the top.'),
-  (31, 6, 'Bake the pão de queijo in the preheated oven for 15-20 minutes, or until puffed up and lightly golden brown.'),
-  (31, 7, 'Remove the pão de queijo from the oven and let them cool in the pan for a few minutes before transferring them to a wire rack to cool completely.'),
-  (31, 8, 'Serve the pão de queijo warm or at room temperature, as they are or with your favorite dipping sauce.'),
-  
--- Bibimbap
-  (32, 1, 'Cook the rice according to package instructions until tender and fluffy.'),
-  (32, 2, 'While the rice is cooking, prepare the vegetables. Julienne the carrots and cucumber into thin matchstick-like strips. Slice the mushrooms and sauté them in a lightly oiled skillet until tender. Blanch the spinach in boiling water for 30 seconds, then drain and squeeze out excess water. Season the vegetables with salt and pepper to taste.'),
-  (32, 3, 'Heat a little oil in a skillet over medium heat and fry the eggs until the whites are set but the yolks are still runny. Season with salt and pepper.'),
-  (32, 4, 'Divide the cooked rice among serving bowls. Arrange the cooked vegetables and fried egg on top of the rice, placing each type of vegetable in a separate section of the bowl for visual appeal.'),
-  (32, 5, 'Serve the bibimbap immediately with a dollop of gochujang (Korean chili paste) on top. Instruct diners to mix everything together thoroughly before eating to evenly distribute the flavors.'),
+  -- Ramen
+  (14, 1, 'Simmer broth with ginger, garlic, and soy sauce for several hours.'),
+  (14, 2, 'Cook ramen noodles according to package instructions.'),
+  (14, 3, 'Slice cooked pork and soft-boiled eggs.'),
+  (14, 4, 'Assemble bowls with noodles, broth, pork, eggs, and vegetables.'),
 
--- Tabbouleh
-  (33, 1, 'Place the bulgur wheat in a large bowl and cover it with boiling water. Let it sit for about 30 minutes, or until softened and most of the water has been absorbed.'),
-  (33, 2, 'Once the bulgur is ready, fluff it with a fork and let it cool to room temperature.'),
-  (33, 3, 'Add the chopped parsley, diced tomatoes, sliced green onions, chopped mint, and finely minced garlic to the bowl with the bulgur.'),
-  (33, 4, 'Drizzle the olive oil and lemon juice over the salad, then season with salt and pepper to taste.'),
-  (33, 5, 'Toss the tabbouleh gently to combine all the ingredients and coat them evenly with the dressing.'),
-  (33, 6, 'Cover the tabbouleh and refrigerate it for at least 1 hour to allow the flavors to meld before serving.'),
+  -- Tempura
+  (15, 1, 'Prepare a batter with cold water and tempura flour.'),
+  (15, 2, 'Heat oil in a deep fryer to 350°F (175°C).'),
+  (15, 3, 'Dip seafood and vegetables in batter and fry until golden.'),
+  (15, 4, 'Drain on paper towels and serve with dipping sauce.'),
 
--- Pho Bo
-  (34, 1, 'In a large pot, combine the beef bones, water, onion, ginger, star anise, cloves, cinnamon stick, and fish sauce.'),
-  (34, 2, 'Bring the pot to a boil over high heat, then reduce the heat to low and simmer, uncovered, for 2-3 hours, skimming off any impurities that rise to the surface.'),
-  (34, 3, 'After simmering, remove the beef bones and spices from the broth using a slotted spoon or fine-mesh strainer, discarding them.'),
-  (34, 4, 'Strain the broth through a fine-mesh strainer lined with cheesecloth to remove any remaining solids and clarify the broth. Return the broth to the pot and keep it warm over low heat.'),
-  (34, 5, 'While the broth is simmering, prepare the rice noodles according to the package instructions. Drain and rinse the noodles under cold water to stop the cooking process, then set them aside.'),
-  (34, 6, 'Thinly slice the cooked beef against the grain and set it aside.'),
-  (34, 7, 'Divide the cooked rice noodles among serving bowls. Top each bowl with a few slices of raw beef and thinly sliced onions.'),
-  (34, 8, 'Ladle the hot broth over the noodles and beef, ensuring that the beef is fully submerged in the hot broth to cook it.'),
-  (34, 9, 'Serve the pho bo immediately, accompanied by plates of fresh herbs, bean sprouts, lime wedges, and sliced chili peppers for diners to customize their bowls to their liking.'),
+  -- Teriyaki Chicken
+  (16, 1, 'Marinate chicken in soy sauce, mirin, and sugar for 30 minutes.'),
+  (16, 2, 'Cook chicken in a pan over medium heat until done.'),
+  (16, 3, 'Add marinade to the pan and simmer until thickened.'),
+  (16, 4, 'Serve with steamed rice.'),
 
--- Iskender Kebab
-  (35, 1, 'Preheat the oven to 400°F (200°C).'),
-  (35, 2, 'Slice the cooked lamb or beef into thin strips and set it aside.'),
-  (35, 3, 'Arrange the slices of pita bread in a single layer on a baking sheet and toast them in the preheated oven for 5-7 minutes, or until lightly golden and crisp.'),
-  (35, 4, 'While the pita bread is toasting, prepare the tomato sauce. In a saucepan, heat the butter over medium heat and sauté the minced garlic until fragrant.'),
-  (35, 5, 'Stir in the tomato paste and paprika, cooking for another 2-3 minutes to develop the flavors.'),
-  (35, 6, 'Add the water, salt, and pepper to the saucepan, stirring well to combine. Simmer the tomato sauce for 5-7 minutes, or until slightly thickened.'),
-  (35, 7, 'Remove the toasted pita bread from the oven and arrange the slices on serving plates.'),
-  (35, 8, 'Top the pita bread with the sliced meat and ladle the hot tomato sauce over the meat and bread, allowing it to soak in.'),
-  (35, 9, 'Drizzle the yogurt over the top of the dish, then finish with a sprinkle of chopped parsley and a drizzle of melted butter, if desired.'),
-  (35, 10, 'Serve the Iskender kebab immediately, accompanied by additional yogurt and tomato sauce on the side.'),
+  -- Miso Soup
+  (17, 1, 'Bring dashi to a simmer in a pot.'),
+  (17, 2, 'Dissolve miso paste in a small amount of dashi.'),
+  (17, 3, 'Add miso mixture to the pot along with tofu and seaweed.'),
+  (17, 4, 'Simmer briefly and serve hot.'),
 
--- Tagine
-  (36, 1, 'Preheat the oven to 325°F (160°C).'),
-  (36, 2, 'In a tagine or large ovenproof skillet, heat the olive oil over medium heat. Add the diced onion and cook until softened and translucent.'),
-  (36, 3, 'Add the diced lamb or beef to the skillet and cook until browned on all sides.'),
-  (36, 4, 'Stir in the minced garlic, ground ginger, ground cumin, ground coriander, ground cinnamon, saffron threads, and chopped cilantro, cooking for another 1-2 minutes to toast the spices and garlic.'),
-  (36, 5, 'Add the diced tomatoes, dried apricots, pitted green olives, and chicken broth to the skillet, stirring well to combine.'),
-  (36, 6, 'Season the mixture with salt and pepper to taste, then cover the tagine or skillet with a lid or foil.'),
-  (36, 7, 'Transfer the covered tagine or skillet to the preheated oven and braise the tagine for 2-3 hours, or until the meat is tender and the flavors have melded together, stirring occasionally.'),
-  (36, 8, 'Remove the tagine from the oven and let it rest for a few minutes before serving. Garnish the tagine with chopped fresh cilantro and serve it hot with couscous, rice, or crusty bread for soaking up the flavorful sauce.'),
+  -- Okonomiyaki
+  (18, 1, 'Mix flour, water, and eggs to make a batter.'),
+  (18, 2, 'Add shredded cabbage and other ingredients to the batter.'),
+  (18, 3, 'Heat oil in a pan and pour in the batter.'),
+  (18, 4, 'Cook until golden brown on both sides.'),
+  (18, 5, 'Drizzle with okonomiyaki sauce and mayonnaise.'),
+  (18, 6, 'Sprinkle with bonito flakes and serve.'),
 
--- Pelmeni
-  (37, 1, 'In a large mixing bowl, combine the flour and salt. Make a well in the center of the flour and add the beaten eggs and water.'),
-  (37, 2, 'Using a fork or your hands, gradually incorporate the flour into the wet ingredients until a dough forms.'),
-  (37, 3, 'Turn the dough out onto a lightly floured surface and knead it for 5-7 minutes, or until smooth and elastic. Cover the dough with a clean kitchen towel and let it rest for 30 minutes.'),
-  (37, 4, 'While the dough is resting, prepare the filling. In a mixing bowl, combine the ground pork, ground beef, finely minced onion, salt, pepper, and garlic powder. Mix well to combine.'),
-  (37, 5, 'Roll out the rested dough on a floured surface until it is about 1/8 inch thick. Use a round cookie cutter or glass to cut out circles of dough, approximately 2 inches in diameter.'),
-  (37, 6, 'Place a small spoonful of the meat filling in the center of each dough circle. Fold the dough over the filling to create a half-moon shape, then pinch the edges together firmly to seal.'),
-  (37, 7, 'Repeat the process with the remaining dough and filling until all the pelmeni are formed.'),
-  (37, 8, 'Bring a large pot of salted water to a boil. Drop the pelmeni into the boiling water in batches, being careful not to overcrowd the pot.'),
-  (37, 9, 'Cook the pelmeni for 5-7 minutes, or until they float to the surface and are cooked through.'),
-  (37, 10, 'Using a slotted spoon, remove the cooked pelmeni from the water and transfer them to a serving platter.'),
-  (37, 11, 'Serve the pelmeni hot, topped with melted butter, sour cream, chopped fresh dill, and a sprinkle of black pepper, if desired.'),
+  -- Kung Pao Chicken
+  (19, 1, 'Marinate chicken in soy sauce, cornstarch, and rice wine.'),
+  (19, 2, 'Stir-fry chicken until browned and remove from pan.'),
+  (19, 3, 'Sauté garlic, ginger, and dried chilies.'),
+  (19, 4, 'Add sauce ingredients and return chicken to the pan.'),
+  (19, 5, 'Stir in peanuts and green onions before serving.'),
 
--- Causa Rellena
-  (38, 1, 'Place the peeled and diced potatoes in a large pot and cover them with cold salted water. Bring the pot to a boil over medium-high heat, then reduce the heat to medium-low and simmer the potatoes until fork-tender, about 15-20 minutes.'),
-  (38, 2, 'While the potatoes are cooking, prepare the filling. In a mixing bowl, combine the shredded chicken, diced avocado, diced red onion, diced celery, minced jalapeño, mayonnaise, lime juice, salt, and pepper. Mix well to combine, adjusting the seasoning to taste.'),
-  (38, 3, 'Once the potatoes are cooked, drain them well and transfer them to a large mixing bowl. Mash the potatoes with a potato masher or fork until smooth and creamy. Season the mashed potatoes with salt, pepper, and lime juice to taste.'),
-  (38, 4, 'Line the bottom of a rectangular baking dish or casserole dish with plastic wrap, leaving some overhang on the sides for easy removal later.'),
-  (38, 5, 'Spread half of the mashed potato mixture evenly in the bottom of the prepared dish, smoothing it out with a spatula or the back of a spoon to create an even layer.'),
-  (38, 6, 'Layer the chicken and avocado filling on top of the mashed potatoes, spreading it out evenly across the surface.'),
-  (38, 7, 'Top the filling with the remaining mashed potato mixture, spreading it out evenly to cover the filling completely and smoothing the top surface.'),
-  (38, 8, 'Cover the dish with plastic wrap and refrigerate the causa rellena for at least 1 hour, or until chilled and set.'),
-  (38, 9, 'To serve, carefully lift the causa rellena out of the baking dish using the overhanging plastic wrap. Transfer it to a cutting board and slice it into individual portions using a sharp knife.'),
-  (38, 10, 'Garnish each slice of causa rellena with a slice of hard-boiled egg, a black olive, and a sprinkle of chopped fresh parsley or cilantro, if desired.'),
-  (38, 11, 'Serve the causa rellena cold, accompanied by lime wedges and additional black olives on the side.'),
+  -- Sweet and Sour Pork
+  (20, 1, 'Cut pork into bite-sized pieces and coat with cornstarch.'),
+  (20, 2, 'Fry pork until golden and remove from oil.'),
+  (20, 3, 'Sauté bell peppers and pineapple chunks.'),
+  (20, 4, 'Mix sauce ingredients and add to the pan.'),
+  (20, 5, 'Return pork to the pan and toss to coat with sauce.'),
 
--- Divine Pavlova
-  (39, 1, 'Preheat the oven to 300°F (150°C) and line a baking sheet with parchment paper.'),
-  (39, 2, 'In a large mixing bowl, beat the egg whites and cream of tartar with an electric mixer on medium speed until soft peaks form.'),
-  (39, 3, 'Gradually add the sugar, 1 tablespoon at a time, while continuing to beat the egg whites on high speed until stiff, glossy peaks form.'),
-  (39, 4, 'Gently fold in the cornstarch, white vinegar, and vanilla extract until just combined, being careful not to deflate the egg whites.'),
-  (39, 5, 'Spoon the meringue mixture onto the prepared baking sheet and use a spatula to shape it into a round disc, smoothing the edges and creating a slight indentation in the center to hold the toppings later.'),
-  (39, 6, 'Transfer the pavlova to the preheated oven and immediately reduce the temperature to 250°F (120°C). Bake the pavlova for 1 hour and 15 minutes to 1 hour and 30 minutes, or until the outside is crisp and dry, and the pavlova lifts easily off the parchment paper.'),
-  (39, 7, 'Turn off the oven and leave the pavlova inside with the door slightly ajar to cool completely, preferably overnight.'),
-  (39, 8, 'When ready to serve, whip the heavy cream with powdered sugar and vanilla extract until stiff peaks form.'),
-  (39, 9, 'Spread the whipped cream over the cooled pavlova, then top it with fresh fruit such as berries, kiwi, mango, or passion fruit.'),
-  (39, 10, 'Drizzle the pavlova with honey or fruit coulis, if desired, and garnish with fresh mint leaves for a pop of color.'),
-  (39, 11, 'Slice the pavlova into wedges and serve immediately, as it may soften if left to sit for too long.'),
+  -- Dumplings
+  (21, 1, 'Prepare filling with ground meat, cabbage, and seasonings.'),
+  (21, 2, 'Place a spoonful of filling in the center of each dumpling wrapper.'),
+  (21, 3, 'Fold and seal the edges of the wrappers.'),
+  (21, 4, 'Steam or boil the dumplings until cooked through.'),
+  (21, 5, 'Serve with dipping sauce.'),
 
--- Nordic Swedish Meatballs
-  (40, 1, 'Preheat the oven to 400°F (200°C) and line a baking sheet with parchment paper.'),
-  (40, 2, 'In a large mixing bowl, combine the ground beef, ground pork, breadcrumbs, finely chopped onion, minced garlic, beaten egg, milk, salt, pepper, allspice, and nutmeg. Mix well until fully combined.'),
-  (40, 3, 'Shape the meat mixture into small balls, about 1 inch in diameter, and arrange them on the prepared baking sheet.'),
-  (40, 4, 'Bake the meatballs in the preheated oven for 15-20 minutes, or until cooked through and lightly browned on the outside.'),
-  (40, 5, 'While the meatballs are baking, prepare the gravy. In a saucepan, melt the butter over medium heat. Whisk in the flour to create a roux, cooking for 1-2 minutes until golden brown.'),
-  (40, 6, 'Gradually whisk in the beef broth and heavy cream, stirring constantly to prevent lumps from forming. Cook the gravy until thickened and smooth, about 5-7 minutes.'),
-  (40, 7, 'Season the gravy with salt, pepper, and a pinch of nutmeg, adjusting the seasoning to taste.'),
-  (40, 8, 'Once the meatballs are cooked, transfer them to a serving dish and pour the gravy over the top, gently tossing to coat the meatballs in the sauce.'),
-  (40, 9, 'Serve the Swedish meatballs hot, garnished with chopped fresh parsley, alongside lingonberry sauce and mashed potatoes, if desired.'),
+  -- Fried Rice
+  (22, 1, 'Heat oil in a pan and scramble eggs.'),
+  (22, 2, 'Add diced vegetables and stir-fry until tender.'),
+  (22, 3, 'Stir in cooked rice and soy sauce.'),
+  (22, 4, 'Cook until rice is heated through and slightly crispy.'),
 
--- Milanesa
-  (41, 1, 'Preheat the oven to 400°F (200°C) and line a baking sheet with parchment paper.'),
-  (41, 2, 'Place the chicken breasts between two sheets of plastic wrap and pound them to an even thickness, about 1/4 inch thick.'),
-  (41, 3, 'Season the chicken breasts with salt and pepper on both sides.'),
-  (41, 4, 'Place a slice of ham and a slice of Swiss cheese on each chicken breast.'),
-  (41, 5, 'Roll up the chicken breasts, starting from the narrow end, and secure them with toothpicks.'),
-  (41, 6, 'In a shallow dish, combine the breadcrumbs, grated Parmesan cheese, and Italian seasoning.'),
-  (41, 7, 'Dip each rolled chicken breast in the beaten egg, then dredge it in the breadcrumb mixture, pressing gently to adhere.'),
-  (41, 8, 'Place the breaded chicken breasts in the prepared baking dish, seam-side down.'),
-  (41, 9, 'Bake in the preheated oven for 25-30 minutes, or until the chicken is cooked through and the breading is golden and crispy.'),
-  (41, 10, 'Remove the toothpicks from the chicken breasts and serve them hot, garnished with chopped fresh parsley and lemon wedges for squeezing over the top.'),
+  -- Hot and Sour Soup
+  (23, 1, 'Bring broth to a simmer and add mushrooms and tofu.'),
+  (23, 2, 'Mix vinegar, soy sauce, and pepper in a bowl.'),
+  (23, 3, 'Add sauce mixture to the pot and simmer.'),
+  (23, 4, 'Thicken with cornstarch slurry and serve hot.'),
 
--- Carbonnade Flamande
-  (42, 1, 'In a large Dutch oven or heavy-bottomed pot, heat the butter and olive oil over medium-high heat until the butter is melted and foamy.'),
-  (42, 2, 'Add the sliced onions to the pot and cook, stirring occasionally, until softened and caramelized, about 20-25 minutes.'),
-  (42, 3, 'Push the caramelized onions to one side of the pot and add the sliced beef chuck to the empty side.'),
-  (42, 4, 'Cook the beef until browned on all sides, about 5-7 minutes, then stir it together with the caramelized onions.'),
-  (42, 5, 'Sprinkle the flour over the beef and onions, stirring well to coat everything evenly.'),
-  (42, 6, 'Pour in the beef broth and beer, stirring to deglaze the bottom of the pot and scrape up any browned bits.'),
-  (42, 7, 'Add the brown sugar, Dijon mustard, thyme, bay leaf, and vinegar to the pot, stirring well to combine.'),
-  (42, 8, 'Season the mixture with salt and pepper to taste, then bring it to a simmer over medium heat.'),
-  (42, 9, 'Cover the pot and reduce the heat to low. Let the carbonnade flamande simmer gently for 2-3 hours, or until the beef is tender and the flavors have melded together, stirring occasionally.'),
-  (42, 10, 'About 30 minutes before serving, toast the bread slices in a toaster or under the broiler until golden brown and crisp. Rub the toasted bread slices with the cut side of the garlic clove.'),
-  (42, 11, 'To serve, ladle the hot carbonnade flamande into serving bowls and top each portion with a slice of garlic-rubbed toast. Garnish with chopped fresh parsley, if desired.'),
+  -- Peking Duck
+  (24, 1, 'Clean and dry the duck thoroughly.'),
+  (24, 2, 'Hang the duck to air-dry for several hours.'),
+  (24, 3, 'Roast in a preheated oven until skin is crispy.'),
+  (24, 4, 'Serve with thin pancakes and hoisin sauce.'),
 
--- Chiles en Nogada
-  (43, 1, 'Preheat the oven to 350°F (175°C).'),
-  (43, 2, 'Roast the poblano chiles directly over an open flame or under the broiler until the skins are charred and blistered on all sides.'),
-  (43, 3, 'Transfer the roasted chiles to a bowl and cover them with plastic wrap. Let them steam for 10-15 minutes to loosen the skins.'),
-  (43, 4, 'Once the chiles are cool enough to handle, peel off the charred skins, then make a lengthwise slit down one side of each chile and carefully remove the seeds and membranes, leaving the stems intact.'),
-  (43, 5, 'In a large skillet, heat the olive oil over medium heat. Add the diced onion and cook until softened and translucent.'),
-  (43, 6, 'Add the ground beef to the skillet and cook, breaking it up with a spoon, until browned and cooked through.'),
-  (43, 7, 'Stir in the diced apple, diced pear, raisins, chopped almonds, ground cinnamon, ground cloves, and salt, cooking for another 5-7 minutes to soften the fruit and meld the flavors together.'),
-  (43, 8, 'Once the filling is cooked, stuff each roasted poblano chile with a generous portion of the meat and fruit mixture, gently pressing the slit edges of the chiles together to enclose the filling.'),
-  (43, 9, 'In a blender or food processor, combine the walnuts, milk, cream cheese, sugar, and cinnamon. Blend until smooth and creamy, adding more milk if necessary to achieve a pourable consistency.'),
-  (43, 10, 'Place the stuffed chiles in a single layer in a baking dish and pour the walnut sauce over the top, ensuring that each chile is generously coated with the sauce.'),
-  (43, 11, 'Bake the chiles en nogada in the preheated oven for 20-25 minutes, or until heated through and the sauce is bubbly and slightly golden brown on top.'),
-  (43, 12, 'To serve, transfer the stuffed chiles to individual plates and drizzle any remaining walnut sauce over the top. Garnish with pomegranate arils and chopped fresh parsley, if desired.'),
+  -- Coq au Vin
+  (25, 1, 'Marinate chicken in red wine with vegetables and herbs.'),
+  (25, 2, 'Brown chicken in a pot and set aside.'),
+  (25, 3, 'Sauté vegetables in the same pot.'),
+  (25, 4, 'Add flour and cook briefly.'),
+  (25, 5, 'Return chicken to the pot with marinade and broth.'),
+  (25, 6, 'Simmer until chicken is tender.'),
+  (25, 7, 'Serve with mashed potatoes.'),
 
--- Tempura
-  (44, 1, 'Prepare the ingredients by cutting seafood such as shrimp, fish, and vegetables like sweet potatoes, bell peppers, and mushrooms into bite-sized pieces.'),
-  (44, 2, 'In a large bowl, combine cold water and egg yolk, then gently mix in cake flour or tempura flour until just combined. Be careful not to overmix; the batter should be slightly lumpy.'),
-  (44, 3, 'Heat vegetable oil in a deep fryer or large pot to 350°F (180°C).'),
-  (44, 4, 'Dip the prepared ingredients into the batter, making sure they are evenly coated.'),
-  (44, 5, 'Carefully place the battered ingredients into the hot oil, frying in batches to avoid overcrowding the fryer.'),
-  (44, 6, 'Fry the tempura for 2-3 minutes, or until golden brown and crispy.'),
-  (44, 7, 'Use a slotted spoon or wire mesh strainer to remove the tempura from the oil, allowing any excess oil to drip off.'),
-  (44, 8, 'Transfer the cooked tempura to a plate lined with paper towels to drain.'),
-  (44, 9, 'Serve the tempura immediately with dipping sauce and garnishes such as grated daikon radish, grated ginger, or chopped green onions.'),
+  -- Ratatouille
+  (26, 1, 'Preheat oven to 375°F (190°C).'),
+  (26, 2, 'Slice vegetables into thin rounds.'),
+  (26, 3, 'Layer vegetables in a baking dish.'),
+  (26, 4, 'Drizzle with olive oil and season with salt and pepper.'),
+  (26, 5, 'Bake for 45 minutes until vegetables are tender.'),
 
--- Mapo Tofu
-  (45, 1, 'In a small bowl, mix together soy sauce, rice wine, and cornstarch to make a slurry. Set aside.'),
-  (45, 2, 'Heat oil in a wok or large skillet over medium-high heat. Add ground pork or beef and cook until browned, breaking it up with a spoon.'),
-  (45, 3, 'Add minced garlic, ginger, and doubanjiang (chili bean paste) to the wok, stirring to combine and cook until fragrant.'),
-  (45, 4, 'Stir in the soy sauce mixture and chicken broth, then add diced tofu and simmer for 5-7 minutes, or until the tofu is heated through and the sauce has thickened slightly.'),
-  (45, 5, 'Taste the mapo tofu and adjust the seasoning with salt, sugar, or additional chili bean paste, if desired.'),
-  (45, 6, 'Just before serving, drizzle sesame oil over the top and sprinkle with chopped green onions.'),
-  (45, 7, 'Serve the mapo tofu hot with steamed rice and garnish with additional green onions, if desired.'),
+  -- Beef Bourguignon
+  (27, 1, 'Brown beef in a pot and set aside.'),
+  (27, 2, 'Sauté onions and garlic in the same pot.'),
+  (27, 3, 'Add flour and cook briefly.'),
+  (27, 4, 'Return beef to the pot with wine and broth.'),
+  (27, 5, 'Add carrots and herbs.'),
+  (27, 6, 'Simmer until beef is tender.'),
+  (27, 7, 'Serve with crusty bread.'),
 
--- Quiche Lorraine
-  (46, 1, 'Preheat the oven to 375°F (190°C) and lightly grease a 9-inch pie dish or tart pan with butter or cooking spray.'),
-  (46, 2, 'Roll out the pie crust dough on a floured surface to fit the prepared pie dish. Press the dough into the bottom and up the sides of the dish, trimming any excess.'),
-  (46, 3, 'In a skillet, cook bacon until crispy, then remove it from the skillet and drain on paper towels before chopping it into small pieces.'),
-  (46, 4, 'In a mixing bowl, whisk together eggs, heavy cream, salt, pepper, and nutmeg until well combined.'),
-  (46, 5, 'Spread the chopped bacon and shredded Gruyère cheese evenly over the bottom of the pie crust.'),
-  (46, 6, 'Pour the egg mixture over the bacon and cheese, ensuring it is evenly distributed.'),
-  (46, 7, 'Bake the quiche in the preheated oven for 35-40 minutes, or until the center is set and the top is golden brown.'),
-  (46, 8, 'Remove the quiche from the oven and let it cool for a few minutes before slicing and serving.'),
-  (46, 9, 'Serve the quiche Lorraine warm or at room temperature, garnished with chopped fresh chives or parsley, if desired.'),
+  -- Croissants
+  (28, 1, 'Mix flour, sugar, yeast, and salt in a bowl.'),
+  (28, 2, 'Add milk and water and knead into a dough.'),
+  (28, 3, 'Roll out dough and fold in butter.'),
+  (28, 4, 'Repeat rolling and folding several times.'),
+  (28, 5, 'Cut dough into triangles and shape into croissants.'),
+  (28, 6, 'Proof until doubled in size.'),
+  (28, 7, 'Bake at 375°F (190°C) until golden brown.'),
 
--- Butter Chicken
-  (47, 1, 'Marinate chicken pieces in a mixture of yogurt, lemon juice, ginger, garlic, garam masala, turmeric, chili powder, and salt for at least 1 hour, or overnight for best flavor.'),
-  (47, 2, 'In a large skillet or saucepan, heat oil over medium heat. Add diced onions and cook until soft and translucent.'),
-  (47, 3, 'Add marinated chicken pieces to the skillet, cooking until browned on all sides.'),
-  (47, 4, 'Stir in tomato puree, ground almonds, butter, and cream, then bring the mixture to a simmer.'),
-  (47, 5, 'Cover and cook over low heat for 20-25 minutes, stirring occasionally, until the chicken is cooked through and the sauce has thickened.'),
-  (47, 6, 'Taste and adjust the seasoning with salt, sugar, or additional spices, if desired.'),
-  (47, 7, 'Garnish the butter chicken with chopped cilantro and a drizzle of cream before serving.'),
-  (47, 8, 'Serve the butter chicken hot with rice, naan bread, or roti for a complete meal.'),
+  -- Quiche Lorraine
+  (29, 1, 'Preheat oven to 350°F (175°C).'),
+  (29, 2, 'Blind bake the pie crust.'),
+  (29, 3, 'Cook bacon and onions until crispy.'),
+  (29, 4, 'Whisk together eggs, cream, and cheese.'),
+  (29, 5, 'Add bacon and onions to the pie crust.'),
+  (29, 6, 'Pour egg mixture over the filling.'),
+  (29, 7, 'Bake for 30-35 minutes until set.'),
 
--- Tom Kha Gai
-  (48, 1, 'In a large pot, combine chicken broth, coconut milk, lemongrass stalks (bruised), galangal slices, kaffir lime leaves, and sliced chili peppers.'),
-  (48, 2, 'Bring the mixture to a gentle simmer over medium heat, then add sliced chicken breast and mushrooms.'),
-  (48, 3, 'Simmer the soup for 10-15 minutes, or until the chicken is cooked through and the mushrooms are tender.'),
-  (48, 4, 'Stir in fish sauce, lime juice, and sugar, adjusting the seasoning to taste with salt and pepper if necessary.'),
-  (48, 5, 'Remove the soup from heat and discard the lemongrass stalks, galangal slices, and kaffir lime leaves before serving.'),
-  (48, 6, 'Garnish the Tom Kha Gai with chopped cilantro and thinly sliced chili peppers, if desired.'),
-  (48, 7, 'Serve the soup hot as a starter or alongside steamed rice for a more substantial meal.'),
+  -- Crème Brûlée
+  (30, 1, 'Preheat oven to 325°F (160°C).'),
+  (30, 2, 'Heat cream and vanilla in a saucepan.'),
+  (30, 3, 'Whisk egg yolks with sugar until pale.'),
+  (30, 4, 'Slowly add hot cream to egg mixture.'),
+  (30, 5, 'Pour into ramekins and place in a baking dish.'),
+  (30, 6, 'Add hot water to the baking dish to create a water bath.'),
+  (30, 7, 'Bake for 40-45 minutes until set.'),
+  (30, 8, 'Chill thoroughly before caramelizing the sugar.'),
 
--- Gazpacho Andaluz
-  (49, 1, 'In a blender or food processor, combine tomatoes, bell peppers, cucumbers, onions, garlic, and bread slices.'),
-  (49, 2, 'Blend the mixture until smooth, then transfer it to a large bowl.'),
-  (49, 3, 'Stir in olive oil, vinegar, salt, and pepper, adjusting the seasoning to taste.'),
-  (49, 4, 'Cover the gazpacho and refrigerate it for at least 2 hours, or until well chilled.'),
-  (49, 5, 'Before serving, taste the gazpacho and adjust the seasoning with salt, pepper, or additional vinegar if necessary.'),
-  (49, 6, 'Serve the chilled gazpacho Andaluz in individual bowls, garnished with diced vegetables such as tomatoes, cucumbers, and bell peppers, and a drizzle of olive oil.'),
+  -- Chicken Tikka Masala
+  (31, 1, 'Marinate chicken in yogurt and spices overnight.'),
+  (31, 2, 'Grill chicken until charred and set aside.'),
+  (31, 3, 'Sauté onions, garlic, and ginger in a pan.'),
+  (31, 4, 'Add tomatoes and cook until soft.'),
+  (31, 5, 'Blend into a smooth sauce and return to pan.'),
+  (31, 6, 'Add cream and simmer until thickened.'),
+  (31, 7, 'Add grilled chicken to the sauce and cook until heated through.'),
 
--- Moussaka with Eggplant
-  (50, 1, 'Preheat the oven to 375°F (190°C) and lightly grease a 9x13-inch baking dish with olive oil or cooking spray.'),
-  (50, 2, 'Slice eggplants into rounds, then sprinkle them with salt and let them sit for 15-20 minutes to release excess moisture. Pat the eggplant slices dry with paper towels before cooking.'),
-  (50, 3, 'Heat olive oil in a large skillet over medium heat. Add sliced onions and minced garlic, cooking until softened and fragrant.'),
-  (50, 4, 'Add ground lamb or beef to the skillet, breaking it up with a spoon and cooking until browned.'),
-  (50, 5, 'Stir in diced tomatoes, tomato paste, cinnamon, oregano, and salt, cooking for another 5-7 minutes.'),
-  (50, 6, 'In a separate saucepan, melt butter over medium heat. Whisk in flour to create a roux, then gradually whisk in milk until smooth and thickened.'),
-  (50, 7, 'Remove the saucepan from heat and whisk in grated Parmesan cheese and beaten egg until well combined.'),
-  (50, 8, 'Layer the bottom of the prepared baking dish with half of the cooked eggplant slices, then spread half of the meat sauce over the eggplant.'),
-  (50, 9, 'Repeat the layers with the remaining eggplant slices and meat sauce, then pour the béchamel sauce over the top, spreading it out evenly.'),
-  (50, 10, 'Bake the moussaka in the preheated oven for 45-50 minutes, or until the top is golden brown and bubbly.'),
-  (50, 11, 'Remove the moussaka from the oven and let it cool for 10-15 minutes before slicing and serving.'),
-  (50, 12, 'Serve the moussaka with a Greek salad and crusty bread for a complete meal.');
+  -- Palak Paneer
+  (32, 1, 'Blanch spinach briefly and blend into a puree.'),
+  (32, 2, 'Fry paneer cubes until golden and set aside.'),
+  (32, 3, 'Sauté onions, garlic, and ginger in a pan.'),
+  (32, 4, 'Add spinach puree and spices.'),
+  (32, 5, 'Simmer until thickened.'),
+  (32, 6, 'Add fried paneer and cook for a few more minutes.'),
+
+  -- Biryani
+  (33, 1, 'Marinate meat with yogurt and spices.'),
+  (33, 2, 'Cook rice with whole spices until 70% done.'),
+  (33, 3, 'Layer meat and rice in a pot.'),
+  (33, 4, 'Add saffron-infused milk on top.'),
+  (33, 5, 'Cover tightly and cook on low heat until done.'),
+  (33, 6, 'Serve with raita.'),
+
+  -- Butter Chicken
+  (34, 1, 'Marinate chicken in yogurt and spices.'),
+  (34, 2, 'Grill chicken until charred and set aside.'),
+  (34, 3, 'Sauté onions, garlic, and ginger in a pan.'),
+  (34, 4, 'Add tomatoes and cook until soft.'),
+  (34, 5, 'Blend into a smooth sauce and return to pan.'),
+  (34, 6, 'Add cream and butter, then simmer until thickened.'),
+  (34, 7, 'Add grilled chicken to the sauce and cook until heated through.'),
+
+  -- Samosas
+  (35, 1, 'Prepare filling with boiled potatoes, peas, and spices.'),
+  (35, 2, 'Make dough with flour, water, and oil.'),
+  (35, 3, 'Roll out dough and cut into circles.'),
+  (35, 4, 'Place filling in the center and fold into triangles.'),
+  (35, 5, 'Fry until golden brown.'),
+
+  -- Gulab Jamun
+  (36, 1, 'Prepare dough with milk powder, flour, and ghee.'),
+  (36, 2, 'Form into small balls and fry until golden.'),
+  (36, 3, 'Soak in sugar syrup until absorbed.'),
+
+  -- Moussaka
+  (37, 1, 'Slice eggplants and potatoes, then fry until golden.'),
+  (37, 2, 'Cook ground meat with onions and tomatoes.'),
+  (37, 3, 'Prepare béchamel sauce.'),
+  (37, 4, 'Layer eggplants, potatoes, meat, and béchamel in a dish.'),
+  (37, 5, 'Bake until golden brown.'),
+
+  -- Souvlaki
+  (38, 1, 'Marinate meat with lemon juice, olive oil, and herbs.'),
+  (38, 2, 'Thread meat onto skewers.'),
+  (38, 3, 'Grill until cooked through.'),
+  (38, 4, 'Serve with pita and tzatziki.'),
+
+  -- Greek Salad
+  (39, 1, 'Chop tomatoes, cucumbers, onions, and bell peppers.'),
+  (39, 2, 'Mix vegetables with olives and feta cheese.'),
+  (39, 3, 'Dress with olive oil, oregano, and lemon juice.'),
+
+  -- Spanakopita
+  (40, 1, 'Sauté spinach with onions and garlic.'),
+  (40, 2, 'Mix spinach with feta cheese.'),
+  (40, 3, 'Layer phyllo dough in a baking dish, brushing each layer with butter.'),
+  (40, 4, 'Add spinach mixture and top with more phyllo dough.'),
+  (40, 5, 'Bake until golden brown.'),
+
+  -- Baklava
+  (41, 1, 'Layer phyllo dough in a baking dish, brushing each layer with butter.'),
+  (41, 2, 'Add a mixture of chopped nuts and cinnamon.'),
+  (41, 3, 'Repeat layers and bake until golden.'),
+  (41, 4, 'Pour syrup over hot baklava and let it soak.'),
+
+  -- Tzatziki
+  (42, 1, 'Grate cucumber and squeeze out excess water.'),
+  (42, 2, 'Mix cucumber with yogurt, garlic, and dill.'),
+  (42, 3, 'Season with salt and refrigerate before serving.'),
+
+  -- Bibimbap
+  (43, 1, 'Cook rice according to package instructions.'),
+  (43, 2, 'Sauté vegetables and set aside.'),
+  (43, 3, 'Cook beef with soy sauce and sugar.'),
+  (43, 4, 'Fry eggs sunny side up.'),
+  (43, 5, 'Assemble bowls with rice, vegetables, beef, and eggs.'),
+  (43, 6, 'Serve with gochujang sauce.'),
+
+  -- Kimchi
+  (44, 1, 'Chop napa cabbage and soak in salt water overnight.'),
+  (44, 2, 'Rinse cabbage and mix with chili paste, garlic, and ginger.'),
+  (44, 3, 'Pack into jars and ferment for at least a week.'),
+
+  -- Bulgogi
+  (45, 1, 'Marinate beef with soy sauce, sugar, garlic, and sesame oil.'),
+  (45, 2, 'Grill or stir-fry beef until cooked through.'),
+  (45, 3, 'Serve with rice and vegetables.'),
+
+  -- Japchae
+  (46, 1, 'Soak glass noodles in water until soft.'),
+  (46, 2, 'Stir-fry vegetables and set aside.'),
+  (46, 3, 'Cook noodles in boiling water until tender.'),
+  (46, 4, 'Mix noodles with vegetables and soy sauce.'),
+  (46, 5, 'Serve with sesame seeds on top.'),
+
+  -- Tteokbokki
+  (47, 1, 'Soak rice cakes in water for 10 minutes.'),
+  (47, 2, 'Simmer broth with gochujang and sugar.'),
+  (47, 3, 'Add rice cakes and cook until soft.'),
+  (47, 4, 'Serve with boiled eggs and green onions.'),
+
+  -- Samgyeopsal
+  (48, 1, 'Cut pork belly into thick slices.'),
+  (48, 2, 'Grill pork belly until crispy.'),
+  (48, 3, 'Serve with lettuce wraps and dipping sauces.'),
+
+  -- Pho
+  (49, 1, 'Simmer beef bones with ginger and spices for several hours.'),
+  (49, 2, 'Cook rice noodles according to package instructions.'),
+  (49, 3, 'Slice beef thinly.'),
+  (49, 4, 'Assemble bowls with noodles, broth, and beef.'),
+  (49, 5, 'Serve with fresh herbs and lime.'),
+
+  -- Banh Mi
+  (50, 1, 'Marinate meat with soy sauce and spices.'),
+  (50, 2, 'Grill or roast meat until cooked through.'),
+  (50, 3, 'Toast baguettes lightly.'),
+  (50, 4, 'Assemble sandwiches with meat, pickled vegetables, and cilantro.'),
+
+  -- Spring Rolls
+  (51, 1, 'Soak rice paper in warm water until pliable.'),
+  (51, 2, 'Place fillings in the center of the rice paper.'),
+  (51, 3, 'Roll tightly and serve with dipping sauce.'),
+
+  -- Bun Cha
+  (52, 1, 'Marinate pork with fish sauce and sugar.'),
+  (52, 2, 'Grill pork until cooked through.'),
+  (52, 3, 'Serve with rice noodles and dipping sauce.'),
+
+  -- Goi Cuon
+  (53, 1, 'Soak rice paper in warm water until pliable.'),
+  (53, 2, 'Place fillings in the center of the rice paper.'),
+  (53, 3, 'Roll tightly and serve with dipping sauce.'),
+
+  -- Ca Kho To
+  (54, 1, 'Caramelize sugar in a clay pot.'),
+  (54, 2, 'Add fish and cook until browned.'),
+  (54, 3, 'Add fish sauce and simmer until fish is cooked through.'),
+
+  -- Beef Stroganoff
+  (55, 1, 'Brown beef in a pan and set aside.'),
+  (55, 2, 'Sauté onions and mushrooms in the same pan.'),
+  (55, 3, 'Add flour and cook briefly.'),
+  (55, 4, 'Return beef to the pan with broth and simmer.'),
+  (55, 5, 'Stir in sour cream and serve over noodles.'),
+
+  -- Borscht
+  (56, 1, 'Cook beets in water until tender.'),
+  (56, 2, 'Sauté onions, carrots, and potatoes.'),
+  (56, 3, 'Add vegetables to beet broth.'),
+  (56, 4, 'Simmer until all vegetables are cooked.'),
+  (56, 5, 'Serve with a dollop of sour cream.'),
+
+  -- Pelmeni
+  (57, 1, 'Prepare filling with ground meat and onions.'),
+  (57, 2, 'Make dough with flour, water, and egg.'),
+  (57, 3, 'Roll out dough and cut into circles.'),
+  (57, 4, 'Place filling in the center and fold into dumplings.'),
+  (57, 5, 'Boil until dumplings float to the surface.'),
+
+  -- Shchi
+  (58, 1, 'Sauté onions and carrots.'),
+  (58, 2, 'Add cabbage and cook until wilted.'),
+  (58, 3, 'Add broth and simmer until vegetables are tender.'),
+
+  -- Blini
+  (59, 1, 'Mix flour, milk, eggs, and sugar to make a batter.'),
+  (59, 2, 'Cook small pancakes in a pan.'),
+  (59, 3, 'Serve with sour cream or caviar.'),
+
+  -- Olivier Salad
+  (60, 1, 'Cook potatoes, carrots, and eggs until tender.'),
+  (60, 2, 'Chop vegetables and mix with peas and pickles.'),
+  (60, 3, 'Dress with mayonnaise and season with salt and pepper.');
