@@ -1,36 +1,50 @@
 DROP TABLE IF EXISTS Evaluation;
+
 DROP TABLE IF EXISTS Judge_Episode;
+
 DROP TABLE IF EXISTS Attempt;
+
 DROP TABLE IF EXISTS Episode;
+
 DROP TABLE IF EXISTS Cook_Cuisine;
+
 DROP TABLE IF EXISTS Cook;
+
 DROP TABLE IF EXISTS Topic_Recipe;
+
 DROP TABLE IF EXISTS Topic;
+
 DROP TABLE IF EXISTS NutrionFacts;
+
 DROP TABLE IF EXISTS Ingredient_FoodCategory;
+
 DROP TABLE IF EXISTS FoodCategory;
+
 DROP TABLE IF EXISTS Ingredient_Recipe;
+
 DROP TABLE IF EXISTS Tool_Recipe;
+
 DROP TABLE IF EXISTS Tool;
+
 DROP TABLE IF EXISTS Label_Recipe;
+
 DROP TABLE IF EXISTS Label;
+
 DROP TABLE IF EXISTS Meal_Recipe;
+
 DROP TABLE IF EXISTS Meal;
+
 DROP TABLE IF EXISTS RecipeStep;
+
 DROP TABLE IF EXISTS RecipeTip;
+
 DROP TABLE IF EXISTS Recipe;
+
 DROP TABLE IF EXISTS Ingredient;
+
 DROP TABLE IF EXISTS Cuisine;
+
 DROP TABLE IF EXISTS Account;
-
-
-
-CREATE TABLE Account (
-    id SERIAL PRIMARY KEY,
-    username VARCHAR(50) UNIQUE NOT NULL,
-    password VARCHAR(255) NOT NULL,
-    is_admin BOOLEAN NOT NULL
-);
 
 CREATE TABLE Cuisine (
     id SERIAL PRIMARY KEY,
@@ -186,8 +200,7 @@ CREATE TABLE Cook (
             'Cook B',
             'Cook C'
         )
-    ) NOT NULL,
-    FOREIGN KEY (id) REFERENCES Account (id) ON DELETE CASCADE
+    ) NOT NULL
 );
 
 CREATE TABLE Cook_Cuisine (
@@ -199,12 +212,10 @@ CREATE TABLE Cook_Cuisine (
 );
 
 CREATE TABLE Episode (
-      id SERIAL PRIMARY KEY,
-      season_no SMALLINT,
-      episode_no SMALLINT,
-      release_date DATE
-  );
-
+    id SERIAL PRIMARY KEY,
+    season_no SMALLINT,
+    release_date DATE
+);
 
 CREATE TABLE Attempt (
     id SERIAL PRIMARY KEY,
@@ -212,12 +223,15 @@ CREATE TABLE Attempt (
     cook_id INT,
     recipe_id INT,
     FOREIGN KEY (episode_id) REFERENCES Episode(id) ON DELETE CASCADE,
-    FOREIGN KEY (cook_id) REFERENCES Cook(id) ON DELETE SET NULL,
-    FOREIGN KEY (recipe_id) REFERENCES Recipe(id) ON DELETE SET NULL
+    FOREIGN KEY (cook_id) REFERENCES Cook(id) ON DELETE
+    SET
+        NULL,
+        FOREIGN KEY (recipe_id) REFERENCES Recipe(id) ON DELETE
+    SET
+        NULL
 );
 
 -- cook judges episode
-
 CREATE TABLE Judge_Episode (
     cook_id INT,
     episode_id INT,
@@ -227,15 +241,17 @@ CREATE TABLE Judge_Episode (
 );
 
 -- cook evaluates attempt
-
 CREATE TABLE Evaluation (
     id SERIAL PRIMARY KEY,
-    cook_id INT, --
+    cook_id INT,
+    --
     attempt_id INT,
     grade SMALLINT CHECK (
         grade >= 1
         AND grade <= 5
     ),
-    FOREIGN KEY (cook_id) REFERENCES Cook(id) ON DELETE SET NULL,
-    FOREIGN KEY (attempt_id) REFERENCES Attempt(id) ON DELETE CASCADE
+    FOREIGN KEY (cook_id) REFERENCES Cook(id) ON DELETE
+    SET
+        NULL,
+        FOREIGN KEY (attempt_id) REFERENCES Attempt(id) ON DELETE CASCADE
 );
