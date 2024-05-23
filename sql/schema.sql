@@ -48,8 +48,7 @@ DROP TABLE IF EXISTS Account;
 
 CREATE TABLE Cuisine (
     id SERIAL PRIMARY KEY,
-    nationality VARCHAR(255) UNIQUE NOT NULL,
-    image_url VARCHAR(255)
+    nationality VARCHAR(255) UNIQUE NOT NULL
 );
 
 CREATE TABLE Ingredient (
