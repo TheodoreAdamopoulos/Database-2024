@@ -1,7 +1,7 @@
 import random
 
 # Constants
-NUM_CUISINES = 10
+NUM_CUISINES = 20
 NUM_COOKS = 60
 PROBABILITIES = [0.65, 0.25, 0.10]
 NUM_CUISINES_CHOICES = [1, 2, 3]
@@ -27,7 +27,7 @@ def generate_cuisine_cook_pairs(num_cuisines, num_cooks, probabilities, num_cuis
 cuisine_cook_pairs = generate_cuisine_cook_pairs(NUM_CUISINES, NUM_COOKS, PROBABILITIES, NUM_CUISINES_CHOICES)
 
 # Output the pairs
-print("INSERT INTO Cook_Cuisine(cook_id, cuisine_id) VALUES)")
+print("INSERT INTO Cook_Cuisine(cook_id, cuisine_id) VALUES")
 for pair in cuisine_cook_pairs:
     print(f"{pair},")
 

@@ -16,10 +16,6 @@ DROP TABLE IF EXISTS Topic;
 
 DROP TABLE IF EXISTS NutrionFacts;
 
-DROP TABLE IF EXISTS Ingredient_FoodCategory;
-
-DROP TABLE IF EXISTS FoodCategory;
-
 DROP TABLE IF EXISTS Ingredient_Recipe;
 
 DROP TABLE IF EXISTS Tool_Recipe;
@@ -44,18 +40,30 @@ DROP TABLE IF EXISTS Ingredient;
 
 DROP TABLE IF EXISTS Cuisine;
 
-DROP TABLE IF EXISTS Account;
+DROP TABLE IF EXISTS FoodCategory;
+
+
 
 CREATE TABLE Cuisine (
     id SERIAL PRIMARY KEY,
-    nationality VARCHAR(255) UNIQUE NOT NULL,
+    nationality VARCHAR(255) UNIQUE NOT NULL
+);
+
+CREATE TABLE FoodCategory (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255) UNIQUE NOT NULL,
+    image_url VARCHAR(255),
+    description TEXT NOT NULL
 );
 
 CREATE TABLE Ingredient (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255) UNIQUE NOT NULL,
+    food_category_id INT NOT NULL,
     image_url VARCHAR(255),
-    caloriesPer100 INT
+    image_description VARCHAR(255),
+    caloriesPer100 INT,
+    FOREIGN KEY (food_category_id) REFERENCES FoodCategory(id) ON DELETE RESTRICT
 );
 
 CREATE TABLE Recipe (
@@ -121,6 +129,7 @@ CREATE TABLE Tool (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255) UNIQUE NOT NULL,
     image_url VARCHAR(255),
+    image_description VARCHAR(255),
     instructions TEXT NOT NULL
 );
 
@@ -132,6 +141,7 @@ CREATE TABLE Tool_Recipe (
     FOREIGN KEY (recipe_id) REFERENCES Recipe(id) ON DELETE CASCADE
 );
 
+
 CREATE TABLE Ingredient_Recipe (
     ingredient_id INT,
     recipe_id INT,
@@ -140,21 +150,6 @@ CREATE TABLE Ingredient_Recipe (
     PRIMARY KEY (ingredient_id, recipe_id),
     FOREIGN KEY (ingredient_id) REFERENCES Ingredient(id) ON DELETE RESTRICT,
     FOREIGN KEY (recipe_id) REFERENCES Recipe(id) ON DELETE CASCADE
-);
-
-CREATE TABLE FoodCategory (
-    id SERIAL PRIMARY KEY,
-    name VARCHAR(255) UNIQUE NOT NULL,
-    image_url VARCHAR(255),
-    description TEXT NOT NULL
-);
-
-CREATE TABLE Ingredient_FoodCategory (
-    ingredient_id INT,
-    food_category_id INT,
-    PRIMARY KEY (ingredient_id, food_category_id),
-    FOREIGN KEY (ingredient_id) REFERENCES Ingredient(id) ON DELETE CASCADE,
-    FOREIGN KEY (food_category_id) REFERENCES FoodCategory(id) ON DELETE CASCADE
 );
 
 CREATE TABLE NutrionFacts (
@@ -192,6 +187,7 @@ CREATE TABLE Cook (
     date_of_birth DATE NOT NULL,
     years_of_experience INTEGER DEFAULT 0,
     image_url VARCHAR(255),
+    image_description VARCHAR(255),
     job_title VARCHAR(50) CHECK (
         job_title IN (
             'Chef',
@@ -223,12 +219,8 @@ CREATE TABLE Attempt (
     cook_id INT,
     recipe_id INT,
     FOREIGN KEY (episode_id) REFERENCES Episode(id) ON DELETE CASCADE,
-    FOREIGN KEY (cook_id) REFERENCES Cook(id) ON DELETE
-    SET
-        NULL,
-        FOREIGN KEY (recipe_id) REFERENCES Recipe(id) ON DELETE
-    SET
-        NULL
+    FOREIGN KEY (cook_id) REFERENCES Cook(id) ON DELETE SET NULL,
+    FOREIGN KEY (recipe_id) REFERENCES Recipe(id) ON DELETE SET NULL
 );
 
 -- cook judges episode
@@ -250,16 +242,6 @@ CREATE TABLE Evaluation (
         grade >= 1
         AND grade <= 5
     ),
-    FOREIGN KEY (cook_id) REFERENCES Cook(id) ON DELETE
-    SET
-        NULL,
-        FOREIGN KEY (attempt_id) REFERENCES Attempt(id) ON DELETE CASCADE
-);
-
-CREATE TABLE Cook_Recipe (
-    cook_id INT,
-    recipe_id INT,
-    PRIMARY KEY (cook_id, recipe_id),
-    FOREIGN KEY (cook_id) REFERENCES Cook(id) ON DELETE CASCADE,
-    FOREIGN KEY (recipe_id) REFERENCES Recipe(id) ON DELETE CASCADE
+    FOREIGN KEY (cook_id) REFERENCES Cook(id) ON DELETE SET NULL,
+    FOREIGN KEY (attempt_id) REFERENCES Attempt(id) ON DELETE CASCADE
 );

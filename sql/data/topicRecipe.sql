@@ -1,53 +1,102 @@
--- Insert data into Topic_Recipe table
-INSERT INTO Topic_Recipe (topic_id, recipe_id)
-VALUES
-  (1, 1),   -- Spaghetti Carbonara -> Village Recipes
-  (1, 2),   -- Margherita Pizza -> Village Recipes
-  (2, 3),   -- Tacos al Pastor -> Risotto Recipes
-  (3, 4),   -- Sushi Rolls -> Easter Sweets
-  (4, 5),   -- Kung Pao Chicken -> Recipes with Eggs
-  (5, 6),   -- Coq au Vin -> Summer Salads
-  (6, 7),   -- Chicken Tikka Masala -> Sunday Lunch
-  (7, 8),   -- Pad Thai -> Spicy Recipes
-  (8, 9),   -- Paella -> Cool Cocktails
-  (9, 10),  -- Greek Salad -> Student Diet
-  (10, 11), -- Feijoada -> Healthy Recipes
-  (11, 12), -- Kimchi -> Sugar-Free Sweets
-  (12, 13), -- Falafel -> Athlete Diet
-  (13, 14), -- Pho -> High Metabolism Diet
-  (14, 15), -- Kebab -> Weight Loss Diet
-  (15, 16), -- Couscous -> Diabetic Recipes
-  (16, 17), -- Borscht -> Gluten-Free Diet
-  (17, 18), -- Ceviche -> Allergy-Friendly Recipes
-  (18, 19), -- Pavlova -> Vegetarian Recipes
-  (19, 20), -- Swedish Meatballs -> Vegan Recipes
-  (20, 21), -- Empanadas -> Mediterranean Diet
-  (1, 22),  -- Lasagna -> Low-Carb Recipes
-  (2, 23),  -- Enchiladas -> Keto-Friendly Recipes
-  (3, 24),  -- Sushi Nigiri -> Paleo Diet
-  (4, 25),  -- Sweet and Sour Pork -> Whole30 Diet
-  (5, 26),  -- Beef Bourguignon -> Flexitarian Diet
-  (6, 27),  -- Chicken Curry -> MIND Diet
-  (7, 28),  -- Tom Yum Soup -> DASH Diet
-  (8, 29),  -- Gazpacho -> Heart-Healthy Recipes
-  (9, 30),  -- Moussaka -> Low-Fat Diet
-  (10, 31), -- Pão de Queijo -> High-Protein Diet
-  (11, 32), -- Bibimbap -> Intermittent Fasting
-  (12, 33), -- Tabbouleh -> Smoothie Recipes
-  (13, 34), -- Pho Bo -> Soup Recipes
-  (14, 35), -- Iskender Kebab -> Stir-Fry Recipes
-  (15, 36), -- Tagine -> Grilling Recipes
-  (16, 37), -- Pelmeni -> Baking Recipes
-  (17, 38), -- Causa Rellena -> One-Pot Meals
-  (18, 39), -- Divine Pavlova -> Slow Cooker Recipes
-  (19, 40), -- Nordic Delight Meatballs -> Instant Pot Recipes
-  (20, 41), -- Milanesa -> Budget-Friendly Recipes
-  (1, 42),  -- Carbonnade Flamande -> Family-Friendly Recipes
-  (2, 43),  -- Chiles en Nogada -> Quick & Easy Recipes
-  (3, 44),  -- Tempura -> Comfort Food Recipes
-  (4, 45),  -- Mapo Tofu -> Holiday Recipes
-  (5, 46),  -- Quiche Lorraine -> Picnic Recipes
-  (6, 47),  -- Butter Chicken -> Party Appetizers
-  (7, 48),  -- Tom Kha Gai -> Brunch Recipes
-  (8, 49),  -- Gazpacho Andaluz -> Date Night Dinners
-  (9, 50);  -- Moussaka with Eggplant -> Meal Prep Ideas
+INSERT INTO Topic_Recipe(topic_id, recipe_id) VALUES
+(10, 1),
+(12, 2),
+(17, 3),
+(16, 4),
+(17, 5),
+(20, 6),
+(5, 6),
+(16, 7),
+(3, 7),
+(14, 8),
+(6, 9),
+(2, 10),
+(19, 11),
+(19, 12),
+(12, 13),
+(17, 14),
+(12, 15),
+(5, 16),
+(9, 16),
+(19, 17),
+(4, 17),
+(13, 18),
+(8, 19),
+(1, 20),
+(12, 21),
+(4, 21),
+(10, 22),
+(1, 23),
+(7, 24),
+(11, 25),
+(4, 26),
+(2, 27),
+(5, 28),
+(1, 29),
+(14, 30),
+(8, 31),
+(11, 32),
+(4, 32),
+(19, 33),
+(10, 34),
+(20, 34),
+(11, 35),
+(17, 36),
+(9, 37),
+(10, 37),
+(2, 38),
+(3, 39),
+(19, 39),
+(4, 40),
+(19, 41),
+(16, 42),
+(4, 43),
+(1, 44),
+(7, 45),
+(20, 46),
+(16, 47),
+(15, 47),
+(3, 48),
+(1, 48),
+(5, 49),
+(11, 50),
+(13, 51),
+(13, 52),
+(14, 53),
+(2, 53),
+(14, 54),
+(4, 55),
+(5, 56),
+(4, 56),
+(14, 57),
+(9, 58),
+(20, 59),
+(11, 60),
+(11, 61),
+(16, 61),
+(18, 62),
+(3, 63),
+(9, 64),
+(8, 64),
+(9, 65),
+(13, 66),
+(6, 67),
+(13, 67),
+(16, 68),
+(18, 68),
+(14, 69),
+(9, 70),
+(13, 71),
+(20, 71),
+(13, 72),
+(18, 72),
+(10, 73),
+(5, 73),
+(13, 74),
+(17, 75),
+(5, 76),
+(13, 77),
+(9, 78),
+(11, 79),
+(1, 80),
+(15, 80);

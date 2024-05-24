@@ -1,6 +1,4 @@
--- Insert data into Cuisine table
-INSERT INTO
-  Cuisine (id, nationality, image_url)
+INSERT INTO Cuisine (id, nationality)
 VALUES
   (1, 'Italian'),
   (2, 'Mexican'),
@@ -8,7 +6,17 @@ VALUES
   (4, 'Chinese'),
   (5, 'French'),
   (6, 'Indian'),
-  (7, 'Greek'),
-  (8, 'Korean'),
-  (9, 'Vietnamese'),
-  (10, 'Russian');
+  (7, 'Thai'),
+  (8, 'Spanish'),
+  (9, 'Greek'),
+  (10, 'Brazilian'),
+  (11, 'Korean'),
+  (12, 'Lebanese'),
+  (13, 'Vietnamese'),
+  (14, 'Turkish'),
+  (15, 'Russian'),
+  (16, 'Moroccan'),
+  (17, 'Peruvian'),
+  (18, 'Ethiopian'),
+  (19, 'Swedish'),
+  (20, 'Australian');
