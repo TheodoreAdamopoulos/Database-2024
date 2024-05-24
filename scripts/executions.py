@@ -17,10 +17,13 @@ for episode_id in range(1, 1 + EPISODES):
       cuisines = [t[1] for t in cook_cuisine if t[0] == random_cook_id]
       recipes = [RECIPES_PER_CUISINE * (j-1) + k for j in cuisines for k in range(1, RECIPES_PER_CUISINE+1)]
       random_recipe_id = random.choice(recipes)
+      while random_recipe_id in recipe_set:
+        random_recipe_id = random.choice(recipes)
+      recipe_set.add(random_recipe_id)
       result.append((exec_id, episode_id, random_cook_id, random_recipe_id))
       
 
-print("INSERT INTO Attempts(id, episode_id, cook_id, recipe_id) VALUES")
+print("INSERT INTO Attempt(id, episode_id, cook_id, recipe_id) VALUES")
 for i, res in enumerate(result):
   print(f"  {res}, ")
   if (i+1) % 10 == 0:
