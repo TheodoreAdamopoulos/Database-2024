@@ -14,9 +14,9 @@
 \i :data_path/foodCategory.sql
 
 \i :data_path/ingredient.sql
-\i :data_path/ingredientRecipe.sql
 
 \i :data_path/recipe.sql
+\i :data_path/ingredientRecipe.sql
 \i :data_path/recipeStep.sql
 \i :data_path/recipeTip.sql
 
