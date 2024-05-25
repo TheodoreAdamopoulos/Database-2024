@@ -152,7 +152,7 @@ CREATE TABLE Ingredient_Recipe (
     FOREIGN KEY (recipe_id) REFERENCES Recipe(id) ON DELETE CASCADE
 );
 
-CREATE TABLE NutrionFacts (
+CREATE TABLE NutritionFacts (
     recipe_id INT,
     sequence INT,
     -- ???
