@@ -1,4 +1,4 @@
----------------- 3.8 ----------------
+EXPLAIN ANALYZE
 SELECT 
     e.id AS episode_id, 
     COUNT(tr.tool_id) AS tool_count
@@ -13,4 +13,3 @@ GROUP BY
 ORDER BY 
     tool_count DESC
 LIMIT 1;
-

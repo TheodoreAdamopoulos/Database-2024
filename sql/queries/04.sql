@@ -6,6 +6,6 @@ SELECT
 FROM
     Cook c
 LEFT JOIN
-    Judge_Episode je ON c.id = je.cook_id
+    evaluation e ON c.id = e.cook_id
 WHERE
-    je.cook_id IS NULL;
+    e.cook_id IS NULL;

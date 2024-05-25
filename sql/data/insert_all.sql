@@ -15,6 +15,9 @@
 \i :data_path/ingredient.sql
 
 \i :data_path/recipe.sql
+\i :data_path/ingredientRecipe.sql
+\i :data_path/recipeStep.sql
+\i :data_path/recipeTip.sql
 
 \i :data_path/episode.sql
 \i :data_path/attempt.sql
@@ -31,3 +34,6 @@
 
 \i :data_path/tool.sql
 \i :data_path/toolRecipe.sql
+
+\i :data_path/nutritionFacts.sql
+

@@ -151,7 +151,7 @@ CREATE TABLE Ingredient_Recipe (
     FOREIGN KEY (recipe_id) REFERENCES Recipe(id) ON DELETE CASCADE
 );
 
-CREATE TABLE NutrionFacts (
+CREATE TABLE NutritionFacts (
     recipe_id INT,
     sequence INT,
     -- ???
@@ -221,14 +221,14 @@ CREATE TABLE Attempt (
     FOREIGN KEY (recipe_id) REFERENCES Recipe(id) ON DELETE SET NULL
 );
 
--- cook judges episode
-CREATE TABLE Judge_Episode (
-    cook_id INT,
-    episode_id INT,
-    PRIMARY KEY (cook_id, episode_id),
-    FOREIGN KEY (cook_id) REFERENCES Cook(id) ON DELETE CASCADE,
-    FOREIGN KEY (episode_id) REFERENCES Episode(id) ON DELETE CASCADE
-);
+-- -- cook judges episode
+-- CREATE TABLE Judge_Episode (
+--     cook_id INT,
+--     episode_id INT,
+--     PRIMARY KEY (cook_id, episode_id),
+--     FOREIGN KEY (cook_id) REFERENCES Cook(id) ON DELETE CASCADE,
+--     FOREIGN KEY (episode_id) REFERENCES Episode(id) ON DELETE CASCADE
+-- );
 
 -- cook evaluates attempt
 CREATE TABLE Evaluation (
