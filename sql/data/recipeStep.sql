@@ -32,7 +32,7 @@ VALUES
   (4, 5, 'Cook until rice is creamy and tender.'),
   (4, 6, 'Stir in Parmesan cheese and serve.'),
 
-  -- Tacos
+  -- Tacos al Pastor
   (5, 1, 'Cook the meat with seasoning until fully cooked.'),
   (5, 2, 'Warm the tortillas in a pan or microwave.'),
   (5, 3, 'Assemble tacos by placing meat in tortillas.'),
@@ -52,15 +52,14 @@ VALUES
   (7, 4, 'Place enchiladas in a baking dish and top with sauce.'),
   (7, 5, 'Sprinkle cheese over the top and bake for 20 minutes.'),
 
-  -- Churros
-  (8, 1, 'Heat oil in a deep fryer to 375°F (190°C).'),
-  (8, 2, 'In a pot, bring water, butter, and salt to a boil.'),
-  (8, 3, 'Stir in flour and cook until mixture forms a ball.'),
-  (8, 4, 'Transfer dough to a piping bag with a star tip.'),
-  (8, 5, 'Pipe dough into hot oil and fry until golden brown.'),
-  (8, 6, 'Roll churros in cinnamon sugar and serve.'),
+  -- Chiles Rellenos
+  (8, 1, 'Roast the poblano peppers until charred, then peel.'),
+  (8, 2, 'Cut a slit in each pepper and remove seeds.'),
+  (8, 3, 'Stuff peppers with cheese.'),
+  (8, 4, 'Dip in batter and fry until golden brown.'),
+  (8, 5, 'Serve with salsa and rice.'),
 
-  -- Sushi
+  -- Sushi Rolls
   (9, 1, 'Rinse the sushi rice under cold water until the water runs clear.'),
   (9, 2, 'Cook the rice according to the package instructions.'),
   (9, 3, 'Mix the rice vinegar, sugar, and salt, then stir into the cooked rice.'),
@@ -84,11 +83,13 @@ VALUES
   (11, 4, 'Fry in hot oil until golden and crispy.'),
   (11, 5, 'Drain on paper towels and serve with dipping sauce.'),
 
-  -- Miso Soup
-  (12, 1, 'Bring dashi stock to a simmer in a pot.'),
-  (12, 2, 'Add miso paste and stir until dissolved.'),
-  (12, 3, 'Add tofu cubes and wakame seaweed.'),
-  (12, 4, 'Simmer for a few minutes, then serve.'),
+  -- Okonomiyaki
+  (12, 1, 'In a bowl, mix flour, eggs, and dashi to make a batter.'),
+  (12, 2, 'Add shredded cabbage and other desired ingredients.'),
+  (12, 3, 'Heat oil in a pan and pour in the batter.'),
+  (12, 4, 'Cook until both sides are browned and cooked through.'),
+  (12, 5, 'Drizzle with okonomiyaki sauce and mayonnaise.'),
+  (12, 6, 'Sprinkle with bonito flakes and serve.'),
 
   -- Kung Pao Chicken
   (13, 1, 'Marinate chicken in soy sauce and cornstarch.'),
@@ -98,61 +99,56 @@ VALUES
   (13, 5, 'Pour in sauce and cook until thickened.'),
   (13, 6, 'Serve hot with steamed rice.'),
 
-  -- Sweet and Sour Pork
-  (14, 1, 'Cut pork into bite-sized pieces and coat with cornstarch.'),
-  (14, 2, 'Fry pork in hot oil until golden and crispy.'),
-  (14, 3, 'In a pan, cook bell peppers and pineapple.'),
-  (14, 4, 'Add cooked pork and pour in sweet and sour sauce.'),
-  (14, 5, 'Stir until everything is coated and heated through.'),
-  (14, 6, 'Serve with steamed rice.'),
+  -- Dumplings
+  (14, 1, 'Prepare the filling with meat and vegetables.'),
+  (14, 2, 'Place filling in the center of each wrapper.'),
+  (14, 3, 'Fold and seal the dumplings.'),
+  (14, 4, 'Steam or fry the dumplings until cooked through.'),
+  (14, 5, 'Serve with dipping sauce.'),
 
-  -- Fried Rice
-  (15, 1, 'Heat oil in a large pan or wok.'),
-  (15, 2, 'Add chopped vegetables and stir-fry until tender.'),
-  (15, 3, 'Push vegetables to the side and add beaten eggs.'),
-  (15, 4, 'Scramble the eggs until cooked.'),
-  (15, 5, 'Add cooked rice and soy sauce.'),
-  (15, 6, 'Stir everything together and cook until heated through.'),
+  -- Mapo Tofu
+  (15, 1, 'Cook ground meat in a pan until browned.'),
+  (15, 2, 'Add tofu cubes and cook gently.'),
+  (15, 3, 'Stir in spicy sauce and simmer.'),
+  (15, 4, 'Serve hot with steamed rice.'),
 
-  -- Dim Sum
-  (16, 1, 'Prepare the fillings for each type of dim sum.'),
-  (16, 2, 'Wrap fillings in dumpling wrappers.'),
-  (16, 3, 'Steam dumplings in a bamboo steamer until cooked through.'),
-  (16, 4, 'Serve with dipping sauces.'),
-
-  -- Croissant
-  (17, 1, 'Roll out the dough and fold in butter.'),
-  (17, 2, 'Refrigerate the dough for 30 minutes.'),
-  (17, 3, 'Roll out the dough again and fold.'),
-  (17, 4, 'Repeat the rolling and folding process several times.'),
-  (17, 5, 'Shape the dough into croissants.'),
-  (17, 6, 'Let the croissants rise, then bake until golden brown.'),
+  -- Peking Duck
+  (16, 1, 'Marinate the duck with spices.'),
+  (16, 2, 'Roast the duck in the oven until crispy.'),
+  (16, 3, 'Slice the duck and serve with pancakes, spring onions, and hoisin sauce.'),
 
   -- Coq au Vin
-  (18, 1, 'Marinate the chicken in wine, garlic, and herbs overnight.'),
-  (18, 2, 'Brown the chicken in a pot.'),
-  (18, 3, 'Add onions, carrots, and mushrooms and cook until tender.'),
-  (18, 4, 'Pour in the marinade and bring to a simmer.'),
-  (18, 5, 'Cook until the chicken is tender and the sauce is thickened.'),
-  (18, 6, 'Serve with crusty bread.'),
+  (17, 1, 'Marinate the chicken in wine, garlic, and herbs overnight.'),
+  (17, 2, 'Brown the chicken in a pot.'),
+  (17, 3, 'Add onions, carrots, and mushrooms and cook until tender.'),
+  (17, 4, 'Pour in the marinade and bring to a simmer.'),
+  (17, 5, 'Cook until the chicken is tender and the sauce is thickened.'),
+  (17, 6, 'Serve with crusty bread.'),
 
   -- Ratatouille
-  (19, 1, 'Preheat the oven to 375°F (190°C).'),
-  (19, 2, 'Slice eggplant, zucchini, and tomatoes.'),
-  (19, 3, 'Layer vegetables in a baking dish.'),
-  (19, 4, 'Drizzle with olive oil and sprinkle with herbs.'),
-  (19, 5, 'Bake for 45 minutes until vegetables are tender.'),
-  (19, 6, 'Serve hot or at room temperature.'),
+  (18, 1, 'Preheat the oven to 375°F (190°C).'),
+  (18, 2, 'Slice eggplant, zucchini, and tomatoes.'),
+  (18, 3, 'Layer vegetables in a baking dish.'),
+  (18, 4, 'Drizzle with olive oil and sprinkle with herbs.'),
+  (18, 5, 'Bake for 45 minutes until vegetables are tender.'),
+  (18, 6, 'Serve hot or at room temperature.'),
 
-  -- Creme Brulee
-  (20, 1, 'Preheat the oven to 325°F (160°C).'),
-  (20, 2, 'Whisk together egg yolks and sugar.'),
-  (20, 3, 'Heat cream and vanilla in a saucepan.'),
-  (20, 4, 'Slowly pour hot cream into the egg mixture.'),
-  (20, 5, 'Pour mixture into ramekins and bake in a water bath.'),
-  (20, 6, 'Chill, then sprinkle with sugar and caramelize with a torch.'),
+  -- Boeuf Bourguignon
+  (19, 1, 'Brown the beef in a pot.'),
+  (19, 2, 'Add onions, carrots, and garlic and cook until tender.'),
+  (19, 3, 'Pour in red wine and broth and bring to a simmer.'),
+  (19, 4, 'Add mushrooms and cook until beef is tender.'),
+  (19, 5, 'Serve hot with crusty bread.'),
 
-  -- Butter Chicken
+  -- Croissants
+  (20, 1, 'Roll out the dough and fold in butter.'),
+  (20, 2, 'Refrigerate the dough for 30 minutes.'),
+  (20, 3, 'Roll out the dough again and fold.'),
+  (20, 4, 'Repeat the rolling and folding process several times.'),
+  (20, 5, 'Shape the dough into croissants.'),
+  (20, 6, 'Let the croissants rise, then bake until golden brown.'),
+
+  -- Chicken Tikka Masala
   (21, 1, 'Marinate chicken in yogurt and spices for at least 1 hour.'),
   (21, 2, 'Cook onions, garlic, and ginger in a pan until soft.'),
   (21, 3, 'Add spices and tomato paste and cook until fragrant.'),
@@ -160,61 +156,59 @@ VALUES
   (21, 5, 'Stir in cream and simmer until chicken is cooked through.'),
   (21, 6, 'Serve with naan or rice.'),
 
-  -- Samosa
-  (22, 1, 'Prepare the filling with potatoes, peas, and spices.'),
-  (22, 2, 'Roll out dough and cut into circles.'),
-  (22, 3, 'Place filling on each circle and fold into a triangle.'),
-  (22, 4, 'Seal the edges with water.'),
-  (22, 5, 'Deep fry until golden and crispy.'),
-  (22, 6, 'Serve with chutney.'),
-
-  -- Biryani
-  (23, 1, 'Marinate meat with yogurt and spices.'),
-  (23, 2, 'Cook rice with whole spices until partially done.'),
-  (23, 3, 'Layer rice and meat in a pot.'),
-  (23, 4, 'Top with fried onions, saffron milk, and ghee.'),
-  (23, 5, 'Cover and cook on low heat until rice and meat are fully cooked.'),
-  (23, 6, 'Serve with raita.'),
-
   -- Palak Paneer
-  (24, 1, 'Blanch spinach in boiling water, then blend into a puree.'),
-  (24, 2, 'Fry paneer cubes until golden brown.'),
-  (24, 3, 'Cook onions, garlic, and ginger in a pan until soft.'),
-  (24, 4, 'Add spinach puree and spices and cook for a few minutes.'),
-  (24, 5, 'Stir in cream and paneer cubes.'),
-  (24, 6, 'Serve with naan or rice.'),
+  (22, 1, 'Blanch spinach in boiling water, then blend into a puree.'),
+  (22, 2, 'Fry paneer cubes until golden brown.'),
+  (22, 3, 'Cook onions, garlic, and ginger in a pan until soft.'),
+  (22, 4, 'Add spinach puree and spices and cook for a few minutes.'),
+  (22, 5, 'Stir in cream and paneer cubes.'),
+  (22, 6, 'Serve with naan or rice.'),
+
+  -- Aloo Gobi
+  (23, 1, 'Heat oil in a pan and fry potatoes until golden.'),
+  (23, 2, 'Add cauliflower and cook until tender.'),
+  (23, 3, 'Add spices and cook for a few minutes.'),
+  (23, 4, 'Stir in tomatoes and cook until heated through.'),
+  (23, 5, 'Serve hot, garnished with cilantro.'),
 
   -- Pad Thai
-  (25, 1, 'Soak rice noodles in hot water until soft.'),
-  (25, 2, 'In a pan, cook tofu and shrimp until done.'),
-  (25, 3, 'Add eggs and scramble until cooked.'),
-  (25, 4, 'Add noodles and sauce ingredients.'),
-  (25, 5, 'Stir-fry until noodles are coated and heated through.'),
-  (25, 6, 'Garnish with peanuts and lime wedges.'),
+  (24, 1, 'Soak rice noodles in hot water until soft.'),
+  (24, 2, 'In a pan, cook tofu and shrimp until done.'),
+  (24, 3, 'Add eggs and scramble until cooked.'),
+  (24, 4, 'Add noodles and sauce ingredients.'),
+  (24, 5, 'Stir-fry until noodles are coated and heated through.'),
+  (24, 6, 'Garnish with peanuts and lime wedges.'),
 
-  -- Tom Yum Soup
-  (26, 1, 'Bring broth to a boil in a pot.'),
-  (26, 2, 'Add lemongrass, kaffir lime leaves, and galangal.'),
-  (26, 3, 'Add mushrooms and cook until tender.'),
-  (26, 4, 'Add shrimp and cook until pink.'),
-  (26, 5, 'Stir in fish sauce, lime juice, and chili paste.'),
-  (26, 6, 'Serve hot, garnished with cilantro.'),
+  -- Tom Yum Goong
+  (25, 1, 'Bring broth to a boil in a pot.'),
+  (25, 2, 'Add lemongrass, kaffir lime leaves, and galangal.'),
+  (25, 3, 'Add mushrooms and cook until tender.'),
+  (25, 4, 'Add shrimp and cook until pink.'),
+  (25, 5, 'Stir in fish sauce, lime juice, and chili paste.'),
+  (25, 6, 'Serve hot, garnished with cilantro.'),
 
   -- Green Curry
-  (27, 1, 'Heat oil in a pan and fry green curry paste.'),
-  (27, 2, 'Add coconut milk and bring to a simmer.'),
-  (27, 3, 'Add meat and cook until done.'),
-  (27, 4, 'Add vegetables and cook until tender.'),
-  (27, 5, 'Stir in fish sauce and sugar.'),
-  (27, 6, 'Serve with steamed rice.'),
+  (26, 1, 'Heat oil in a pan and fry green curry paste.'),
+  (26, 2, 'Add coconut milk and bring to a simmer.'),
+  (26, 3, 'Add meat and cook until done.'),
+  (26, 4, 'Add vegetables and cook until tender.'),
+  (26, 5, 'Stir in fish sauce and sugar.'),
+  (26, 6, 'Serve with steamed rice.'),
 
-  -- Mango Sticky Rice
-  (28, 1, 'Cook sticky rice according to package instructions.'),
-  (28, 2, 'In a pot, heat coconut milk, sugar, and salt.'),
-  (28, 3, 'Mix coconut milk mixture into cooked rice.'),
-  (28, 4, 'Slice ripe mangoes.'),
-  (28, 5, 'Serve rice topped with mango slices.'),
-  (28, 6, 'Drizzle with extra coconut milk if desired.'),
+  -- Som Tum
+  (27, 1, 'Shred green papaya and place in a bowl.'),
+  (27, 2, 'Add tomatoes, carrots, and peanuts.'),
+  (27, 3, 'Mix in fish sauce, lime juice, and chili.'),
+  (27, 4, 'Toss everything together until well combined.'),
+  (27, 5, 'Serve immediately.'),
+
+  -- Pad See Ew
+  (28, 1, 'Soak rice noodles in hot water until soft.'),
+  (28, 2, 'In a pan, cook meat until browned.'),
+  (28, 3, 'Add garlic and Chinese broccoli and cook until tender.'),
+  (28, 4, 'Add noodles and sauce ingredients.'),
+  (28, 5, 'Stir-fry until noodles are coated and heated through.'),
+  (28, 6, 'Serve hot.'),
 
   -- Paella
   (29, 1, 'Heat oil in a large pan over medium heat.'),
@@ -232,7 +226,7 @@ VALUES
   (30, 4, 'Chill in the refrigerator for at least 2 hours.'),
   (30, 5, 'Serve cold, garnished with croutons and diced vegetables.'),
 
-  -- Tortilla Espanola
+  -- Tortilla Española
   (31, 1, 'Slice potatoes and onions thinly.'),
   (31, 2, 'Fry potatoes and onions in oil until tender.'),
   (31, 3, 'Beat eggs in a bowl and mix in potatoes and onions.'),
@@ -240,13 +234,12 @@ VALUES
   (31, 5, 'Flip tortilla and cook until set.'),
   (31, 6, 'Serve warm or at room temperature.'),
 
-  -- Churros
-  (32, 1, 'Heat oil in a deep fryer to 375°F (190°C).'),
-  (32, 2, 'In a pot, bring water, butter, and salt to a boil.'),
-  (32, 3, 'Stir in flour and cook until mixture forms a ball.'),
-  (32, 4, 'Transfer dough to a piping bag with a star tip.'),
-  (32, 5, 'Pipe dough into hot oil and fry until golden brown.'),
-  (32, 6, 'Roll churros in cinnamon sugar and serve.'),
+  -- Patatas Bravas
+  (32, 1, 'Peel and cut potatoes into bite-sized pieces.'),
+  (32, 2, 'Fry potatoes until crispy and golden brown.'),
+  (32, 3, 'In a pan, cook tomatoes, onions, and garlic for the sauce.'),
+  (32, 4, 'Add paprika and other spices to the sauce.'),
+  (32, 5, 'Pour sauce over fried potatoes and serve.'),
 
   -- Moussaka
   (33, 1, 'Preheat the oven to 375°F (190°C).'),
@@ -256,185 +249,315 @@ VALUES
   (33, 5, 'Top with béchamel sauce.'),
   (33, 6, 'Bake for 45 minutes until golden brown.'),
 
-  -- Tzatziki
-  (34, 1, 'Grate cucumber and squeeze out excess water.'),
-  (34, 2, 'Mix cucumber with yogurt, garlic, and dill.'),
-  (34, 3, 'Season with salt and pepper.'),
-  (34, 4, 'Chill in the refrigerator before serving.'),
+  -- Greek Salad
+  (34, 1, 'Chop tomatoes, cucumbers, and onions.'),
+  (34, 2, 'Mix vegetables with olives and feta cheese.'),
+  (34, 3, 'Dress salad with olive oil and oregano.'),
+  (34, 4, 'Serve chilled.'),
+
+  -- Spanakopita
+  (35, 1, 'Preheat the oven to 350°F (175°C).'),
+  (35, 2, 'Cook spinach and mix with feta cheese and herbs.'),
+  (35, 3, 'Layer filo dough in a baking dish, brushing each layer with butter.'),
+  (35, 4, 'Spread spinach mixture between layers.'),
+  (35, 5, 'Cut into squares and bake until golden brown.'),
 
   -- Souvlaki
-  (35, 1, 'Marinate meat in olive oil, lemon juice, and herbs.'),
-  (35, 2, 'Skewer the meat onto wooden sticks.'),
-  (35, 3, 'Grill skewers until meat is cooked through.'),
-  (35, 4, 'Serve with pita bread and tzatziki.'),
+  (36, 1, 'Marinate meat in olive oil, lemon juice, and herbs.'),
+  (36, 2, 'Skewer the meat onto wooden sticks.'),
+  (36, 3, 'Grill skewers until meat is cooked through.'),
+  (36, 4, 'Serve with pita bread and tzatziki.'),
+
+  -- Feijoada
+  (37, 1, 'Soak black beans in water overnight.'),
+  (37, 2, 'Cook beans with meat, onions, and garlic in a pot.'),
+  (37, 3, 'Simmer until beans and meat are tender.'),
+  (37, 4, 'Serve hot with rice, collard greens, and orange slices.'),
+
+
+
+  -- Pão de Queijo
+  (38, 1, 'Preheat the oven to 375°F (190°C).'),
+  (38, 2, 'Bring milk, oil, and salt to a boil in a saucepan.'),
+  (38, 3, 'Stir in tapioca flour until a dough forms.'),
+  (38, 4, 'Mix in eggs and cheese until well combined.'),
+  (38, 5, 'Drop spoonfuls of dough onto a baking sheet.'),
+  (38, 6, 'Bake for 15-20 minutes until puffed and golden brown.'),
+
+  -- Moqueca
+  (39, 1, 'Marinate fish with lime juice and spices.'),
+  (39, 2, 'Cook onions, peppers, and tomatoes in a pot until soft.'),
+  (39, 3, 'Layer fish, vegetables, and coconut milk in the pot.'),
+  (39, 4, 'Simmer until fish is cooked through and flavors meld.'),
+  (39, 5, 'Serve hot with rice and sliced lime.'),
+
+  -- Caipirinha
+  (40, 1, 'Cut lime into wedges and muddle with sugar in a glass.'),
+  (40, 2, 'Fill the glass with ice.'),
+  (40, 3, 'Pour in cachaça and stir well.'),
+  (40, 4, 'Garnish with a lime wedge and serve.'),
+
+  -- Bibimbap
+  (41, 1, 'Cook rice according to package instructions.'),
+  (41, 2, 'Prepare various vegetables by slicing or julienning them.'),
+  (41, 3, 'Cook meat with garlic and soy sauce until done.'),
+  (41, 4, 'Fry eggs until whites are set but yolks are still runny.'),
+  (41, 5, 'Assemble bowls with rice, vegetables, meat, and eggs.'),
+  (41, 6, 'Serve with spicy gochujang sauce.'),
+
+  -- Kimchi
+  (42, 1, 'Cut cabbage into pieces and salt generously.'),
+  (42, 2, 'Let sit for a few hours, then rinse and drain.'),
+  (42, 3, 'Mix with garlic, ginger, chili powder, and fish sauce.'),
+  (42, 4, 'Pack mixture into a jar and let ferment for a few days.'),
+  (42, 5, 'Store in the refrigerator.'),
+
+  -- Bulgogi
+  (43, 1, 'Slice beef thinly and marinate in soy sauce, sugar, and garlic.'),
+  (43, 2, 'Cook beef in a hot pan until browned and caramelized.'),
+  (43, 3, 'Serve with rice, lettuce leaves, and dipping sauces.'),
+
+  -- Tteokbokki
+  (44, 1, 'Soak rice cakes in water for 30 minutes.'),
+  (44, 2, 'In a pot, simmer rice cakes in spicy sauce until tender.'),
+  (44, 3, 'Add fish cakes and cook until heated through.'),
+  (44, 4, 'Serve hot, garnished with sesame seeds and green onions.'),
+
+  -- Hummus
+  (45, 1, 'Blend chickpeas, tahini, lemon juice, and garlic until smooth.'),
+  (45, 2, 'Season with salt and cumin.'),
+  (45, 3, 'Drizzle with olive oil and sprinkle with paprika.'),
+  (45, 4, 'Serve with pita bread or vegetables.'),
+
+  -- Falafel
+  (46, 1, 'Blend chickpeas, onions, garlic, and herbs until smooth.'),
+  (46, 2, 'Form mixture into balls and flatten slightly.'),
+  (46, 3, 'Fry falafel in hot oil until golden brown and crispy.'),
+  (46, 4, 'Serve with tahini sauce and pita bread.'),
+
+  -- Tabbouleh
+  (47, 1, 'Soak bulgur wheat in water until softened.'),
+  (47, 2, 'Mix bulgur with chopped parsley, tomatoes, and onions.'),
+  (47, 3, 'Dress salad with olive oil, lemon juice, and salt.'),
+  (47, 4, 'Refrigerate for at least 1 hour before serving.'),
+
+  -- Shawarma
+  (48, 1, 'Marinate meat with yogurt, garlic, and spices.'),
+  (48, 2, 'Cook meat on a grill or in a pan until browned.'),
+  (48, 3, 'Slice meat thinly and serve in pita bread with vegetables.'),
+
+  -- Pho
+  (49, 1, 'Bring beef broth to a boil in a pot.'),
+  (49, 2, 'Add spices like star anise, cinnamon, and cloves, and simmer for 15-20 minutes to infuse flavors.'),
+  (49, 3, 'Meanwhile, prepare rice noodles according to package instructions.'),
+  (49, 4, 'Slice raw beef thinly and place it on top of cooked noodles in serving bowls.'),
+  (49, 5, 'Pour hot broth over the beef and noodles to cook the beef.'),
+  (49, 6, 'Serve with bean sprouts, basil, lime wedges, and chili sauce on the side.'),
+
+  -- Banh Mi
+  (50, 1, 'Slice a baguette in half and spread mayonnaise on both sides.'),
+  (50, 2, 'Layer with sliced pork, pâté, pickled vegetables, and cilantro.'),
+  (50, 3, 'Drizzle with soy sauce and sriracha sauce, if desired.'),
+  (50, 4, 'Serve as a sandwich or wrap in parchment paper for portability.'),
+
+  -- Goi Cuon
+  (51, 1, 'Soak rice paper wrappers in warm water until pliable.'),
+  (51, 2, 'Place shrimp, vegetables, and herbs on the bottom third of the wrapper.'),
+  (51, 3, 'Fold the bottom of the wrapper over the filling, then fold in the sides, and roll tightly.'),
+  (51, 4, 'Serve with peanut dipping sauce or sweet chili sauce.'),
+
+  -- Bun Cha
+  (52, 1, 'Marinate pork in a mixture of fish sauce, sugar, and garlic.'),
+  (52, 2, 'Grill pork until cooked through and slightly caramelized.'),
+  (52, 3, 'Cook rice noodles according to package instructions.'),
+  (52, 4, 'Serve grilled pork over noodles with herbs and dipping sauce on the side.'),
+  (52, 5, 'Enjoy with fresh vegetables like lettuce, cucumber, and bean sprouts.'),
+
+  -- Kebab
+  (53, 1, 'Marinate meat or vegetables in olive oil, lemon juice, and spices for at least 30 minutes.'),
+  (53, 2, 'Skewer marinated ingredients onto metal or wooden sticks.'),
+  (53, 3, 'Grill kebabs over medium-high heat until cooked to desired doneness.'),
+  (53, 4, 'Serve with rice, salad, or flatbread, and tzatziki sauce.'),
 
   -- Baklava
-  (36, 1, 'Preheat the oven to 350°F (175°C).'),
-  (36, 2, 'Layer filo dough in a baking dish, brushing each layer with butter.'),
-  (36, 3, 'Spread a mixture of nuts and cinnamon between layers.'),
-  (36, 4, 'Cut into squares and bake for 45 minutes.'),
-  (36, 5, 'Pour syrup over the hot baklava and let it soak in.'),
+  (54, 1, 'Preheat the oven to 350°F (175°C).'),
+  (54, 2, 'Layer filo dough in a baking dish, brushing each layer with butter.'),
+  (54, 3, 'Spread a mixture of nuts and cinnamon between layers.'),
+  (54, 4, 'Cut into squares or diamonds before baking.'),
+  (54, 5, 'Bake for 45 minutes until golden brown and crispy.'),
+  (54, 6, 'Pour syrup over the hot baklava and let it soak in.'),
+  (54, 7, 'Allow baklava to cool before serving.'),
 
--- Feijoada
-(37, 1, 'Soak black beans in water overnight.'),
-(37, 2, 'Cook beans with meat, onions, and garlic in a pot.'),
-(37, 3, 'Simmer until beans and meat are tender.'),
-(37, 4, 'Serve hot with rice, collard greens, and orange slices.'),
+  -- Menemen
+  (55, 1, 'Heat oil in a pan and sauté onions and green peppers until soft.'),
+  (55, 2, 'Add tomatoes and cook until they start to break down.'),
+  (55, 3, 'Beat eggs and pour into the pan.'),
+  (55, 4, 'Stir gently until eggs are cooked to desired consistency.'),
+  (55, 5, 'Season with salt and pepper.'),
+  (55, 6, 'Serve hot with bread.'),
 
--- Brigadeiro
-(38, 1, 'Mix condensed milk, cocoa powder, and butter in a pan.'),
-(38, 2, 'Cook over low heat, stirring constantly, until thickened.'),
-(38, 3, 'Remove from heat and let cool slightly.'),
-(38, 4, 'Form into small balls and roll in chocolate sprinkles.'),
-(38, 5, 'Chill in the refrigerator until set.'),
+  -- Borscht
+  (57, 1, 'Heat oil in a pot and sauté onions, carrots, and celery until softened.'),
+  (57, 2, 'Add chopped beets, potatoes, and cabbage to the pot.'),
+  (57, 3, 'Pour in beef broth and simmer until vegetables are tender.'),
+  (57, 4, 'Stir in vinegar, sugar, and salt to taste.'),
+  (57, 5, 'Serve hot with a dollop of sour cream and fresh dill.'),
 
--- Pão de Queijo
-(39, 1, 'Preheat the oven to 375°F (190°C).'),
-(39, 2, 'Bring milk, oil, and salt to a boil in a saucepan.'),
-(39, 3, 'Stir in tapioca flour until a dough forms.'),
-(39, 4, 'Mix in eggs and cheese until well combined.'),
-(39, 5, 'Drop spoonfuls of dough onto a baking sheet.'),
-(39, 6, 'Bake for 15-20 minutes until puffed and golden brown.'),
+  -- Pelmeni
+  (58, 1, 'Make a dough from flour, eggs, water, and salt.'),
+  (58, 2, 'Roll out the dough thinly and cut into circles.'),
+  (58, 3, 'Place a spoonful of meat filling on each circle.'),
+  (58, 4, 'Fold the dough over the filling and pinch to seal tightly.'),
+  (58, 5, 'Boil pelmeni in salted water until they float to the surface.'),
+  (58, 6, 'Serve hot with sour cream or melted butter.'),
 
--- Moqueca
-(40, 1, 'Marinate fish with lime juice and spices.'),
-(40, 2, 'Cook onions, peppers, and tomatoes in a pot until soft.'),
-(40, 3, 'Layer fish, vegetables, and coconut milk in the pot.'),
-(40, 4, 'Simmer until fish is cooked through and flavors meld.'),
-(40, 5, 'Serve hot with rice and sliced lime.'),
+  -- Beef Stroganoff
+  (59, 1, 'Slice beef thinly against the grain and season with salt and pepper.'),
+  (59, 2, 'Heat oil in a skillet and brown beef on all sides, then remove from the skillet.'),
+  (59, 3, 'Sauté onions and mushrooms in the same skillet until softened and browned.'),
+  (59, 4, 'Stir in flour and cook until lightly golden, then add beef broth and bring to a simmer.'),
+  (59, 5, 'Return beef to the skillet and simmer until heated through and sauce thickens.'),
+  (59, 6, 'Stir in sour cream and serve over cooked egg noodles or rice.'),
+  (59, 7, 'Garnish with chopped parsley, if desired.'),
 
--- Kimchi
-(41, 1, 'Cut cabbage into pieces and salt generously.'),
-(41, 2, 'Let sit for a few hours, then rinse and drain.'),
-(41, 3, 'Mix with garlic, ginger, chili powder, and fish sauce.'),
-(41, 4, 'Pack mixture into a jar and let ferment for a few days.'),
-(41, 5, 'Store in the refrigerator.'),
+  -- Tagine
+  (61, 1, 'Marinate meat with spices for at least 1 hour.'),
+  (61, 2, 'Heat oil in a tagine or heavy pot.'),
+  (61, 3, 'Cook onions and garlic until soft.'),
+  (61, 4, 'Add meat and brown on all sides.'),
+  (61, 5, 'Add vegetables, dried fruits, and broth.'),
+  (61, 6, 'Cover and simmer until meat is tender.'),
+  (61, 7, 'Garnish with fresh herbs and serve with couscous.'),
 
--- Bibimbap
-(42, 1, 'Cook rice according to package instructions.'),
-(42, 2, 'Prepare various vegetables by slicing or julienning them.'),
-(42, 3, 'Cook meat with garlic and soy sauce until done.'),
-(42, 4, 'Fry eggs until whites are set but yolks are still runny.'),
-(42, 5, 'Assemble bowls with rice, vegetables, meat, and eggs.'),
-(42, 6, 'Serve with spicy gochujang sauce.'),
+  -- Couscous
+  (62, 1, 'Bring water or broth to a boil.'),
+  (62, 2, 'Add couscous, cover, and remove from heat.'),
+  (62, 3, 'Let sit for 5 minutes, then fluff with a fork.'),
+  (62, 4, 'Stir in butter or olive oil and season with salt.'),
+  (62, 5, 'Serve with meat or vegetables.'),
 
--- Bulgogi
-(43, 1, 'Slice beef thinly and marinate in soy sauce, sugar, and garlic.'),
-(43, 2, 'Cook beef in a hot pan until browned and caramelized.'),
-(43, 3, 'Serve with rice, lettuce leaves, and dipping sauces.'),
+  -- Harira
+  (63, 1, 'Heat oil in a pot and sauté onions, celery, and garlic until soft.'),
+  (63, 2, 'Add tomatoes, lentils, and chickpeas.'),
+  (63, 3, 'Pour in broth and bring to a boil.'),
+  (63, 4, 'Add spices and simmer until lentils are tender.'),
+  (63, 5, 'Stir in fresh herbs and serve hot.'),
 
--- Tteokbokki
-(44, 1, 'Soak rice cakes in water for 30 minutes.'),
-(44, 2, 'In a pot, simmer rice cakes in spicy sauce until tender.'),
-(44, 3, 'Add fish cakes and cook until heated through.'),
-(44, 4, 'Serve hot, garnished with sesame seeds and green onions.'),
+  -- Pastilla
+  (64, 1, 'Cook meat with onions and spices until tender.'),
+  (64, 2, 'Mix cooked meat with beaten eggs and almonds.'),
+  (64, 3, 'Layer filo dough in a baking dish, brushing each layer with butter.'),
+  (64, 4, 'Spread meat mixture between layers.'),
+  (64, 5, 'Bake until golden brown and crispy.'),
+  (64, 6, 'Dust with powdered sugar and cinnamon before serving.'),
 
--- Hummus
-(45, 1, 'Blend chickpeas, tahini, lemon juice, and garlic until smooth.'),
-(45, 2, 'Season with salt and cumin.'),
-(45, 3, 'Drizzle with olive oil and sprinkle with paprika.'),
-(45, 4, 'Serve with pita bread or vegetables.'),
+  -- Ceviche
+  (65, 1, 'Cut fish into small cubes.'),
+  (65, 2, 'Marinate fish in lime juice for at least 30 minutes.'),
+  (65, 3, 'Add chopped onions, cilantro, and chili peppers.'),
+  (65, 4, 'Season with salt and mix well.'),
+  (65, 5, 'Serve chilled, garnished with avocado slices.'),
 
--- Falafel
-(46, 1, 'Blend chickpeas, onions, garlic, and herbs until smooth.'),
-(46, 2, 'Form mixture into balls and flatten slightly.'),
-(46, 3, 'Fry falafel in hot oil until golden brown and crispy.'),
-(46, 4, 'Serve with tahini sauce and pita bread.'),
+  -- Lomo Saltado
+  (66, 1, 'Marinate beef with soy sauce, vinegar, and spices.'),
+  (66, 2, 'Stir-fry beef in a hot pan until browned.'),
+  (66, 3, 'Add onions, tomatoes, and aji amarillo.'),
+  (66, 4, 'Cook until vegetables are tender.'),
+  (66, 5, 'Serve with rice and fried potatoes.'),
 
--- Tabbouleh
-(47, 1, 'Soak bulgur wheat in water until softened.'),
-(47, 2, 'Mix bulgur with chopped parsley, tomatoes, and onions.'),
-(47, 3, 'Dress salad with olive oil, lemon juice, and salt.'),
-(47, 4, 'Refrigerate for at least 1 hour before serving.'),
+  -- Aji de Gallina
+  (67, 1, 'Cook chicken in water with vegetables and spices.'),
+  (67, 2, 'Shred cooked chicken and set aside.'),
+  (67, 3, 'Blend bread, milk, and walnuts to make a sauce.'),
+  (67, 4, 'Cook sauce with aji amarillo and spices.'),
+  (67, 5, 'Add shredded chicken to the sauce.'),
+  (67, 6, 'Serve with rice and boiled potatoes.'),
 
--- Kibbeh
-(48, 1, 'Mix bulgur with minced onions, spices, and ground meat.'),
-(48, 2, 'Form mixture into balls or patties.'),
-(48, 3, 'Fry kibbeh in hot oil until browned and crispy.'),
-(48, 4, 'Serve with yogurt sauce and lemon wedges.'),
+  -- Anticuchos
+  (68, 1, 'Marinate meat in vinegar, garlic, and spices.'),
+  (68, 2, 'Skewer marinated meat onto wooden sticks.'),
+  (68, 3, 'Grill skewers until meat is cooked through.'),
+  (68, 4, 'Serve with boiled potatoes and aji sauce.'),
 
--- Pho
-(49, 1, 'Bring beef broth to a boil in a pot.'),
-(49, 2, 'Add spices like star anise, cinnamon, and cloves, and simmer for 15-20 minutes to infuse flavors.'),
-(49, 3, 'Meanwhile, prepare rice noodles according to package instructions.'),
-(49, 4, 'Slice raw beef thinly and place it on top of cooked noodles in serving bowls.'),
-(49, 5, 'Pour hot broth over the beef and noodles to cook the beef.'),
-(49, 6, 'Serve with bean sprouts, basil, lime wedges, and chili sauce on the side.'),
+  -- Doro Wat
+  (69, 1, 'Marinate chicken in lemon juice and spices.'),
+  (69, 2, 'Cook onions, garlic, and ginger in a pot until soft.'),
+  (69, 3, 'Add berbere spice mix and cook until fragrant.'),
+  (69, 4, 'Add chicken and simmer until cooked through.'),
+  (69, 5, 'Serve hot with injera.'),
 
--- Banh Mi
-(50, 1, 'Slice a baguette in half and spread mayonnaise on both sides.'),
-(50, 2, 'Layer with sliced pork, pâté, pickled vegetables, and cilantro.'),
-(50, 3, 'Drizzle with soy sauce and sriracha sauce, if desired.'),
-(50, 4, 'Serve as a sandwich or wrap in parchment paper for portability.'),
+  -- Injera
+  (70, 1, 'Mix teff flour with water to make a batter.'),
+  (70, 2, 'Let the batter ferment for a few days.'),
+  (70, 3, 'Cook batter on a hot griddle like a pancake.'),
+  (70, 4, 'Serve with stews or salads.'),
 
--- Spring Rolls
-(51, 1, 'Soak rice paper wrappers in warm water until pliable.'),
-(51, 2, 'Place shrimp, vegetables, and herbs on the bottom third of the wrapper.'),
-(51, 3, 'Fold the bottom of the wrapper over the filling, then fold in the sides, and roll tightly.'),
-(51, 4, 'Serve with peanut dipping sauce or sweet chili sauce.'),
+  -- Misir Wot
+  (71, 1, 'Cook lentils in water until tender.'),
+  (71, 2, 'In a pot, cook onions, garlic, and ginger until soft.'),
+  (71, 3, 'Add berbere spice mix and cook until fragrant.'),
+  (71, 4, 'Add cooked lentils and simmer until thickened.'),
+  (71, 5, 'Serve hot with injera.'),
 
--- Bun Cha
-(52, 1, 'Marinate pork in a mixture of fish sauce, sugar, and garlic.'),
-(52, 2, 'Grill pork until cooked through and slightly caramelized.'),
-(52, 3, 'Cook rice noodles according to package instructions.'),
-(52, 4, 'Serve grilled pork over noodles with herbs and dipping sauce on the side.'),
-(52, 5, 'Enjoy with fresh vegetables like lettuce, cucumber, and bean sprouts.'),
+  -- Shiro
+  (72, 1, 'Cook chickpea flour with water until thickened.'),
+  (72, 2, 'In a pot, cook onions, garlic, and ginger until soft.'),
+  (72, 3, 'Add berbere spice mix and cook until fragrant.'),
+  (72, 4, 'Add chickpea mixture and simmer until flavors meld.'),
+  (72, 5, 'Serve hot with injera.'),
 
--- Kebabs
-(53, 1, 'Marinate meat or vegetables in olive oil, lemon juice, and spices for at least 30 minutes.'),
-(53, 2, 'Skewer marinated ingredients onto metal or wooden sticks.'),
-(53, 3, 'Grill kebabs over medium-high heat until cooked to desired doneness.'),
-(53, 4, 'Serve with rice, salad, or flatbread, and tzatziki sauce.'),
+  -- Swedish Meatballs
+  (73, 1, 'Mix ground meat with breadcrumbs, eggs, and spices.'),
+  (73, 2, 'Form mixture into small meatballs.'),
+  (73, 3, 'Brown meatballs in a skillet until cooked through.'),
+  (73, 4, 'In the same skillet, make a sauce with cream and broth.'),
+  (73, 5, 'Return meatballs to the skillet and simmer in the sauce.'),
+  (73, 6, 'Serve with mashed potatoes and lingonberry sauce.'),
 
--- Baklava
-(54, 1, 'Preheat the oven to 350°F (175°C).'),
-(54, 2, 'Layer filo dough in a baking dish, brushing each layer with butter.'),
-(54, 3, 'Spread a mixture of nuts and cinnamon between layers.'),
-(54, 4, 'Cut into squares or diamonds before baking.'),
-(54, 5, 'Bake for 45 minutes until golden brown and crispy.'),
-(54, 6, 'Pour syrup over the hot baklava and let it soak in.'),
-(54, 7, 'Allow baklava to cool before serving.'),
+  -- Gravad Lax
+  (74, 1, 'Mix salt, sugar, and dill.'),
+  (74, 2, 'Rub the mixture over the salmon fillet.'),
+  (74, 3, 'Wrap the fillet in plastic wrap and refrigerate for a few days.'),
+  (74, 4, 'Slice thinly and serve with mustard sauce.'),
 
--- Lahmacun
-(55, 1, 'Preheat the oven to 500°F (260°C).'),
-(55, 2, 'Spread a thin layer of spiced ground meat mixture on rolled-out dough.'),
-(55, 3, 'Bake lahmacun in the oven for about 5-10 minutes until the edges are crispy and the meat is cooked through.'),
-(55, 4, 'Serve with fresh lemon wedges, parsley, and sliced vegetables.'),
+  -- Köttbullar
+  (75, 1, 'Mix ground meat with breadcrumbs, eggs, and spices.'),
+  (75, 2, 'Form mixture into small meatballs.'),
+  (75, 3, 'Brown meatballs in a skillet until cooked through.'),
+  (75, 4, 'In the same skillet, make a sauce with cream and broth.'),
+  (75, 5, 'Return meatballs to the skillet and simmer in the sauce.'),
+  (75, 6, 'Serve with mashed potatoes and lingonberry sauce.'),
 
--- Turkish Delight
-(56, 1, 'Mix sugar, cornstarch, and water in a saucepan.'),
-(56, 2, 'Cook over medium heat until the mixture thickens and turns translucent.'),
-(56, 3, 'Stir in flavorings like rosewater or lemon juice and food coloring, if desired.'),
-(56, 4, 'Pour the mixture into a pan lined with powdered sugar and let it set.'),
-(56, 5, 'Cut into squares or diamonds and toss in powdered sugar to coat.'),
+  -- Smörgåsbord
+  (76, 1, 'Arrange a variety of cold and hot dishes on a table.'),
+  (76, 2, 'Include items like herring, cured salmon, meatballs, potatoes, salads, and bread.'),
+  (76, 3, 'Serve buffet-style, allowing guests to help themselves.'),
 
--- Borscht
-(57, 1, 'Heat oil in a pot and sauté onions, carrots, and celery until softened.'),
-(57, 2, 'Add chopped beets, potatoes, and cabbage to the pot.'),
-(57, 3, 'Pour in beef broth and simmer until vegetables are tender.'),
-(57, 4, 'Stir in vinegar, sugar, and salt to taste.'),
-(57, 5, 'Serve hot with a dollop of sour cream and fresh dill.'),
+  -- Pavlova
+  (77, 1, 'Preheat the oven to 300°F (150°C).'),
+  (77, 2, 'Whip egg whites and sugar to stiff peaks.'),
+  (77, 3, 'Spread the meringue onto a baking sheet.'),
+  (77, 4, 'Bake for 1 hour, then let cool in the oven.'),
+  (77, 5, 'Top with whipped cream and fresh fruits.'),
 
--- Pelmeni
-(58, 1, 'Make a dough from flour, eggs, water, and salt.'),
-(58, 2, 'Roll out the dough thinly and cut into circles.'),
-(58, 3, 'Place a spoonful of meat filling on each circle.'),
-(58, 4, 'Fold the dough over the filling and pinch to seal tightly.'),
-(58, 5, 'Boil pelmeni in salted water until they float to the surface.'),
-(58, 6, 'Serve hot with sour cream or melted butter.'),
+  -- Meat Pie
+  (78, 1, 'Preheat the oven to 375°F (190°C).'),
+  (78, 2, 'Cook ground meat with onions and spices.'),
+  (78, 3, 'Fill pie crust with meat mixture.'),
+  (78, 4, 'Cover with a top crust and seal the edges.'),
+  (78, 5, 'Bake until golden brown.'),
 
--- Blini
-(59, 1, 'Mix flour, eggs, milk, and salt to make a thin batter.'),
-(59, 2, 'Heat a lightly greased skillet over medium heat.'),
-(59, 3, 'Pour a small amount of batter into the skillet and swirl to coat the bottom.'),
-(59, 4, 'Cook until the edges are lightly browned, then flip and cook the other side.'),
-(59, 5, 'Serve blini warm with sour cream, caviar, or jam.'),
+  -- Vegemite on Toast
+  (79, 1, 'Toast slices of bread until golden brown.'),
+  (79, 2, 'Spread a thin layer of butter on the toast.'),
+  (79, 3, 'Spread a thin layer of Vegemite over the butter.'),
+  (79, 4, 'Serve immediately.'),
 
--- Beef Stroganoff
-(60, 1, 'Slice beef thinly against the grain and season with salt and pepper.'),
-(60, 2, 'Heat oil in a skillet and brown beef on all sides, then remove from the skillet.'),
-(60, 3, 'Sauté onions and mushrooms in the same skillet until softened and browned.'),
-(60, 4, 'Stir in flour and cook until lightly golden, then add beef broth and bring to a simmer.'),
-(60, 5, 'Return beef to the skillet and simmer until heated through and sauce thickens.'),
-(60, 6, 'Stir in sour cream and serve over cooked egg noodles or rice.'),
-(60, 7, 'Garnish with chopped parsley, if desired.') ;
+  -- Anzac Biscuits
+  (80, 1, 'Preheat the oven to 350°F (175°C).'),
+  (80, 2, 'Mix rolled oats, flour, sugar, and coconut in a bowl.'),
+  (80, 3, 'Melt butter and golden syrup in a saucepan.'),
+  (80, 4, 'Stir in baking soda and water.'),
+  (80, 5, 'Combine wet and dry ingredients.'),
+  (80, 6, 'Drop spoonfuls of dough onto a baking sheet.'),
+  (80, 7, 'Bake for 15 minutes until golden brown.');

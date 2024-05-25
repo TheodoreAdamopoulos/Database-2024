@@ -99,21 +99,22 @@ BEGIN
 END;
 
 --Calculate Calories Per Serving
-CREATE TRIGGER calculate_calories_per_serving
-BEFORE INSERT ON Recipe
+DELIMITER $$
+
+CREATE TRIGGER calculate_calories_per_portion
+BEFORE INSERT OR UPDATE ON Recipe
 FOR EACH ROW
 BEGIN
-    DECLARE total_calories INT;
+    DECLARE total_calories DECIMAL(10,2) DEFAULT 0;
     DECLARE ingredient_id INT;
     DECLARE quantity DECIMAL(10,2);
     DECLARE calories_per_100 DECIMAL(10,2);
     DECLARE done INT DEFAULT 0;
-    DECLARE cur CURSOR FOR SELECT ingredient_id, quantity 
-                           FROM Ingredient_Recipe 
-                           WHERE recipe_id = NEW.id;
+    DECLARE cur CURSOR FOR 
+        SELECT ir.ingredient_id, ir.quantity
+        FROM Ingredient_Recipe ir
+        WHERE ir.recipe_id = NEW.id;
     DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = 1;
-
-    SET total_calories = 0;
 
     OPEN cur;
     read_loop: LOOP
@@ -121,14 +122,24 @@ BEGIN
         IF done THEN
             LEAVE read_loop;
         END IF;
-        
-        SET calories_per_100 = (SELECT caloriesPer100 
-                                FROM Ingredient 
-                                WHERE id = ingredient_id);
-        
-        SET total_calories = total_calories + (quantity * calories_per_100) / 100;
+
+        -- Check if quantity is in grams
+        IF LOCATE('grams', quantity) > 0 THEN
+            -- Extract the numeric part of the quantity
+            SET quantity = CAST(SUBSTRING_INDEX(quantity, ' ', 1) AS DECIMAL(10,2));
+            
+            -- Get calories per 100 grams from Ingredient table
+            SET calories_per_100 = (SELECT caloriesPer100 
+                                    FROM Ingredient 
+                                    WHERE id = ingredient_id);
+            
+            -- Calculate and add to total calories
+            SET total_calories = total_calories + (quantity * calories_per_100) / 100;
+        END IF;
     END LOOP;
     CLOSE cur;
 
-    SET NEW.calories_per_serving = total_calories / NEW.serving_size;
-END;
+    SET NEW.calories_per_portion = total_calories / NEW.serving_size;
+END$$
+
+DELIMITER ;
