@@ -2,7 +2,6 @@
 SELECT 
     t.id,
     t.name,
-    t.image_url,
     t.description,
     COUNT(a.id) AS total_appearances
 FROM 
@@ -12,6 +11,6 @@ JOIN
 JOIN 
     Attempt a ON tr.recipe_id = a.recipe_id
 GROUP BY 
-    t.id, t.name, t.image_url, t.description
+    t.id, t.name, t.description
 ORDER BY 
     total_appearances DESC;

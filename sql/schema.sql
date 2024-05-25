@@ -52,7 +52,6 @@ CREATE TABLE Cuisine (
 CREATE TABLE FoodCategory (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255) UNIQUE NOT NULL,
-    image_url VARCHAR(255),
     description TEXT NOT NULL
 );
 
@@ -167,7 +166,6 @@ CREATE TABLE NutrionFacts (
 CREATE TABLE Topic (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255) UNIQUE NOT NULL,
-    image_url VARCHAR(255),
     description TEXT NOT NULL
 );
 

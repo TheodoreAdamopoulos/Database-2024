@@ -17,7 +17,7 @@ for episode_id in range(1, 1 + EPISODES):
       cuisines = [t[1] for t in cook_cuisine if t[0] == random_cook_id]
       recipes = [RECIPES_PER_CUISINE * (j-1) + k for j in cuisines for k in range(1, RECIPES_PER_CUISINE+1)]
       random_recipe_id = random.choice(recipes)
-      while random_recipe_id in recipe_set:
+      while random_recipe_id in recipe_set or random_recipe_id in [9, 10]:
         random_recipe_id = random.choice(recipes)
       recipe_set.add(random_recipe_id)
       result.append((exec_id, episode_id, random_cook_id, random_recipe_id))

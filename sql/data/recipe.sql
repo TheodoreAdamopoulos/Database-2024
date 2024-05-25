@@ -44,14 +44,14 @@ VALUES
 
 -- Spanish Recipes
   (29, 'Paella', 8, 'Spanish rice dish originally from Valencia, made with saffron-infused rice, meat, seafood, and vegetables.', 3, 29, '/recipes/img_29.jpg', 'A pan of paella with seafood and lemon wedges.'),
-  (30, 'Gazpacho', 8, 'Spanish cold soup made of raw, blended vegetables, such as tomato, cucumber, bell pepper, onion, and garlic.', 1, 30, '/recipes/img_30.jpg', 'A bowl of gazpacho garnished with diced vegetables.'),
-  (31, 'Tortilla Española', 8, 'Spanish omelette made with eggs, potatoes, onions, and olive oil, often served as a tapa.', 2, 31, '/recipes/img_31.jpg', 'A slice of tortilla española on a plate.'),
-  (32, 'Patatas Bravas', 8, 'Spanish tapa of fried potatoes served with a spicy tomato sauce and aioli.', 2, 32, '/recipes/img_32.jpg', 'A plate of patatas bravas with dipping sauces.'),
+  (30, 'Gazpacho', 8, 'Spanish cold soup made of raw, blended vegetables, such as tomato, cucumber, bell pepper, onion, and garlic.', 1, 100, '/recipes/img_30.jpg', 'A bowl of gazpacho garnished with diced vegetables.'),
+  (31, 'Tortilla Española', 8, 'Spanish omelette made with eggs, potatoes, onions, and olive oil, often served as a tapa.', 2, 101, '/recipes/img_31.jpg', 'A slice of tortilla española on a plate.'),
+  (32, 'Patatas Bravas', 8, 'Spanish tapa of fried potatoes served with a spicy tomato sauce and aioli.', 2, 102, '/recipes/img_32.jpg', 'A plate of patatas bravas with dipping sauces.'),
 
 -- Greek Recipes
-  (33, 'Moussaka', 9, 'Greek baked casserole dish made with layers of eggplant, minced meat, and tomatoes, topped with a béchamel sauce.', 3, 33, '/recipes/img_33.jpg', 'A slice of moussaka served on a plate.'),
-  (34, 'Greek Salad', 9, 'Traditional Greek salad made with tomatoes, cucumbers, olives, onions, and feta cheese, seasoned with olive oil and oregano.', 1, 34, '/recipes/img_34.jpg', 'A bowl of Greek salad with feta cheese.'),
-  (35, 'Spanakopita', 9, 'Greek spinach and feta cheese pie wrapped in layers of phyllo dough.', 2, 35, '/recipes/img_35.jpg', 'A slice of spanakopita on a plate.'),
+  (33, 'Moussaka', 9, 'Greek baked casserole dish made with layers of eggplant, minced meat, and tomatoes, topped with a béchamel sauce.', 3, 103, '/recipes/img_33.jpg', 'A slice of moussaka served on a plate.'),
+  (34, 'Greek Salad', 9, 'Traditional Greek salad made with tomatoes, cucumbers, olives, onions, and feta cheese, seasoned with olive oil and oregano.', 1, 104, '/recipes/img_34.jpg', 'A bowl of Greek salad with feta cheese.'),
+  (35, 'Spanakopita', 9, 'Greek spinach and feta cheese pie wrapped in layers of phyllo dough.', 2, 105, '/recipes/img_35.jpg', 'A slice of spanakopita on a plate.'),
   (36, 'Souvlaki', 9, 'Greek dish of skewered and grilled meat, usually served with pita bread and tzatziki sauce.', 2, 36, '/recipes/img_36.jpg', 'A plate of souvlaki skewers with pita bread and tzatziki sauce.'),
 
 -- Brazilian Recipes
@@ -69,11 +69,11 @@ VALUES
 -- Lebanese Recipes
   (45, 'Hummus', 12, 'Lebanese dip or spread made from cooked, mashed chickpeas blended with tahini, olive oil, lemon juice, salt, and garlic.', 1, 45, '/recipes/img_45.jpg', 'A bowl of hummus garnished with olive oil and parsley.'),
   (46, 'Falafel', 12, 'Lebanese deep-fried ball or patty made from ground chickpeas, fava beans, or both, usually served in a pita pocket with vegetables and tahini sauce.', 2, 46, '/recipes/img_46.jpg', 'A plate of falafel with pita bread and vegetables.'),
-  (47, 'Tabbouleh', 12, 'Lebanese salad made with chopped parsley, tomatoes, mint, onion, bulgur, and seasoned with olive oil, lemon juice, and salt.', 1, 47, '/recipes/img_47.jpg', 'A bowl of tabbouleh garnished with lemon wedges.'),
-  (48, 'Shawarma', 12, 'Lebanese meat preparation, where lamb, chicken, turkey, beef, veal, or mixed meats are placed on a spit and may be grilled for as long as a day.', 3, 48, '/recipes/img_48.jpg', 'A plate of shawarma meat with pita bread and vegetables.'),
+  (47, 'Tabbouleh', 12, 'Lebanese salad made with chopped parsley, tomatoes, mint, onion, bulgur, and seasoned with olive oil, lemon juice, and salt.', 1, 120, '/recipes/img_47.jpg', 'A bowl of tabbouleh garnished with lemon wedges.'),
+  (48, 'Shawarma', 12, 'Lebanese meat preparation, where lamb, chicken, turkey, beef, veal, or mixed meats are placed on a spit and may be grilled for as long as a day.', 3, 121, '/recipes/img_48.jpg', 'A plate of shawarma meat with pita bread and vegetables.'),
 
   -- Vietnamese Recipes
-  (49, 'Pho', 13, 'Vietnamese noodle soup consisting of broth, rice noodles, herbs, and meat, often beef or chicken.', 3, 49, '/recipes/img_49.jpg', 'A bowl of pho with beef slices and herbs.'),
+  (49, 'Pho', 13, 'Vietnamese noodle soup consisting of broth, rice noodles, herbs, and meat, often beef or chicken.', 3, 122, '/recipes/img_49.jpg', 'A bowl of pho with beef slices and herbs.'),
   (50, 'Banh Mi', 13, 'Vietnamese sandwich consisting of a baguette filled with various savory ingredients such as meat, pickled vegetables, and cilantro.', 2, 50, '/recipes/img_50.jpg', 'A Vietnamese banh mi sandwich with meat and vegetables.'),
   (51, 'Goi Cuon', 13, 'Vietnamese fresh spring rolls made with shrimp, pork, vegetables, rice vermicelli, and herbs, wrapped in rice paper.', 2, 51, '/recipes/img_51.jpg', 'A plate of goi cuon with dipping sauce.'),
   (52, 'Bun Cha', 13, 'Vietnamese dish of grilled pork served with rice vermicelli, fresh herbs, and dipping sauce.', 2, 52, '/recipes/img_52.jpg', 'A plate of bun cha with grilled pork and noodles.'),

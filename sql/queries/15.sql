@@ -1,10 +1,15 @@
----------------- 3.15 ----------------
-SELECT id, name, image_url, description
-FROM FoodCategory fc
-WHERE NOT EXISTS (
-    SELECT 1
-    FROM Ingredient_FoodCategory ifc
-    JOIN Ingredient_Recipe ir ON ifc.ingredient_id = ir.ingredient_id
-    WHERE ifc.food_category_id = fc.id
-);
-
+SELECT
+  fc.id,
+  fc.name,
+  fc.description
+FROM
+  FoodCategory fc
+WHERE
+  fc.id NOT IN (
+    SELECT
+      i.food_category_id
+    FROM
+      Ingredient i
+      JOIN Recipe r ON r.ingredient_id = i.id
+      JOIN Attempt a ON a.recipe_id = r.id
+  );

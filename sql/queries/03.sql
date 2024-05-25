@@ -1,16 +1,15 @@
----------------- 3.3 ----------------
 SELECT
     co.id,
     co.first_name,
     co.last_name,
-    COUNT(*) AS recipes
+    COUNT(DISTINCT a.recipe_id) AS recipes
 FROM 
     Cook co
 JOIN
-    Recipe r ON co.id = r.cook_id
+    Attempt a ON a.cook_id = co.id
 WHERE 
     DATE_PART('year', age(NOW(), co.date_of_birth)) < 30
 GROUP BY
     co.id, co.first_name, co.last_name
 ORDER BY
-    COUNT(*) DESC;
+    recipes DESC;

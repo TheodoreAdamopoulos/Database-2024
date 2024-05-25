@@ -1,4 +1,3 @@
----------------- 3.12 ----------------
 WITH EpisodeDifficulty AS (
     SELECT
         e.id AS episode_id,

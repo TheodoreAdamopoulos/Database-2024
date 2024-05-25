@@ -1,4 +1,3 @@
----------------- 3.7 ----------------
 WITH CookParticipation AS (
     SELECT
         c.id,
@@ -24,6 +23,6 @@ SELECT
     cp.participation_count
 FROM
     CookParticipation cp
-    JOIN MaxParticipation mp ON 1 = 1
+    CROSS JOIN MaxParticipation mp
 WHERE
     cp.participation_count <= mp.max_count - 5;
