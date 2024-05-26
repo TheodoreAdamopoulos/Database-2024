@@ -1,9 +1,9 @@
 CREATE INDEX idx_label_recipe_recipe_id ON Label_Recipe(recipe_id);
 CREATE INDEX idx_label_recipe_label_id ON Label_Recipe(label_id);
-CREATE INDEX idx_attempt_recipe_id ON Attempt(recipe_id);
+-- CREATE INDEX idx_attempt_recipe_id ON Attempt(recipe_id);
 
 
--- EXPLAIN ANALYZE 
+EXPLAIN ANALYZE 
 SELECT 
     lr1.label_id AS label1_id, 
     lr2.label_id AS label2_id, 
