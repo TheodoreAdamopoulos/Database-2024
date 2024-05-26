@@ -23,8 +23,6 @@ FROM
   judge_cook_score jcs
   JOIN Cook j ON jcs.judge_id = j.id
   JOIN Cook c ON jcs.cook_id = c.id
-GROUP BY
-
 ORDER BY
   jcs.total_grade DESC
 LIMIT 5;

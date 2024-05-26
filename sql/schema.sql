@@ -1,6 +1,6 @@
 DROP TABLE IF EXISTS Evaluation;
 
-DROP TABLE IF EXISTS Judge_Episode;
+DROP TABLE IF EXISTS NutritionFacts;
 
 DROP TABLE IF EXISTS Attempt;
 
@@ -13,8 +13,6 @@ DROP TABLE IF EXISTS Cook;
 DROP TABLE IF EXISTS Topic_Recipe;
 
 DROP TABLE IF EXISTS Topic;
-
-DROP TABLE IF EXISTS NutrionFacts;
 
 DROP TABLE IF EXISTS Ingredient_Recipe;
 
@@ -41,6 +39,7 @@ DROP TABLE IF EXISTS Ingredient;
 DROP TABLE IF EXISTS Cuisine;
 
 DROP TABLE IF EXISTS FoodCategory;
+
 
 
 
@@ -152,12 +151,11 @@ CREATE TABLE Ingredient_Recipe (
 );
 
 CREATE TABLE NutritionFacts (
-    id INT,
+    id PRIMARY KEY SERIAL,
     recipe_id INT,
     fatPerPortion INT,
     proteinPerPortion INT,
     carbohydratePerPortion INT,
-    PRIMARY KEY (recipe_id, sequence),
     FOREIGN KEY (recipe_id) REFERENCES Recipe(id) ON DELETE CASCADE
 );
 
@@ -176,7 +174,7 @@ CREATE TABLE Topic_Recipe (
 );
 
 CREATE TABLE Cook (
-    id INT PRIMARY KEY,
+    id SERIAL PRIMARY KEY,
     first_name VARCHAR(255) NOT NULL,
     last_name VARCHAR(255) NOT NULL,
     phone_number VARCHAR(20) NOT NULL,
@@ -211,9 +209,9 @@ CREATE TABLE Episode (
 
 CREATE TABLE Attempt (
     id SERIAL PRIMARY KEY,
-    episode_id INT,
-    cook_id INT,
-    recipe_id INT,
+    episode_id INT NOT NULL,
+    cook_id INT NOT NULL,
+    recipe_id INT NOT NULL,
     FOREIGN KEY (episode_id) REFERENCES Episode(id) ON DELETE CASCADE,
     FOREIGN KEY (cook_id) REFERENCES Cook(id) ON DELETE CASCADE,
     FOREIGN KEY (recipe_id) REFERENCES Recipe(id) ON DELETE CASCADE
@@ -230,14 +228,13 @@ CREATE TABLE Attempt (
 
 -- cook evaluates attempt
 CREATE TABLE Evaluation (
-    id SERIAL PRIMARY KEY,
     cook_id INT,
-    --
     attempt_id INT,
     grade SMALLINT CHECK (
         grade >= 1
         AND grade <= 5
     ),
-    FOREIGN KEY (cook_id) REFERENCES Cook(id) ON DELETE SET NULL,
+    PRIMARY KEY (cook_id, attempt_id)
+        FOREIGN KEY (cook_id) REFERENCES Cook(id) ON DELETE CASCADE,
     FOREIGN KEY (attempt_id) REFERENCES Attempt(id) ON DELETE CASCADE
 );

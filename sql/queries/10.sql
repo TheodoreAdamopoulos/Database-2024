@@ -42,4 +42,4 @@ FROM
   TwoYearsParticipationCount s
   JOIN TwoYearsParticipationCount t ON s.total_participation_count = t.total_participation_count
   and s.start_year = t.start_year
-  AND s.id != t.id
+  AND s.id < t.id;
