@@ -22,7 +22,7 @@
 --   3;
 
 ---------------- 3.6 ----------------
--- EXPLAIN ANALYZE
+EXPLAIN ANALYZE
 SELECT
   lr1.label_id AS label1_id,
   lr2.label_id AS label2_id,
