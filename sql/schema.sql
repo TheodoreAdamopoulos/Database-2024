@@ -152,6 +152,7 @@ CREATE TABLE Ingredient_Recipe (
 
 CREATE TABLE NutritionFacts (
     id SERIAL PRIMARY KEY,
+    id SERIAL PRIMARY KEY,
     recipe_id INT,
     fatPerPortion INT,
     proteinPerPortion INT,
