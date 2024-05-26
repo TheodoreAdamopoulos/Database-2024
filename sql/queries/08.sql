@@ -1,4 +1,5 @@
 ---------------- 3.8 ----------------
+--EXPLAIN ANALYZE
 SELECT 
     e.id AS episode_id, 
     COUNT(tr.tool_id) AS tool_count

@@ -158,7 +158,6 @@ CREATE TABLE NutritionFacts (
     fatPerPortion INT,
     proteinPerPortion INT,
     carbohydratePerPortion INT,
-    -- caloriesPerPortion()
     PRIMARY KEY (recipe_id, sequence),
     FOREIGN KEY (recipe_id) REFERENCES Recipe(id) ON DELETE CASCADE
 );
@@ -207,7 +206,7 @@ CREATE TABLE Cook_Cuisine (
 
 CREATE TABLE Episode (
     id SERIAL PRIMARY KEY,
-    season_no SMALLINT,
+    --season_no SMALLINT,
     release_date DATE
 );
 
