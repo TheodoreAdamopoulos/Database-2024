@@ -1,11 +1,11 @@
-\set base_path '~/ntua/db/Database-2024/sql/'
-\set data_path '~/ntua/db/Database-2024/sql/data'
+-- \set base_path '~/ntua/db/Database-2024/sql/'
+-- \set data_path '~/ntua/db/Database-2024/sql/data'
 
 -- For teo
--- \set base_path '/home/cerberus/Documents/db24/sql/'
--- \set data_path '/home/cerberus/Documents/db24/sql/data'
+--\set base_path '/home/cerberus/Documents/db24/sql/'
+\set data_path '/home/cerberus/Documents/db24/sql/data'
 
-\i :base_path/schema.sql
+--\i :base_path/schema.sql
 \i :data_path/cook.sql
 \i :data_path/cuisine.sql
 \i :data_path/cookCuisine.sql
