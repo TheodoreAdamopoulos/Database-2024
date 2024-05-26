@@ -152,9 +152,8 @@ CREATE TABLE Ingredient_Recipe (
 );
 
 CREATE TABLE NutritionFacts (
+    id INT,
     recipe_id INT,
-    sequence INT,
-    -- ???
     fatPerPortion INT,
     proteinPerPortion INT,
     carbohydratePerPortion INT,
@@ -216,8 +215,8 @@ CREATE TABLE Attempt (
     cook_id INT,
     recipe_id INT,
     FOREIGN KEY (episode_id) REFERENCES Episode(id) ON DELETE CASCADE,
-    FOREIGN KEY (cook_id) REFERENCES Cook(id) ON DELETE SET NULL,
-    FOREIGN KEY (recipe_id) REFERENCES Recipe(id) ON DELETE SET NULL
+    FOREIGN KEY (cook_id) REFERENCES Cook(id) ON DELETE CASCADE,
+    FOREIGN KEY (recipe_id) REFERENCES Recipe(id) ON DELETE CASCADE
 );
 
 -- -- cook judges episode

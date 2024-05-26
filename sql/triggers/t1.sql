@@ -1,4 +1,4 @@
---Prevent Duplicate Judges per episode --Maybe we'll not use this one
+--Prevent Judges from evaluating the same attempt more than once
 CREATE OR REPLACE FUNCTION prevent_duplicate_evaluation()
 RETURNS TRIGGER AS $$
 BEGIN
