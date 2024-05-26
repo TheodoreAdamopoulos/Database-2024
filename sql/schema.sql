@@ -1,6 +1,6 @@
 DROP TABLE IF EXISTS Evaluation;
 
-DROP TABLE IF EXISTS Judge_Episode;
+DROP TABLE IF EXISTS NutritionFacts;
 
 DROP TABLE IF EXISTS Attempt;
 
@@ -13,8 +13,6 @@ DROP TABLE IF EXISTS Cook;
 DROP TABLE IF EXISTS Topic_Recipe;
 
 DROP TABLE IF EXISTS Topic;
-
-DROP TABLE IF EXISTS NutrionFacts;
 
 DROP TABLE IF EXISTS Ingredient_Recipe;
 
@@ -41,6 +39,7 @@ DROP TABLE IF EXISTS Ingredient;
 DROP TABLE IF EXISTS Cuisine;
 
 DROP TABLE IF EXISTS FoodCategory;
+
 
 
 

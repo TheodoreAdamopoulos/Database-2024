@@ -19,12 +19,12 @@ WITH
       COUNT(*) > 3
   )
 SELECT
-  e1.cook_id,
-  e2.cook_id,
+  e1.cook_id as cook_id_1,
+  e2.cook_id as cook_id_2,
   e1.release_year,
   e1.episode_count
 FROM
   episode_cooks e1
-  JOIN episode_cooks e2 ON e1.cook_id != e2.cook_id
+  JOIN episode_cooks e2 ON e1.cook_id < e2.cook_id
   AND e1.episode_count = e2.episode_count
-  AND e1.release_year = e2.release_year 
+  AND e1.release_year = e2.release_year;
