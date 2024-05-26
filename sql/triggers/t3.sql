@@ -1,78 +1,37 @@
 -- --Prevent More Than 3 Consecutive Participations
--- CREATE OR REPLACE FUNCTION prevent_consecutive_cook_participations()
--- RETURNS TRIGGER AS $$
--- DECLARE
---     count_participations INT;
--- BEGIN
---     -- Count the participations in the last 3 episodes
---     SELECT COUNT(*)
---     INTO count_participations
---     FROM Attempt 
---     WHERE cook_id = NEW.cook_id 
---     AND episode_id IN (
---         SELECT episode_id 
---         FROM Attempt 
---         WHERE cook_id = NEW.cook_id 
---         ORDER BY episode_id DESC 
---         LIMIT 3
---     );
+-- Drop the previous trigger if it exists
+DROP TRIGGER IF EXISTS check_cook_consecutive_episodes_trigger ON Attempt CASCADE;
 
---     -- If count_participations is 3 or more, raise an exception
---     IF count_participations >= 3 THEN
---         RAISE EXCEPTION 'A cook cannot participate in more than 3 consecutive episodes';
---     END IF;
+-- Drop the previous trigger function if it exists
+DROP FUNCTION IF EXISTS check_cook_consecutive_episodes CASCADE;
 
---     RETURN NEW;
--- END;
--- $$ LANGUAGE plpgsql;
-
--- -- Create the trigger to call the function before inserting into the Attempt table
--- CREATE TRIGGER prevent_consecutive_cook_participations
--- BEFORE INSERT ON Attempt
--- FOR EACH ROW
--- EXECUTE FUNCTION prevent_consecutive_cook_participations();
-
-
-
--- Prevent More Than 3 Consecutive Participations
-CREATE OR REPLACE FUNCTION prevent_consecutive_cook_participations()
-RETURNS TRIGGER AS $$
+-- Create the trigger function for cook participation
+CREATE OR REPLACE FUNCTION check_cook_consecutive_episodes() RETURNS TRIGGER AS $$
 DECLARE
-    count_participations INT;
-    participations RECORD;
+    consecutive_count INT;
 BEGIN
-    -- Count the participations in the last 3 episodes
-    SELECT COUNT(*) INTO count_participations
+    -- Check if the cook has participated in the last three consecutive episodes
+    SELECT COUNT(*)
+    INTO consecutive_count
     FROM (
-        SELECT episode_id 
-        FROM Attempt 
-        WHERE cook_id = NEW.cook_id 
-        ORDER BY episode_id DESC 
+        SELECT episode_id
+        FROM Attempt
+        WHERE cook_id = NEW.cook_id
+        ORDER BY episode_id DESC
         LIMIT 3
-    ) AS subquery;
+    ) subquery;
 
-    -- If count_participations is 3 or more, raise an exception
-    IF count_participations > 3 THEN
-        -- Get the episodes that cause the problem
-        RAISE NOTICE 'Cook ID: % has participated in the following episodes:', NEW.cook_id;
-        FOR participations IN 
-            SELECT episode_id 
-            FROM Attempt 
-            WHERE cook_id = NEW.cook_id 
-            ORDER BY episode_id DESC 
-            LIMIT 3
-        LOOP
-            RAISE NOTICE 'Episode ID: %', participations.episode_id;
-        END LOOP;
-        RAISE EXCEPTION 'A cook cannot participate in more than 3 consecutive episodes';
+    IF consecutive_count > 3 THEN
+        RAISE EXCEPTION 'Cook cannot participate in more than 3 consecutive episodes';
     END IF;
 
     RETURN NEW;
 END;
 $$ LANGUAGE plpgsql;
 
--- Create the trigger to call the function before inserting into the Attempt table
-CREATE TRIGGER prevent_consecutive_cook_participations
+-- Create the trigger for cook participation
+CREATE TRIGGER check_cook_consecutive_episodes_trigger
 BEFORE INSERT ON Attempt
 FOR EACH ROW
-EXECUTE FUNCTION prevent_consecutive_cook_participations();
+EXECUTE FUNCTION check_cook_consecutive_episodes();
+
