@@ -151,7 +151,7 @@ CREATE TABLE Ingredient_Recipe (
 );
 
 CREATE TABLE NutritionFacts (
-    id PRIMARY KEY SERIAL,
+    id SERIAL PRIMARY KEY,
     recipe_id INT,
     fatPerPortion INT,
     proteinPerPortion INT,
@@ -234,7 +234,7 @@ CREATE TABLE Evaluation (
         grade >= 1
         AND grade <= 5
     ),
-    PRIMARY KEY (cook_id, attempt_id)
+    PRIMARY KEY (cook_id, attempt_id),
         FOREIGN KEY (cook_id) REFERENCES Cook(id) ON DELETE CASCADE,
     FOREIGN KEY (attempt_id) REFERENCES Attempt(id) ON DELETE CASCADE
 );
